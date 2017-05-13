@@ -5,7 +5,7 @@
 
 # Linux-Notebook
  
-__Update 13-05-2017__:   __It's an Ubuntu-Notebook written by myself, for the daily summary of Ubuntu using.__
+__Update 13-05-2017__:   __It's an Ubuntu-Notebook written by myself, for the daily summary of Ubuntu using, written in Simplified Chinese.__
 
 ## Introduction
 
@@ -20,3 +20,22 @@ And this Linux-Notebook will still be improved and be updated.
 ## Requirements
 
    * No specific requirements
+
+
+# Linux笔记
+ 
+__更新于 13-05-2017__:   __这是我自己写的Linux操作笔记, 里面记录了我日常使用Linux操作系统进行研发的心得总结。__
+
+## 简介
+
+在日常的Linux开发中，我有将常用的指令操作、心得总结、遇到的问题和解决方案进行记录的习惯. 我所使用的操作系统是 [Ubuntu 14.04.5](http://releases.ubuntu.com/14.04.5/), 一个经典而且稳定支持的Linux版本.
+
+我会不断完善和更新这个Linux操作笔记.
+
+## 用法
+
+* 点开 [Ubuntu-Notebook.md]() 文件就能看啦～
+
+## 要求和依赖
+
+   * 最起码的中文阅读能力
