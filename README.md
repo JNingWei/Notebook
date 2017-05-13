@@ -21,6 +21,9 @@ And this Linux-Notebook will still be improved and be updated.
 
    * No specific requirements
 
+---
+
+---
 
 # Linux笔记
  
@@ -34,7 +37,7 @@ __更新于 13-05-2017__:   __这是我自己写的Linux操作笔记, 里面记
 
 ## 用法
 
-* 点开 [Ubuntu-Notebook.md]() 文件就能看啦～
+* 点开 [Ubuntu-Notebook.md](https://github.com/JNingWei/Linux-Notebook/blob/master/Ubuntu-Notebook.md) 文件就能看啦～
 
 ## 要求和依赖
 
