@@ -2111,6 +2111,11 @@ type命令其实不能算查找命令，它是用来区分某个命令到底是�
 Caffe
 ----
 
+### 安装 Caffe
+
+参照 [Caffe Ubuntu Installation](http://caffe.berkeleyvision.org/install_apt.html) 和 [Ubuntu 14.04上安装caffe](http://www.cnblogs.com/wm123/p/5385940.html) 即可
+
+
 测试Caffe是否正常
 
 进入 Caffe 主文件夹下
