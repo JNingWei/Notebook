@@ -387,19 +387,6 @@ apt-get 安装 出现依赖问题
 
 
 
-局域网内传文件
---------
-
-    ssh -X xiaoming@172.18.128.57
-    scp -r  '/media/D/Cross-Age Reference Coding/CARC-master' xiaoming@172.18.128.57:/home/xiaoming
-    sudo /etc/init.d/vboxdrv setup
-
-
-----------
-
-
-----------
-
 
 安装Gnome桌面
 ----------
