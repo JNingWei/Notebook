@@ -1017,8 +1017,12 @@ or
 
 ----------
 
-装opencv时可能遇到的问题
+opencv
 ----------------
+
+###安装
+
+[Installation in Linux](http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html)
 
 ### Problem & Solution
 #### Problem_0
