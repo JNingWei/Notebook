@@ -2441,4 +2441,22 @@ Ctrl+-	缩小
 
 ----------
 
+Python __future__ 模块
+----
+
+[python的__future__模块](http://www.cnblogs.com/ksedz/p/3190208.html)：
+	运用
+
+	首先是可以做个性化的用法，比如你喜欢用print（）而不是print
+
+	更重要的是基本用以下几句就可以让python2和python3有良好的兼容性了
+
+	from __future__ import print_function
+	from __future__ import unicode_literals
+	from __future__ import division
+	from __future__ import absolute_import
+	
+[Python future模块常见示例相关解读](http://developer.51cto.com/art/201003/186805.htm)：
+
+	如果使用这个语句，则该语句必须是模块或程序的第一个语句。此外，'__ future__' 模块中存在的特性最终将成为Python语言标准的一部分。到那时，将不再需要使用Python future模块。
 
