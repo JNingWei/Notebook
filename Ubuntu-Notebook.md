@@ -2458,5 +2458,7 @@ Python __future__ 模块
 	
 [Python future模块常见示例相关解读](http://developer.51cto.com/art/201003/186805.htm)：
 
-	如果使用这个语句，则该语句必须是模块或程序的第一个语句。此外，'__ future__' 模块中存在的特性最终将成为Python语言标准的一部分。到那时，将不再需要使用Python future模块。
+	如果使用这个语句，则该语句必须是模块或程序的第一个语句。
+	此外，'__ future__' 模块中存在的特性最终将成为Python语言标准的一部分。
+	到那时，将不再需要使用Python future模块。
 
