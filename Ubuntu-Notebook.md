@@ -2433,7 +2433,7 @@ ipython
 
 > ImportError: No module named shutil_get_terminal_size
 
-#### [Solution](https://github.com/ipython/ipython/issues/9656)
+#### Solution
 
 	conda config --add channels conda-forge
 	conda install backports.shutil_get_terminal_size
