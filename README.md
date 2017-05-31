@@ -7,7 +7,9 @@
 
 [Caffe-Notebook](https://github.com/JNingWei/Notebook/edit/master/Caffe-Notebook.md)
 
-[Tensorflow-Notebook](https://github.com/JNingWei/Notebook/edit/master/Tensorflow-Notebook.md)
+[TensorFlow-Notebook](https://github.com/JNingWei/Notebook/edit/master/TensorFlow-Notebook.md)
+
+[OpenCV-Notebook](https://github.com/JNingWei/Notebook/blob/master/OpenCV-Notebook.md)
 
 [Others]()
 
@@ -20,13 +22,15 @@
 
 # **索引**
 
-[Ubuntu笔记](https://github.com/JNingWei/Notebook/edit/master/Ubuntu-Notebook.md)
+[Ubuntu　笔记](https://github.com/JNingWei/Notebook/edit/master/Ubuntu-Notebook.md)
 
-[Python笔记](https://github.com/JNingWei/Notebook/edit/master/Python-Notebook.md)
+[Python　笔记](https://github.com/JNingWei/Notebook/edit/master/Python-Notebook.md)
 
-[Caffe笔记](https://github.com/JNingWei/Notebook/edit/master/Caffe-Notebook.md)
+[Caffe　笔记](https://github.com/JNingWei/Notebook/edit/master/Caffe-Notebook.md)
 
-[Tensorflow笔记](https://github.com/JNingWei/Notebook/edit/master/Tensorflow-Notebook.md)
+[TensorFlow　笔记](https://github.com/JNingWei/Notebook/edit/master/TensoFlow-Notebook.md)
+
+[OpenCV　笔记](https://github.com/JNingWei/Notebook/blob/master/OpenCV-Notebook.md)
 
 [其他笔记]()
 
