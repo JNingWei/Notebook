@@ -88,8 +88,7 @@ requirements.txt 文件 里面记录了当前程序的所有依赖包及其精�
 
 ---
 
-
-Python __future__ 模块
+__future__ 模块
 ----
 
 [python的__future__模块](http://www.cnblogs.com/ksedz/p/3190208.html)：
