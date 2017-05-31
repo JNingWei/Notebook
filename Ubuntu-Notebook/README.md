@@ -19,8 +19,6 @@ And this Linux-Notebook will still be improved and be updated.
 
 ---
 
----
-
 ## Linux笔记
  
 __更新于 13-05-2017__:   __这是我自己写的Linux操作笔记, 里面记录了我日常使用Linux操作系统进行研发的心得总结。__
