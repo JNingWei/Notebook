@@ -2176,7 +2176,7 @@ Markdown
 
 ----
 
-ipython
+IPython
 ---
 
 ### Problem & Solution
@@ -2194,5 +2194,21 @@ ipython
 
 ---
 
+Jupyter
+---
+
+### Problem & Solution
+
+#### Problem_0
+
+When attempt to download *.ipynb* file as *.python* file:
+
+> 500 : Internal Server Error
+> The error was:
+> Could not import nbconvert: cannot import name configparser
+
+#### [Solution]()
+
+	conda install configparser=3.5.0b2
 
 
