@@ -8,18 +8,19 @@ CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
 
 #### 可自定义日志级别：
 
-
+>
 > import logging
 >
 > logging.basicConfig(
->               level=logging.WARNING,
->               format='%(asctime)s %(levelname)s %(message)s',
->               filename='myapp.log',
->               filemode='w')
+>                     level=logging.WARNING,
+>                     format='%(asctime)s %(levelname)s %(message)s',
+>                     filename='myapp.log',
+>                     filemode='w')
 >
 > logging.debug('Debug message')
 > logging.info('Info message')
 > logging.warning('Warning message')
+>
 
 **logging.basicConfig 函数** 各参数:
 
