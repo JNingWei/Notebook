@@ -2201,7 +2201,7 @@ Jupyter
 
 #### Problem_0
 
-When attempt to download *.ipynb* file as *.python* file:
+When attempt to download **.ipynb** file as **.python** file:
 
 > 500 : Internal Server Error
 >
