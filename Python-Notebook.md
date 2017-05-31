@@ -7,7 +7,7 @@ logging模块
 CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
 
 级别	| 何时使用 
----- | ----
+:----: | :----:
 DEBUG	| 详细信息，典型地调试问题时会感兴趣。
 INFO	| 证明事情按预期工作。
 WARNING	| 表明发生了一些意外，或者不久的将来会发生问题（如‘磁盘满了’）。软件还是在正常工作。
