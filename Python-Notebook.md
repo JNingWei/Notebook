@@ -12,13 +12,19 @@ CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
 > import logging
 >
 > logging.basicConfig(
+>
 >                     level=logging.WARNING,
+>
 >                     format='%(asctime)s %(levelname)s %(message)s',
+>
 >                     filename='myapp.log',
+>
 >                     filemode='w')
 >
 > logging.debug('Debug message')
+>
 > logging.info('Info message')
+>
 > logging.warning('Warning message')
 >
 
