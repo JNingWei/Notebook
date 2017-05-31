@@ -2435,9 +2435,8 @@ ipython
 
 #### [Solution](https://github.com/ipython/ipython/issues/9656)
 
-	pip install --upgrade setuptools pip
-	pip uninstall ipython
-	pip install ipython
+	conda config --add channels conda-forge
+	conda install backports.shutil_get_terminal_size
 
 ---
 
