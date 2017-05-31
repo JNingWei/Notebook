@@ -6,7 +6,7 @@ logging模块
 
 CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
 
-级别	| 何时使用 
+**级别**	| **何时使用**
 :----: | :----:
 DEBUG	| 详细信息，典型地调试问题时会感兴趣。
 INFO	| 证明事情按预期工作。
