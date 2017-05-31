@@ -782,12 +782,12 @@ find
 
 首行添加
 
->    # -*- coding: utf-8 -*-
+	# -*- coding: utf-8 -*-
 
 or
 
->   #!/usr/bin/env python
->   # -*- coding: utf-8 -*-
+	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-
 
 
 ----------
@@ -987,12 +987,10 @@ or
 
 ----------
 
-opencv
-----------------
+OpenCV
+---
 
-###安装
-
-[Installation in Linux](http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html)
+### [安装](http://docs.opencv.org/trunk/d7/d9f/tutorial_linux_install.html)
 
 ### Problem & Solution
 #### Problem_0
