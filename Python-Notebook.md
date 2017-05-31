@@ -9,19 +9,19 @@ CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
 #### 可自定义日志级别：
 
 
-    import logging
+> import logging
+>
+> logging.basicConfig(
+>               level=logging.WARNING,
+>               format='%(asctime)s %(levelname)s %(message)s',
+>               filename='myapp.log',
+>               filemode='w')
+>
+> logging.debug('Debug message')
+> logging.info('Info message')
+> logging.warning('Warning message')
 
-    logging.basicConfig(
-                    level=logging.WARNING,
-                    format='%(asctime)s %(levelname)s %(message)s',
-                    filename='myapp.log',
-                    filemode='w')
-
-    logging.debug('Debug message')
-    logging.info('Info message')
-    logging.warning('Warning message')
-
-logging.basicConfig函数各参数:
+**logging.basicConfig 函数** 各参数:
 
     filename: 指定日志文件名
     filemode: 和file函数意义相同，指定日志文件的打开模式，'w'或'a'
@@ -39,7 +39,8 @@ logging.basicConfig函数各参数:
      %(message)s: 打印日志信息
     datefmt: 指定时间格式，同time.strftime()
     level: 设置日志级别，默认为logging.WARNING
-    stream: 指定将日志的输出流，可以指定输出到sys.stderr,sys.stdout或者文件，默认输出到sys.stderr，当stream和filename同时指定时，stream被忽略
+    stream: 指定将日志的输出流，可以指定输出到sys.stderr,sys.stdout或者文件，默认输出到sys.stderr，
+    当stream和filename同时指定时，stream被忽略
 
 [python 的日志logging模块学习](http://blog.csdn.net/yatere/article/details/6655445)
 
