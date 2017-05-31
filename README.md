@@ -22,15 +22,15 @@
 
 # **索引**
 
-[Ubuntu　笔记](https://github.com/JNingWei/Notebook/edit/master/Ubuntu-Notebook.md)
+[Ubuntu笔记](https://github.com/JNingWei/Notebook/edit/master/Ubuntu-Notebook.md)
 
-[Python　笔记](https://github.com/JNingWei/Notebook/edit/master/Python-Notebook.md)
+[Python笔记](https://github.com/JNingWei/Notebook/edit/master/Python-Notebook.md)
 
-[Caffe　笔记](https://github.com/JNingWei/Notebook/edit/master/Caffe-Notebook.md)
+[Caffe笔记](https://github.com/JNingWei/Notebook/edit/master/Caffe-Notebook.md)
 
-[TensorFlow　笔记](https://github.com/JNingWei/Notebook/edit/master/TensoFlow-Notebook.md)
+[TensorFlow笔记](https://github.com/JNingWei/Notebook/edit/master/TensoFlow-Notebook.md)
 
-[OpenCV　笔记](https://github.com/JNingWei/Notebook/blob/master/OpenCV-Notebook.md)
+[OpenCV笔记](https://github.com/JNingWei/Notebook/blob/master/OpenCV-Notebook.md)
 
 [其他笔记]()
 
