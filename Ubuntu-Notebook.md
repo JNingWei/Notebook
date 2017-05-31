@@ -2476,7 +2476,7 @@ ipython
 
 #### Problem_0
 
-> No module named shutil_get_terminal_size
+> ImportError: No module named shutil_get_terminal_size
 
 #### [Solution](https://github.com/ipython/ipython/issues/9656)
 
