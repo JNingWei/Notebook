@@ -2204,10 +2204,12 @@ Jupyter
 When attempt to download *.ipynb* file as *.python* file:
 
 > 500 : Internal Server Error
+>
 > The error was:
+>
 > Could not import nbconvert: cannot import name configparser
 
-#### [Solution]()
+#### [Solution](https://github.com/conda/conda/issues/4823)
 
 	conda install configparser=3.5.0b2
 
