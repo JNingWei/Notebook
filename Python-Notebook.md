@@ -2,7 +2,7 @@
 logging模块
 ----
 
-日志级别大小关系为：CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET，
+日志级别大小关系为：CRITICAL > ERROR > WARNING > INFO > DEBUG > NOTSET
 也可以自己定义日志级别
 
 [python 的日志logging模块学习](http://blog.csdn.net/yatere/article/details/6655445)
