@@ -154,4 +154,13 @@ shutil.rmtree()|删除非空文件夹树
 
 ---
 
+import模块
+---
+
+关于　* import scipy * 为什么不能导入　scipy.misc.imsave　模块：
+[个人理解]()
+
+---
+
+---
 
