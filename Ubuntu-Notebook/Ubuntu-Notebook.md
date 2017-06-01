@@ -2213,4 +2213,21 @@ When attempt to download **.ipynb** file as **.python** file:
 
 	conda install configparser=3.5.0b2
 
+---
+
+---
+
+编程规范
+---
+
+[结构化你的工程](http://pythonguidecn.readthedocs.io/zh/latest/writing/structure.html)
+
+[Python风格规范](http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/)
+
+[Python语言规范](http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_language_rules/)
+
+---
+
+---
+
 
