@@ -113,3 +113,36 @@ __future__ 模块
 
 ---
 
+[下载指定url文件到指定的本地目录](https://github.com/JNingWei/Python-Applet/blob/master/DownloadFileFromUrl/down.py)
+
+---
+
+---
+
+os模块
+---
+
+api|annotation
+---|---
+os.listdir()|列出当前目录下的所有文件和文件夹
+os.system()|运行shell命令(接收命令行列出当前目录下的所有文件和文件夹参数)
+os.mkdir()|新建文件夹
+os.sep()|更改操作系统中的路径分隔符
+os.path.isfile()|文件是否存在
+os.path.exists()|是否存在
+os.getcwd()|获取当前路径(中间会自动添上一个路径分隔符)
+os.remove()|删除指定文件
+os.rmdir()|删除空文件夹
+os.chdir()|改变当前目录到指定目录中
+
+---
+
+---
+
+shutil模块
+---
+
+api|annotation
+---|---
+shutil.rmtree()|删除非空文件夹树
+
