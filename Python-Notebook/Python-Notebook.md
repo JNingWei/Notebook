@@ -1,5 +1,5 @@
 
-logging模块
+logging
 ----
 
 ### 日志级别：
@@ -88,7 +88,7 @@ requirements.txt 文件 里面记录了当前程序的所有依赖包及其精�
 
 ---
 
-__future__ 模块
+__future__ 
 ----
 
 [python的__future__模块](http://www.cnblogs.com/ksedz/p/3190208.html)：
@@ -122,7 +122,7 @@ __future__ 模块
 
 ---
 
-os模块
+os
 ---
 
 api|annotation
@@ -154,7 +154,7 @@ shutil.rmtree()|删除非空文件夹树
 
 ---
 
-import模块
+import
 ---
 
 关于　**import scipy** 为什么不能导入　**scipy.misc.imsave** 模块：
