@@ -22,3 +22,10 @@ tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的
 
 
 ----------
+
+[Tensorflow一些常用基本概念与函数](http://blog.csdn.net/lenbow/article/category/6194008)
+---
+
+---
+
+---
