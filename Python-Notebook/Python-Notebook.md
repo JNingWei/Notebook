@@ -165,3 +165,12 @@ import
 
 ---
 
+matplotlib
+---
+
+[matplotlib module](https://github.com/JNingWei/Notebook/blob/master/Python-Notebook/Box/matplotlib.ipynb)
+
+---
+
+---
+
