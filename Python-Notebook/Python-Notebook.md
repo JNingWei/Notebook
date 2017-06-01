@@ -159,7 +159,7 @@ import模块
 
 关于　**import scipy** 为什么不能导入　**scipy.misc.imsave** 模块：
 
-[个人理解]()
+[个人理解](https://github.com/JNingWei/Notebook/blob/master/Python-Notebook/Box/import.ipynb)
 
 ---
 
