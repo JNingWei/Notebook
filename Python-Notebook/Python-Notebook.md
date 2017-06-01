@@ -113,7 +113,10 @@ __future__ 模块
 
 ---
 
-[下载指定url文件到指定的本地目录](https://github.com/JNingWei/Python-Applet/blob/master/DownloadFileFromUrl/down.py)
+下载指定url文件到指定的本地目录
+---
+
+[代码模板](https://github.com/JNingWei/Python-Applet/blob/master/DownloadFileFromUrl/down.py)
 
 ---
 
