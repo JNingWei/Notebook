@@ -143,7 +143,7 @@ os.chdir()|改变当前目录到指定目录中
 
 ---
 
-shutil模块
+shutil
 ---
 
 api|annotation
