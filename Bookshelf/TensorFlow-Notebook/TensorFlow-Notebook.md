@@ -1,5 +1,18 @@
-[py2.7+gpu 安装tensorflow](https://www.tensorflow.org/install/install_linux#installing_with_native_pip)
+基本网站
 ---
+
+[tensorflow源码](https://github.com/tensorflow/tensorflow)
+
+[tensorflow官网](https://www.tensorflow.org/)
+
+---
+
+---
+
+安装
+---
+
+出处：[Ubuntu + py2.7 + gpu](https://www.tensorflow.org/install/install_linux#installing_with_native_pip)
 
 pip uninstall tensorflow
 pip install tensorflow-gpu
