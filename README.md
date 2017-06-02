@@ -1,16 +1,16 @@
 **索引**
 ---
 
-[Ubuntu笔记](https://github.com/JNingWei/Notebook/blob/master/Ubuntu-Notebook/Bookshelf/Ubuntu-Notebook.md)
+[Ubuntu笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Ubuntu-Notebook/Ubuntu-Notebook.md)
 
-[Python笔记](https://github.com/JNingWei/Notebook/blob/master/Python-Notebook/Bookshelf/Python-Notebook.md)
+[Python笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Python-Notebook/Python-Notebook.md)
 
-[Caffe笔记](https://github.com/JNingWei/Notebook/blob/master/Caffe-Notebook/Bookshelf/Caffe-Notebook.md)
+[Caffe笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Caffe-Notebook/Caffe-Notebook.md)
 
-[TensorFlow笔记](https://github.com/JNingWei/Notebook/blob/master/TensorFlow-Notebook/Bookshelf/TensorFlow-Notebook.md)
+[TensorFlow笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/TensorFlow-Notebook/TensorFlow-Notebook.md)
 
-[OpenCV笔记](https://github.com/JNingWei/Notebook/blob/master/OpenCV-Notebook/Bookshelf/OpenCV-Notebook.md)
+[OpenCV笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/OpenCV-Notebook/OpenCV-Notebook.md)
 
-[其他笔记](https://github.com/JNingWei/Notebook/blob/master/Others-Notebook/Bookshelf/Others-Notebook.md)
+[其他笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Notebook.md)
 
 
