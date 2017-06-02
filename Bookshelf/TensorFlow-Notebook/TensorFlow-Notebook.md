@@ -14,8 +14,8 @@
 
 出处：[Ubuntu + py2.7 + gpu](https://www.tensorflow.org/install/install_linux#installing_with_native_pip)
 
-pip uninstall tensorflow
-pip install tensorflow-gpu
+	pip uninstall tensorflow
+	pip install tensorflow-gpu
 
 tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的 Warning 也更少
 
