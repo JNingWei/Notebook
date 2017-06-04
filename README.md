@@ -11,6 +11,8 @@
 
 [OpenCV笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/OpenCV-Notebook/OpenCV-Notebook.md)
 
+[调参笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Tunning-Notebook/Tunning-Notebook.md)
+
 [其他笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Notebook.md)
 
 
