@@ -1420,6 +1420,17 @@ Google Search Tip
 git
 ---
 
+### git规范
+
+[Git 使用规范流程](http://www.ruanyifeng.com/blog/2015/08/git-use-process.html)
+
+[团队中的 Git 实践](https://ourai.ws/posts/working-with-git-in-team/)
+
+[Git: 教你如何在Commit时有话可说](https://mp.weixin.qq.com/s?__biz=MzAwNDYwNzU2MQ==&mid=401622986&idx=1&sn=470717939914b956ac372667ed23863c&scene=2&srcid=0114ZcTNyAMH8CLwTKlj6CTN&from=timeline&isappinstalled=0#wechat_redirect)
+
+[Git工作流指南](https://github.com/xirong/my-git/blob/master/git-workflow-tutorial.md)
+
+
 ### git辅助工具
 
 #### 练习工具
@@ -1427,9 +1438,13 @@ git
 
 #### GUI
 
-Windows、Mac：[sourcetree](https://www.sourcetreeapp.com/)、[tortoise](https://tortoisesvn.net/)
+[sourcetree](https://www.sourcetreeapp.com/)
 
-Linux：[smartgit](http://www.syntevo.com/smartgit/)、[]()
+[tortoise](https://tortoisesvn.net/)
+
+[smartgit](http://www.syntevo.com/smartgit/)
+
+
 
 
 ### (Git常用备忘)[https://gist.github.com/pk13610/7983917]
