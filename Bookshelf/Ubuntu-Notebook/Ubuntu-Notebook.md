@@ -1274,7 +1274,7 @@ source 该文件 :
 Ubuntu 备份与恢复
 ------------
 
-[详细教程](https://gist.github.com/bearpaw/c38ef18ec45ba6548ec0)
+[详细教程](https://gist.hub.com/bearpaw/c38ef18ec45ba6548ec0)
 
 Ubuntu可以将系统备份为一个tar压缩文件，也能很方便地从该文件恢复系统。
 
@@ -1420,6 +1420,16 @@ Google Search Tip
 git
 ---
 
+### git辅助工具
+
+#### 练习工具
+[git分支管理练习](http://learngitbranching.js.org/?NODEMO)
+
+#### GUI
+
+Windows、Mac：[sourcetree](https://www.sourcetreeapp.com/)、[tortoise](https://tortoisesvn.net/)
+
+Linux：[smartgit](http://www.syntevo.com/smartgit/)、[]()
 
 
 ### (Git常用备忘)[https://gist.github.com/pk13610/7983917]
