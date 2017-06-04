@@ -1444,12 +1444,14 @@ git
 
 [smartgit](http://www.syntevo.com/smartgit/)
 
+### github个人博客
 
+[利用Github免费搭建个人主页(个人博客)](http://blog.csdn.net/hitwhylz/article/details/42646197)
 
-
-### (Git常用备忘)[https://gist.github.com/pk13610/7983917]
+### (Git常用指令备忘)[https://gist.github.com/pk13610/7983917]
 
 配置：
+
 	git config --global user.name "robbin"  
 	git config --global user.email "fankai@gmail.com"
 	git config --global color.ui true
@@ -1500,11 +1502,11 @@ Git常用命令 查看、添加、提交、删除、找回，重置修改文件�
 
 查看提交记录：
 
-		git log
-		git log <file>      # 查看该文件每次提交记录
-		git log -p <file>   # 查看每次详细修改内容的diff
-		git log -p -2       # 查看最近两次详细修改内容的diff
-		git log --stat      # 查看提交统计信息
+	git log
+	git log <file>      # 查看该文件每次提交记录
+	git log -p <file>   # 查看每次详细修改内容的diff
+	git log -p -2       # 查看最近两次详细修改内容的diff
+	git log --stat      # 查看提交统计信息
 		
 tig Mac上可以使用tig代替diff和log，brew install tig
 
