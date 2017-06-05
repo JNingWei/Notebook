@@ -7,7 +7,7 @@
  |  |  |  | 
 [Caffe笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Caffe-Notebook/Caffe-Notebook.md)  |  |  [TensorFlow笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/TensorFlow-Notebook/TensorFlow-Notebook.md)  |  |  [调参笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Tunning-Notebook/Tunning-Notebook.md)
  |  |  |  | 
-[其他笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Notebook.md)  |  |  |  | 
+[Numpy笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Numpy-Notebook/Numpy-Notebook.md)  |  | [其他笔记](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Notebook.md) |  | 
  |  |  |  | 
 
 
