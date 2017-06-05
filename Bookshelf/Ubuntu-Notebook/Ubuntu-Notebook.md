@@ -2269,7 +2269,9 @@ When attempt to download **.ipynb** file as **.python** file:
 进入URL：
 > chrome://settings/passwords
 
-将　**Saved passwords** 选项里面的密码状态设置为 **show**
+将　**Saved passwords**  选项里面的密码状态设置为 **show** 
+
+即可看到在该浏览器上保存的所有账号密码，以及该账户同步的所有账号密码
 
 ---
 
