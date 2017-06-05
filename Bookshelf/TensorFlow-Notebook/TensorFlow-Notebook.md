@@ -61,6 +61,30 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 
 ---
 
+返回　tensor 的　维数
+---
+
+如果tensor是用调用tensorflow框架定义的，那么用 tensor_name.shape 即可返回tensorflow 的维数：
+
+	>>> import tensorflow as tf 
+	>>> a=tf.constant([  
+	...         [[1.0,2.0,3.0,4.0],  
+	...         [5.0,6.0,7.0,8.0],  
+	...         [8.0,7.0,6.0,5.0],  
+	...         [4.0,3.0,2.0,1.0]],  
+	...         [[4.0,3.0,2.0,1.0],  
+	...          [8.0,7.0,6.0,5.0],  
+	...          [1.0,2.0,3.0,4.0],  
+	...          [5.0,6.0,7.0,8.0]]  
+	...     ])
+	>>> a.shape
+	TensorShape([Dimension(2), Dimension(4), Dimension(4)])
+也可通过调用 numpy 来返回 tensor 的维数：
+
+	>>> import numpy as np
+	>>> np.shape(a)
+	TensorShape([Dimension(2), Dimension(4), Dimension(4)])
+
 
 
 ---
