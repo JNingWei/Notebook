@@ -94,6 +94,11 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 查看tensor数值
 ---
 
+### 不能直接用print的原因：
+print只能打印输出shape的信息，而要打印输出tensor的值，需要借助class tf.Session, class tf.InteractiveSession。
+
+因为我们在建立graph的时候，只建立tensor的结构形状信息，并没有执行数据的操作。
+
 ### 法一：
 
 	>>> import tensorflow as tf 
@@ -162,6 +167,28 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 
 ---
 
+[tf.reshape](https://www.tensorflow.org/api_docs/python/tf/reshape)
+---
+
+reshape(
+    tensor,
+    shape,
+    name=None
+)
+
+给定一个tensor，这个操作会返回一个有着跟原tensor一样的值且经过shape重塑过的张量。
+如果shape中存在值为-1的组成，被计算过的维度总和的大小将保持恒定。尤其是当一个为[-1]的shape被展平为一维，且shape最多只能存在一个-1。
+如果shape是一维或者是更高维度，那么这个操作将会返回一个形状为shape，填充满value值的张量。在这种情况下，shape的元素的数量必须与tensor的元素数量一样。
+
+Args:
+
+tensor: A Tensor.
+shape: A Tensor. Must be one of the following types: int32, int64. Defines the shape of the output tensor.
+name: A name for the operation (optional).
+
+Returns:
+
+A Tensor. Has the same type as tensor.
 
 ---
 
