@@ -55,7 +55,7 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 
 **第三个参数strides**：和卷积类似，窗口在每一个维度上滑动的步长，一般也是[1, stride,stride, 1]
 
-**第四个参数padding**：和卷积类似，可以取'VALID' 或者'SAME'. 返回一个Tensor，类型不变，shape仍然是[batch, height, width, channels]这种形式
+**第四个参数padding**：和卷积类似，可以取'VALID' 或者'SAME'. 返回一个Tensor，类型不变，shape仍然是[batch, height, width, channels]这种形式.  padding='VALID'时，无自动填充。padding='SAME'时，自动填充，池化后保持shape不变。
 
 ---
 
