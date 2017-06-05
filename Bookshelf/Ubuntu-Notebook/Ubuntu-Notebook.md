@@ -2244,5 +2244,24 @@ When attempt to download **.ipynb** file as **.python** file:
 
 ---
 
+修改同一目录下所有图片的尺寸（宽x高）
+---
+
+	find ./ -name '*.jpg' -exec convert -resize 600x480 {} {} \;  
+	find ./ -name '*.jpg' -exec convert -resize 600x480 ！{} {} \;  
+
+---
+
+---
+
+生成同一目录下所有图片的路径
+---
+
+	ls *.jpg > list.txt  
+	ls */train/depths/*.png > depth.txt  
+
+---
+
+---
 
 
