@@ -236,7 +236,9 @@ HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等�
 
 ---
 
-
+小技巧
+---
+[Use WeChat to Monitor Your Network](http://www.jianshu.com/p/b2e050bb7d4f)
 
 ---
 
