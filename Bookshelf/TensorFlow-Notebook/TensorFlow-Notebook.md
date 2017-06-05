@@ -45,17 +45,40 @@ tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的
 
 ---
 
-tf.nn.max_pool(value, ksize, strides, padding, name=None)
+
+tf.nn.conv2d
 ---
+
+(input, filter, strides, padding, use_cudnn_on_gpu=None, name=None)
+除去name参数用以指定该操作的name，与方法有关的一共五个参数：
+
+Args|Annotation
+ :---- | ----
+ 第一个参数input | 指需要做卷积的输入图像，它要求是一个Tensor，具有[batch, in_height, in_width, in_channels]这样的shape，具体含义是[训练时一个batch的图片数量, 图片高度, 图片宽度, 图像通道数]，注意这是一个4维的Tensor，要求类型为float32和float64其中之一
+ 第二个参数filter | 相当于CNN中的卷积核，它要求是一个Tensor，具有[filter_height, filter_width, in_channels, out_channels]这样的shape，具体含义是[卷积核的高度，卷积核的宽度，图像通道数，卷积核个数]，要求类型与参数input相同，有一个地方需要注意，第三维in_channels，就是参数input的第四维
+第三个参数strides | 卷积时在图像每一维的步长，这是一个一维的向量，长度4
+第四个参数padding | string类型的量，只能是"SAME","VALID"其中之一，这个值决定了不同的卷积方式
+第五个参数 | use_cudnn_on_gpu:bool类型，是否使用cudnn加速，默认为true
+
+**结果返回：** 一个Tensor，这个输出，就是我们常说的feature map
+
+---
+
+---
+
+tf.nn.max_pool
+---
+
+(value, ksize, strides, padding, name=None)
 参数是四个，和卷积很类似：
 
-**第一个参数value**：需要池化的输入，一般池化层接在卷积层后面，所以输入通常是feature map，依然是[batch, height, width, channels]这样的shape
 
-**第二个参数ksize**：池化窗口的大小，取一个四维向量，一般是[1, height, width, 1]，因为我们不想在batch和channels上做池化，所以这两个维度设为了1
-
-**第三个参数strides**：和卷积类似，窗口在每一个维度上滑动的步长，一般也是[1, stride,stride, 1]
-
-**第四个参数padding**：和卷积类似，可以取'VALID' 或者'SAME'. 返回一个Tensor，类型不变，shape仍然是[batch, height, width, channels]这种形式.  padding='VALID'时，无自动填充。padding='SAME'时，自动填充，池化后保持shape不变。
+Args|Annotation
+ :---- | ----
+第一个参数value | 需要池化的输入，一般池化层接在卷积层后面，所以输入通常是feature map，依然是[batch, height, width, channels]这样的shape
+第二个参数ksize | 池化窗口的大小，取一个四维向量，一般是[1, height, width, 1]，因为我们不想在batch和channels上做池化，所以这两个维度设为了1
+第三个参数strides | 和卷积类似，窗口在每一个维度上滑动的步长，一般也是[1, stride,stride, 1]
+第四个参数padding | 和卷积类似，可以取'VALID' 或者'SAME'. 返回一个Tensor，类型不变，shape仍然是[batch, height, width, channels]这种形式.  padding='VALID'时，无自动填充。padding='SAME'时，自动填充，池化后保持shape不变。
 
 ---
 
@@ -195,23 +218,27 @@ A Tensor. Has the same type as tensor.
 
 ---
 
-tf.nn.conv2d(input, filter, strides, padding, use_cudnn_on_gpu=None, name=None)
+Tensorboard
 ---
 
-除去name参数用以指定该操作的name，与方法有关的一共五个参数：
-
-Args|Annotation
+Module | Annotation
  :---- | ----
- 第一个参数input | 指需要做卷积的输入图像，它要求是一个Tensor，具有[batch, in_height, in_width, in_channels]这样的shape，具体含义是[训练时一个batch的图片数量, 图片高度, 图片宽度, 图像通道数]，注意这是一个4维的Tensor，要求类型为float32和float64其中之一
- 第二个参数filter | 相当于CNN中的卷积核，它要求是一个Tensor，具有[filter_height, filter_width, in_channels, out_channels]这样的shape，具体含义是[卷积核的高度，卷积核的宽度，图像通道数，卷积核个数]，要求类型与参数input相同，有一个地方需要注意，第三维in_channels，就是参数input的第四维
-第三个参数strides | 卷积时在图像每一维的步长，这是一个一维的向量，长度4
-第四个参数padding | string类型的量，只能是"SAME","VALID"其中之一，这个值决定了不同的卷积方式
-第五个参数 | use_cudnn_on_gpu:bool类型，是否使用cudnn加速，默认为true
----
-结果返回 | 一个Tensor，这个输出，就是我们常说的feature map
+SCALARS | 记录单一变量的，使用 tf.summary.scalar() 收集构建。
+IMAGES | 收集的图片数据，当我们使用的数据为图片时（选用）。
+AUDIO | 收集的音频数据，当我们使用数据为音频时（选用）。
+GRAPHS | 构件图，效果图类似流程图一样，我们可以看到数据的流向，使用tf.name_scope()收集构建。
+DISTRIBUTIONS | 用于查看变量的分布值，比如 W（Weights）变化的过程中，主要是在 0.5 附近徘徊。
+HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等），并使用折线图的方式展现，使用tf.summary.histogram()进行收集构建。
 
 ---
 
 ---
+
+
+
+---
+
+---
+
 
 
