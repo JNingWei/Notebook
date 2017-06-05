@@ -21,6 +21,8 @@ Pycharm使用
 
 [pycharm快捷键、常用设置、配置管理](http://blog.csdn.net/pipisorry/article/details/39909057)
 
+ctrl + Click：自动跳转
+
 ---
 
 ---
