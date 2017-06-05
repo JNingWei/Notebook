@@ -208,10 +208,9 @@ Args|Annotation
 第四个参数padding | string类型的量，只能是"SAME","VALID"其中之一，这个值决定了不同的卷积方式
 第五个参数 | use_cudnn_on_gpu:bool类型，是否使用cudnn加速，默认为true
 
-
-
-
-**结果返回：** | 一个Tensor，这个输出，就是我们常说的feature map
+ | 
+ :---- | ----
+结果返回 | 一个Tensor，这个输出，就是我们常说的feature map
 
 ---
 
