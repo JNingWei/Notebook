@@ -2268,6 +2268,7 @@ When attempt to download **.ipynb** file as **.python** file:
 ---
 进入URL：
 > chrome://settings/passwords
+
 将　**Saved passwords** 选项里面的密码状态设置为 **show**
 
 ---
