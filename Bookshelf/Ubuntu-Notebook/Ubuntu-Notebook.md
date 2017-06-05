@@ -2264,4 +2264,12 @@ When attempt to download **.ipynb** file as **.python** file:
 
 ---
 
+查看Chrome浏览器保存的密码
+---
+进入URL：
+> chrome://settings/passwords
+将　**Saved passwords** 选项里面的密码状态设置为 **show**
 
+---
+
+---
