@@ -237,6 +237,7 @@ HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等�
 	tensorboard --logdir .
 等待程序反应之后，浏览器访问
 > localhost:6006
+
 也可以自己定义端口
 
 ---
