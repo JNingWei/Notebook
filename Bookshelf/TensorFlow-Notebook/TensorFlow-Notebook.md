@@ -50,6 +50,7 @@ tf.nn.conv2d
 ---
 
 (input, filter, strides, padding, use_cudnn_on_gpu=None, name=None)
+
 除去name参数用以指定该操作的name，与方法有关的一共五个参数：
 
 Args|Annotation
@@ -70,6 +71,7 @@ tf.nn.max_pool
 ---
 
 (value, ksize, strides, padding, name=None)
+
 参数是四个，和卷积很类似：
 
 
