@@ -94,6 +94,8 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 查看tensor数值
 ---
 
+### 法一：
+
 	>>> import tensorflow as tf 
 	>>> a=tf.constant([  
 	...         [[1.0,2.0,3.0,4.0],  
@@ -113,6 +115,38 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 	# Evaluate the tensor `a`. 
 	
 	>>> print(sess.run(a)) 
+	[[[ 1.  2.  3.  4.]
+	  [ 5.  6.  7.  8.]
+	  [ 8.  7.  6.  5.]
+	  [ 4.  3.  2.  1.]]
+
+	 [[ 4.  3.  2.  1.]
+	  [ 8.  7.  6.  5.]
+	  [ 1.  2.  3.  4.]
+	  [ 5.  6.  7.  8.]]]
+
+
+### 法二：
+
+
+	>>> import tensorflow as tf 
+	>>> a=tf.constant([  
+	...         [[1.0,2.0,3.0,4.0],  
+	...         　[5.0,6.0,7.0,8.0],  
+	...         　[8.0,7.0,6.0,5.0],  
+	...         　[4.0,3.0,2.0,1.0]],  
+	...         [[4.0,3.0,2.0,1.0],  
+	...          [8.0,7.0,6.0,5.0],  
+	...          [1.0,2.0,3.0,4.0],  
+	...          [5.0,6.0,7.0,8.0]]  
+	...     ])
+	
+	# Launch the graph in a session. 
+	
+	>>> with tf.Session():
+	...     print(a.eval())
+	... 
+ 
 	[[[ 1.  2.  3.  4.]
 	  [ 5.  6.  7.  8.]
 	  [ 8.  7.  6.  5.]
