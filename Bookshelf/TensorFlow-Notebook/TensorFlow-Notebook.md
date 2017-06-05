@@ -105,9 +105,13 @@ tf.nn.max_pool(value, ksize, strides, padding, name=None)
 	...          [1.0,2.0,3.0,4.0],  
 	...          [5.0,6.0,7.0,8.0]]  
 	...     ])
-	# Launch the graph in a session.  
+	
+	# Launch the graph in a session. 
+	
 	>>> sess = tf.Session() 
+	
 	# Evaluate the tensor `a`. 
+	
 	>>> print(sess.run(a)) 
 	[[[ 1.  2.  3.  4.]
 	  [ 5.  6.  7.  8.]
