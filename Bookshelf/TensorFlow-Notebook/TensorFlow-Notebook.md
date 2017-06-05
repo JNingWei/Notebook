@@ -232,6 +232,13 @@ GRAPHS | 构件图，效果图类似流程图一样，我们可以看到数据�
 DISTRIBUTIONS | 用于查看变量的分布值，比如 W（Weights）变化的过程中，主要是在 0.5 附近徘徊。
 HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等），并使用折线图的方式展现，使用tf.summary.histogram()进行收集构建。
 
+代码运行完成之后，命令行中跳转到代码生成的文件夹中，输入
+
+	tensorboard --logdir .
+等待程序反应之后，浏览器访问
+> localhost:6006
+也可以自己定义端口
+
 ---
 
 ---
