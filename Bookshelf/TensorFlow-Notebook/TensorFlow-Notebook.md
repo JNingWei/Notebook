@@ -11,6 +11,19 @@
 
  - 使用 feed 和 fetch 可以为任意的操作(arbitrary operation) 赋值或者从其中获取数据.
 
+---
+
+---
+
+个人理解
+---
+
+Session 与硬件设备相关联，而 Graph　只是画了一张虚拟的操作图。所以 Graph 只有放在　Session 中才能实际跑起来。Op　是代表　操作　的　节点　，一堆　Op 和它们之间的　关联　构成　Graph ， tensor 们在这张 Graph 上的那些孔（Op）里穿来穿去。
+
+---
+
+---
+
 综述
 ---
 
@@ -79,6 +92,18 @@ tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的
 ---
 
 ---
+
+
+Session
+---
+
+
+
+
+---
+
+---
+
 
 Variable
 ---
