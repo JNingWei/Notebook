@@ -76,11 +76,43 @@ tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的
     pip install --upgrade https://storage.googleapis.com/tensorflow/linux/cpu/protobuf-3.1.0-cp27-none-linux_x86_64.whl
 	  
 	  
+---
 
-----------
+---
+
+Variable
+---
+
+### 变量初始化
+
+    tf.Session.run(tf.global_variables_initializer())
+
+等同于：
+
+    with tf.Session() as sess:
+	init = tf.global_variables_initializer()
+	sess.run(init)
+	
+等同于：
+
+    init = tf.global_variables_initializer()
+    sess = tf.Session()
+    sess.run(init)
 
 
-----------
+**tf.global_variables_initializer()** == **tf.global_variables_initializer()**
+
+但是在 2017年3月2号以后, tf.initialize_all_variables() 该函数将不再使用。取而代之的是　tf.global_variables_initializer() 
+
+来自TensorFlow 文档的重要说明：
+> tf.initialize_all_variables(): THIS FUNCTION IS DEPRECATED. It will be removed after 2017-03-02. Instructions for updating: Use tf.global_variables_initializer instead.
+
+
+
+---
+
+
+---
 
 [Tensorflow一些常用基本概念与函数](http://blog.csdn.net/lenbow/article/category/6194008)
 ---
