@@ -115,11 +115,11 @@ Variable
     ＃要初始化v_6, v_7, v_8三个变量：
     init_new_vars_op = tf.initialize_variables([v_6, v_7, v_8])
     sess.run(init_new_vars_op)
-###　识别未被初始化的变量
 
-用 try & except 语句块捕获：
+PS:　识别　未被初始化的变量　的小技巧：
 
 	uninit_vars = []
+	＃用 try & except 语句块捕获：
 	for var in tf.all_variables():
 	    try:
 		sess.run(var)
