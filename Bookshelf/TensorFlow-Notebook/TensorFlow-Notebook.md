@@ -83,7 +83,9 @@ tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的
 Variable
 ---
 
-### 变量初始化
+## 变量初始化
+
+### 全部变量一次性初始化
 
     tf.Session.run(tf.global_variables_initializer())
 
@@ -107,7 +109,24 @@ Variable
 来自TensorFlow 文档的重要说明：
 > tf.initialize_all_variables(): THIS FUNCTION IS DEPRECATED. It will be removed after 2017-03-02. Instructions for updating: Use tf.global_variables_initializer instead.
 
+### 仅指定部分变量初始化
+使用 tf.initialize_variables()
 
+    ＃要初始化v_6, v_7, v_8三个变量：
+    init_new_vars_op = tf.initialize_variables([v_6, v_7, v_8])
+    sess.run(init_new_vars_op)
+###　识别未被初始化的变量
+
+用 try & except 语句块捕获：
+
+	uninit_vars = []
+	for var in tf.all_variables():
+	    try:
+		sess.run(var)
+	    except tf.errors.FailedPreconditionError:
+		uninit_vars.append(var)
+
+	init_new_vars_op = tf.initialize_variables(uninit_vars)
 
 ---
 
