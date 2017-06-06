@@ -428,9 +428,33 @@ apt-get 安装 出现依赖问题
     # D
     /dev/sdb1	/media/D	ntfs	defaults	0	0
 
+---
+
+---
+
+挂载局域网上的共享目录
+---
+sudo mount -t cifs -o username=The_username,password=The_password  Shared_directory_url  Local_url
+
+### Problem & Solution
+
+#### Problem_0
+
+之前根据老教程，用：
+
+sudo mount -t smbfs -o username=The_username,password=The_password  Shared_directory_url  Local_url
+
+提示出错：
+	
+	mount: unknown filesystem type 'smbfs'
+
+#### Solution
+
+查资料后，说 smbfs 改为 cifs 了
+
+所以改过来就可以了
 
 ----------
-
 
 ----------
 
