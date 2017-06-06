@@ -21,3 +21,9 @@ numpy文件存取
 
 ---
 
+
+[TutorialsPoint NumPy 教程](http://www.jianshu.com/p/57e3c0a92f3a)
+
+---
+
+---
