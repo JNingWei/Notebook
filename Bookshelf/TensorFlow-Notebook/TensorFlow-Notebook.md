@@ -296,5 +296,23 @@ HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等�
 
 ---
 
+tf.assign
+---
+assign(
+    ref,
+    value,
+    validate_shape=None,
+    use_locking=None,
+    name=None
+)
+Defined in [tensorflow/python/ops/state_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/state_ops.py).
 
+将　value 赋值给　ref，并输出 ref　
+
+这使得需要使用复位值的连续操作变简单
+
+
+---
+
+---
 
