@@ -106,8 +106,13 @@ tensorflow 尽量从 **源码** 安装，这样运行起来会更快，遇到的
 Session
 ---
 
+	with tf.Session() as sess:
+	  result = sess.run([mul, intermed])
+	  print result
+  
+ 等同于：
 
-
+      tf.Session().run([mul, intermed])
 
 ---
 
@@ -126,8 +131,9 @@ Variable
 等同于：
 
     with tf.Session() as sess:
-	init = tf.global_variables_initializer()
-	sess.run(init)
+    
+      init = tf.global_variables_initializer()
+      sess.run(init)
 	
 等同于：
 
