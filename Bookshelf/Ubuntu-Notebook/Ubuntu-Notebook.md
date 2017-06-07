@@ -76,6 +76,7 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 	sudo gedit ~/.bash_profile
 添加内容：
 > export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH   
+
 环境变量生效: 
 
 	source ~/.bash_profile
