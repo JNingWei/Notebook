@@ -29,6 +29,21 @@
 
 Session 与硬件设备相关联，而 Graph　只是画了一张虚拟的操作图。所以 Graph 只有放在　Session 中才能实际跑起来。Op　是代表　操作　的　节点　，一堆　Op 和它们之间的　关联　构成　Graph ， tensor 们在这张 Graph 上的那些孔（Op）里穿来穿去。
 
+	import tensorflow as tf
+	
+	#定义‘符号’变量，也称为占位符
+	a = tf.placeholder("float")
+	b = tf.placeholder("float")
+
+	y = tf.multiply(a, b) #构造一个op节点
+	
+	#建立会话
+	sess = tf.Session()
+	#运行会话，输入数据，并计算节点，同时打印结果
+	print sess.run(y, feed_dict={a: 3, b: 3})
+	# 任务完成, 关闭会话.
+	sess.close()
+
 ---
 
 ---
@@ -69,7 +84,7 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 [tensorflow官网](https://www.tensorflow.org/)
 
-[tensorflow中文社区](http://www.tensorfly.cn)
+[tensorflow中文社区](http://www.tensorfly.cn)：内容老旧，里面列举的不少api后来都改名了，直接copy下的代码有时候跑起来会报错。
 
 [python-api](https://www.tensorflow.org/api_docs/python/)
 
