@@ -435,11 +435,14 @@ apt-get 安装 出现依赖问题
 局域网上的共享目录
 ---
 
-	＃　挂载
+	# 挂载
 	sudo mount -t cifs -o username=The_username,password=The_password  Shared_directory_url  ./share
-	＃　卸载
+
+	# 卸载
 	sudo umount ./share
 	
+另一篇同事推荐的方法：[使用Samba实现Linux与Windows文件共享实践](https://wsgzao.github.io/post/samba/)，但是我并没有试过。
+
 ### Problem & Solution
 
 #### Problem_0
