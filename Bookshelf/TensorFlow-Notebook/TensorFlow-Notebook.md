@@ -170,6 +170,85 @@ PS:　识别　未被初始化的变量　的小技巧：
 
 ---
 
+---
+
+tf.constant
+---
+
+constant(
+    value,
+    dtype=None,
+    shape=None,
+    name='Const',
+    verify_shape=False
+)
+Defined in [tensorflow/python/framework/constant_op.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/constant_op.py).
+
+Creates a constant tensor.
+生成一个常量
+
+**Args:**
+
+value: A constant value (or list) of output type dtype.
+dtype: The type of the elements of the resulting tensor.
+shape: Optional dimensions of resulting tensor.
+name: Optional name for the tensor.
+verify_shape: Boolean that enables verification of a shape of values.
+
+**Returns:**
+
+A Constant Tensor.
+
+Exampple:
+
+	i = tf.constant(0.1, shape=[1,3,1,2])
+	print(tf.Session().run(i))
+	tf.Session().run(i)
+result:
+
+	[[[[ 0.1  0.1]]
+	  [[ 0.1  0.1]]
+	  [[ 0.1  0.1]]]]
+    Out[1]:
+	array([[[[ 0.1,  0.1]],
+		[[ 0.1,  0.1]],
+		[[ 0.1,  0.1]]]], dtype=float32)
+	
+---
+
+---
+
+tf.truncated_normal
+---
+
+truncated_normal(
+    shape,
+    mean=0.0,
+    stddev=1.0,
+    dtype=tf.float32,
+    seed=None,
+    name=None
+)
+Defined in [tensorflow/python/ops/random_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/random_ops.py).
+
+Outputs random values from a truncated normal distribution.
+
+The generated values follow a normal distribution with specified mean and standard deviation, except that values whose magnitude is more than 2 standard deviations from the mean are dropped and re-picked.
+
+**Args:**
+
+shape: A 1-D integer Tensor or Python array. The shape of the output tensor.
+mean: A 0-D Tensor or Python value of type dtype. The mean of the truncated normal distribution.
+stddev: A 0-D Tensor or Python value of type dtype. The standard deviation（标准差） of the truncated normal distribution.
+dtype: The type of the output.
+seed: A Python integer. Used to create a random seed for the distribution. See tf.set_random_seed for behavior.
+name: A name for the operation (optional).
+
+**Returns:**
+
+A tensor of the specified shape filled with random truncated normal values.
+
+---
 
 ---
 
@@ -198,6 +277,9 @@ Args|Annotation
 
 **结果返回：** 一个Tensor，这个输出，就是我们常说的feature map
 
+	def conv2d(x, W):
+	  return tf.nn.conv2d(x, W, strides=[1, 1, 1, 1], padding='SAME')
+
 ---
 
 ---
@@ -217,6 +299,11 @@ Args|Annotation
 第三个参数strides | 和卷积类似，窗口在每一个维度上滑动的步长，一般也是[1, stride,stride, 1]
 第四个参数padding | 和卷积类似，可以取'VALID' 或者'SAME'. 返回一个Tensor，类型不变，shape仍然是[batch, height, width, channels]这种形式.  padding='VALID'时，无自动填充。padding='SAME'时，自动填充，池化后保持shape不变。
 
+
+	def max_pool_2x2(x):
+	  return tf.nn.max_pool(x, ksize=[1, 2, 2, 1],
+				strides=[1, 2, 2, 1], padding='SAME')
+			
 ---
 
 ---
