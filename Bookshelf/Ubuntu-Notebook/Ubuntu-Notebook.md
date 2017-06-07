@@ -36,13 +36,118 @@
     sudo apt-get install nautilus-open-terminal
 
 
-----------
+---
 
-----------
+---
 
+安装 CUDA
+---
+
+	sudo dpkg -i cuda-repo-ubuntu1404-8-0-local_8.0.44-1_amd64.deb
+	sudo apt-get update
+	sudo apt-get install cuda
+查看显卡信息:
+
+	nvidia-smi
+确定驱动成功安装:
+
+	cat /proc/driver/nvidia/version
+
+
+
+设置环境变量:
+
+	sudo gedit /etc/profile
+添加内容：
+> export PATH=/usr/local/cuda/bin:$PATH
+
+	sudo gedit /etc/ld.so.conf.d/cuda.conf
+添加内容：
+> /usr/local/cuda/lib64 
+
+环境变量生效:   
+
+	source /etc/profile
+lib库生效:
+
+	sudo ldconfig
+ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的环境变量：
+
+	sudo gedit ~/.bash_profile
+添加内容：
+> export LD_LIBRARY_PATH=/usr/local/cuda/lib64:$LD_LIBRARY_PATH   
+环境变量生效: 
+
+	source ~/.bash_profile
+	sudo ldconfig
+
+编译cuda sample:
+
+	cd /usr/local/cuda/samples
+	sudo make all -j4
+	cd /usr/local/cuda/samples/bin/x86_64/linux/release
+	./deviceQuery
+
+---
+
+---
+
+安装 Cudnn
+---
+
+[Cudnn最新版的下载地址](https://developer.nvidia.com/cudnn)
+
+（复制源的地址要进具体文档具体找，下面的有误）
+
+	tar -xzvf cudnn-5.1-linux-R1.tgz /home/hok/Software/cudnn
+	cd cudnn
+	sudo cp lib64/lib* /usr/local/cuda/lib64/
+	sudo cp include/cudnn.h /usr/local/cuda/include/
+删除软连接
+
+	cd /usr/local/cuda/lib64/
+	sudo rm -rf libcudnn.so libcudnn.so.5
+然后修改文件权限，并创建新的软连接
+
+	sudo chmod u=rwx,g=rx,o=rx libcudnn.so.5.1.5
+（只要 libcudnn.so.5.1.5 权限为 -rwxr-xr-x 即可）
+
+	sudo ln -s libcudnn.so.5.1.5 libcudnn.so.5
+	sudo ln -s libcudnn.so.5 libcudnn.so
+
+---
+
+---
+
+gcc降级
+---
+
+	sudo apt-get install -y gcc-4.7
+	sudo apt-get install -y g++-4.7
+	cd /usr/bin
+	sudo rm gcc
+	sudo ln -s gcc-4.7 gcc
+	sudo rm g++
+	sudo ln -s g++-4.7 g++
+	ls –al gcc g++
+	gcc --version
+	g++ --version
+
+---
+
+---
+
+安装ATLAS
+---
+
+	sudo apt-get install libatlas-base-dev
+
+---
+
+---
 
 安装 Y PPA Manager
-----------------
+---
 
     sudo add-apt-repository ppa:webupd8team/y-ppa-manager -y
     sudo apt-get update
