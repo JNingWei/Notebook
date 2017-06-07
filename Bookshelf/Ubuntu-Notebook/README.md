@@ -1,5 +1,5 @@
 
-## Linux-Notebook
+## Ubuntu-Notebook
  
 __Update 13-05-2017__:   __It's an Ubuntu-Notebook written by myself, for the daily summary of Ubuntu using, written in Simplified Chinese.__
 
@@ -19,7 +19,7 @@ And this Linux-Notebook will still be improved and be updated.
 
 ---
 
-## Linux笔记
+## Ubuntu笔记
  
 __更新于 13-05-2017__:   __这是我自己写的Linux操作笔记, 里面记录了我日常使用Linux操作系统进行研发的心得总结。__
 
@@ -32,8 +32,12 @@ __更新于 13-05-2017__:   __这是我自己写的Linux操作笔记, 里面记
 ### 用法
 
 * 点开 [Ubuntu-Notebook.md](https://github.com/JNingWei/Linux-Notebook/blob/master/Ubuntu-Notebook.md) 文件就能看啦～
+* 使用　**Ctrl** + **F** , 输入 **关键字** ，即可跳转到要查找的字段。
 
 ### 要求和依赖
 
-   * 最起码的中文阅读能力
+* 最起码的中文阅读能力
+   
+### 补充说明
 
+* 在熟悉　Ubuntu 后，我会考虑换成其他Linux系统，以从多角度理解Linux。
