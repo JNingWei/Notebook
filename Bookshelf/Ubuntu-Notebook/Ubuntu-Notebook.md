@@ -1,21 +1,16 @@
 前言
 ---
 
-使用　**Ctrl** + **F**,输入 **关键字** ，即可跳转到要查找的字段。
+使用　**Ctrl** + **F** , 输入 **关键字** ，即可跳转到要查找的字段。
+
+在熟悉　Ubuntu 后会考虑换成其他Linux系统，以从多角度理解Linux。
 
 ---
 
 ---
 
-刷完机第一步
+改源
 ---
-
-把 terminal 的
-
-> Scrolling-->Scrollback
-
-调成 Unlimited ；
-
 
 > Software&Updates
 
@@ -28,10 +23,9 @@
 
 以免以后遇到 apt-get 出现依赖 unmet 的问题。
 
-----------
+---
 
-
-----------
+---
 
 
 右键添加"Open in Terminal"选项
