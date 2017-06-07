@@ -2232,12 +2232,30 @@ Markdown
 
 [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/index.html#list)
 
+### 编辑器
+
+我以前常用的轻量级的Markdown编辑器：[StackEdit](https://stackedit.io/editor)
+
 ----
 
 ----
 
 IPython
 ---
+
+### 安装
+
+	pip install ipython
+
+### 打开
+
+#### 在终端打开ipython
+
+	ipython
+
+#### 在网页上打开ipython
+
+	ipython notebook
 
 ### Problem & Solution
 
@@ -2256,6 +2274,18 @@ IPython
 
 Jupyter
 ---
+
+
+### 安装
+
+	pip install --upgrade pip
+	pip install jupyter
+
+### 打开
+
+#### 在网页上打开ipython
+
+	jupyter notebook
 
 ### Problem & Solution
 
