@@ -432,10 +432,14 @@ apt-get 安装 出现依赖问题
 
 ---
 
-挂载局域网上的共享目录
+局域网上的共享目录
 ---
-sudo mount -t cifs -o username=The_username,password=The_password  Shared_directory_url  Local_url
 
+	＃　挂载
+	sudo mount -t cifs -o username=The_username,password=The_password  Shared_directory_url  ./share
+	＃　卸载
+	sudo umount ./share
+	
 ### Problem & Solution
 
 #### Problem_0
