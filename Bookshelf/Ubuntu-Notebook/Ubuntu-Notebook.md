@@ -9,6 +9,17 @@
 
 ---
 
+GPU下,刷正版Ubuntu系统
+---
+
+**BIOS Surface** --> **XXXX** --> **Security Boot menu** --> **Other OS**
+
+to prevent the Security Problem about Third-party Software in Installing CUDA.
+
+---
+
+---
+
 改源
 ---
 
