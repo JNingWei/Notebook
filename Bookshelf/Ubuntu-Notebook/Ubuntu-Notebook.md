@@ -2551,19 +2551,17 @@ When attempt to download **.ipynb** file as **.python** file:
 
 ---
 
-fanqiang
+搭建翻墙代理
 ---
 
-[悠悠代理](http://www.uudaili.org/index.html)
-
-> 普通Shadowsocks账号
-> 100/年
-
-[Install shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation)
-
-[SwitchyOmega 2.4.6 for Chromium](https://github.com/FelisCatus/SwitchyOmega/releases)
-
-[安装 SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
+1. 进入[悠悠代理](http://www.uudaili.org/index.html)购买账号（免费账号一般都不稳定，或者限定时长，或者需要很麻烦地每天签到领流量）
+	推荐买下面这种。我自己用的也是这种：
+	> 普通Shadowsocks账号
+	> 100/年
+2. 下载[shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation)客户端，通过客户端连接并创建本地代理。
+3. 下载要添加到浏览器中的[SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega/releases)插件。
+4. 在浏览器中，根据[具体步骤](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)来安装SwitchyOmega插件。
+5. 完成
 
 
 ---
