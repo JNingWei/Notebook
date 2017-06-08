@@ -20,6 +20,13 @@
 
  - 使用 feed 和 fetch 可以为任意的操作(arbitrary operation) 赋值或者从其中获取数据.
 
+
+TensorFlow 用图来表示计算任务，图中的节点被称之为operation，缩写成op。
+
+一个节点获得 0 个或者多个张量 tensor，执行计算，产生0个或多个张量。
+
+图必须在会话(Session)里被启动，会话(Session)将图的op分发到CPU或GPU之类的设备上，同时提供执行op的方法，这些方法执行后，将产生的张量(tensor)返回。
+
 ---
 
 ---
