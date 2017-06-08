@@ -2551,3 +2551,22 @@ When attempt to download **.ipynb** file as **.python** file:
 ---
 
 ---
+
+fanqiang
+---
+
+[悠悠代理](http://www.uudaili.org/index.html)
+
+> 普通Shadowsocks账号
+> 100/年
+
+[Install shadowsocks-qt5](https://github.com/shadowsocks/shadowsocks-qt5/wiki/Installation)
+
+[SwitchyOmega 2.4.6 for Chromium](https://github.com/FelisCatus/SwitchyOmega/releases)
+
+[安装 SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)
+
+
+---
+
+---
