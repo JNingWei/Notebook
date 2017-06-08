@@ -1,3 +1,63 @@
+Fundamental element
+---
+
+### Scalar
+标量
+
+	In [1]: np.ScalarType
+	Out[1]:
+		(int,
+		 float,
+		 complex,
+		 long,
+		 bool,
+		 str,
+		 unicode,
+		 buffer,
+		 numpy.uint32,
+		 numpy.int32,
+		 numpy.string_,
+		 numpy.complex64,
+		 numpy.float32,
+		 numpy.uint16,
+		 numpy.int16,
+		 numpy.bool_,
+		 numpy.timedelta64,
+		 numpy.float16,
+		 numpy.uint8,
+		 numpy.int8,
+		 numpy.object_,
+		 numpy.datetime64,
+		 numpy.uint64,
+		 numpy.int64,
+		 numpy.void,
+		 numpy.complex256,
+		 numpy.float128,
+		 numpy.uint64,
+		 numpy.int64,
+		 numpy.unicode_,
+		 numpy.complex128,
+		 numpy.float64)
+
+### Array
+数组
+
+### List
+列表，用　**[　]** 表示。一个list中的元素类型可不一样，也可为空list。
+
+### Tuple
+元组
+
+### Dict
+字典　
+
+### Set
+集合
+
+
+---
+
+---
 
 logging
 ----
