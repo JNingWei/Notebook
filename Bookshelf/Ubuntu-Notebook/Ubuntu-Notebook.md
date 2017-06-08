@@ -111,7 +111,7 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 
 	mkdir /home/hok/Software/CUDA+Cudnn/cudnn
 	tar -xzvf cudnn-5.1-linux-R1.tgz -C /home/hok/Software/CUDA+Cudnn/cudnn
-	cd cudnn
+	cd cudnn/cuda
 	sudo cp lib64/lib* /usr/local/cuda/lib64/
 	sudo cp include/cudnn.h /usr/local/cuda/include/
 删除软连接
