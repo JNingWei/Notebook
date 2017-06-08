@@ -1,3 +1,29 @@
+Python规范
+---
+
+[PEP](https://www.python.org/dev/peps/)：Python的PEP文档是一组不断发展的标准文档，PEP是Python Enhancement Proposal的首字母缩写。就像TCPIP协议使用RFC来组织起不断发展的通信标准一样，PEP也是类似的用于发展Python的一组文档。
+
+[Python风格规范](http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_style_rules/)
+
+[Python语言规范](http://zh-google-styleguide.readthedocs.io/en/latest/google-python-styleguide/python_language_rules/)
+
+---
+
+---
+
+Python开发者手册
+---
+
+[Python Developer’s Guide](https://docs.python.org/devguide/)
+
+[Python中文文档](http://python.usyiyi.cn/)
+
+[Python标准库-中文](http://python.usyiyi.cn/translate/python_278/library/index.html)
+
+---
+
+---
+
 Fundamental element
 ---
 
