@@ -2567,3 +2567,24 @@ When attempt to download **.ipynb** file as **.python** file:
 ---
 
 ---
+
+搜狗拼音
+---
+
+### 安装到最后发现装不上
+
+	sudo apt-get update
+	sudo apt-get upgrade
+	sudo apt-get install -f
+搜狗拼音就自动被**apt-get install -f**装上了
+
+### 设置英语为默认输入语言
+
+桌面右上角**拼音图标** --> **设置** --> **高级（D）** --> **打开Fcitx设置** ：
+
+将里面的 **Keyboard-English(US)** 调到 **Sogou Pinyin** 之前即可。
+
+---
+
+---
+
