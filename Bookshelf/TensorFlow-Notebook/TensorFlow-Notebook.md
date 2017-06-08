@@ -529,8 +529,8 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
  | op　| Args |　Annotation | 
  | --- | --- | --- | 
  | tf.add | (x, y, name=None) | 求和 | 
- | tf.sub | (x, y, name=None) | 减法 | 
- | tf.mul | (x, y, name=None) | 乘法 | 
+ | tf.subtract | (x, y, name=None) | 减法 | 
+ | tf.multiply | (x, y, name=None) | 乘法 | 
  | tf.div | (x, y, name=None) | 除法 | 
  | tf.mod | (x, y, name=None) | 取模 | 
  | tf.abs | (x, name=None) | 求绝对值 | 
