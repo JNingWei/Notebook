@@ -30,7 +30,7 @@ ctrl + Click：自动跳转
 表情符号
 ---
 
-[上网收集的表情符号]()
+[上网收集的表情符号](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Emoticon-Symbol.md)
 
 ---
 
