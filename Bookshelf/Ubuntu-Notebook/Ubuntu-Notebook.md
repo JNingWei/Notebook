@@ -2576,13 +2576,24 @@ When attempt to download **.ipynb** file as **.python** file:
 	sudo apt-get update
 	sudo apt-get upgrade
 	sudo apt-get install -f
-搜狗拼音就自动被**apt-get install -f**装上了
+搜狗拼音就自动被 **apt-get install -f** 装上了
 
 ### 设置英语为默认输入语言
 
 桌面右上角**拼音图标** --> **设置** --> **高级（D）** --> **打开Fcitx设置** ：
 
 将里面的 **Keyboard-English(US)** 调到 **Sogou Pinyin** 之前即可。
+
+---
+
+---
+
+ProcessOn
+---
+
+[ProcessOn](https://www.processon.com/;jsessionid=54CAFA5DA4BE3990809758983F91DDE7.jvm1) 是一个 免费在线作图，实时协作 的绘图工具。支持流程图、思维导图、原型图、UML、网络拓扑图等。之前因为在实习公司要给项目组绘制流程图demo而用到。只能存放几张绘好的图，再多存放就要充钱了。不过只要把先前不用的成图删掉，就可以继续免费存放图了。
+
+推荐[一篇processon教程](http://www.mamicode.com/info-detail-1615743.html)，虽然我自己并没有怎么看。。。
 
 ---
 
