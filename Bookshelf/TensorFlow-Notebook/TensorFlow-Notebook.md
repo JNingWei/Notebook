@@ -99,6 +99,19 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 ---
 
+版本变动
+---
+
+[TensorFlow 1.0 版本 API 变动汇总](http://www.jianshu.com/p/04850ffc1021)
+
+[自动将代码移植到 1.0 版本](https://github.com/tensorflow/tensorflow/tree/master/tensorflow/tools/compatibility)：
+
+	tf_upgrade.py --infile foo.py --outfile foo-upgraded.py
+
+---
+
+---
+
 安装
 ---
 
@@ -140,6 +153,14 @@ Session
 
 ---
 
+Tensor 种类　| Annotation
+--- | ---
+常值张量(constant)　| 是不需要初始化的。
+变量(Variable)　| 是维护图执行过程中的状态信息的. 需要它来保持和更新参数值，是需要动态调整的。必须先通过**tf.global_variables_initializer()**初始化，然后才有值。
+
+---
+
+---
 
 Variable
 ---
