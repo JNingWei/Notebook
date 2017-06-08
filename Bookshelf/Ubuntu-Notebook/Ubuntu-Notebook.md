@@ -580,9 +580,18 @@ sudo mount -t smbfs -o username=The_username,password=The_password  Shared_direc
 
 所以改过来就可以了
 
-----------
 
-----------
+#### Problem_1
+
+另一种提示出错（然而忘了保存ＴＴ）
+
+#### Solution
+
+查资料后，说先去掉　password　项，后面会重新让你输入的。然后就有权限挂载该共享目录了。
+
+-----
+
+-----
 
 虚拟机操作
 -----
