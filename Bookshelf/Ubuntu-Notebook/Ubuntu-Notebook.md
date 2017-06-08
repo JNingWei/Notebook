@@ -2421,7 +2421,7 @@ Jupyter Notebook 有两种键盘输入模式。
 
 命令模式，键盘输入运行程序命令；这时的单元框线是灰色。
 
-命令模式 (按键 Esc 开启) | 
+命令模式 (按键 Esc 开启) |
 --- | ---
 Enter | 转入编辑模式
 Shift-Enter |  运行本单元，选中下个单元
@@ -2465,7 +2465,8 @@ Shift  | 忽略
 Shift-Space  | 向上滚动
 Space  | 向下滚动
 
-编辑模式 ( Enter 键启动) | 
+
+编辑模式 ( Enter 键启动) |
 --- | ---
 Tab  | 代码补全或缩进
 Shift-Tab  | 提示
@@ -2493,9 +2494,9 @@ Ctrl-Shift-Subtract  |  分割单元
 Ctrl-S  | 文件存盘
 Shift  |  忽略
 Up  |  光标上移或转入上一单元
-Down  | 光标下移或转入下一单元
+Down  || 光标下移或转入下一单元
 
-### [Jupyter技巧](27 个Jupyter Notebook的小提示与技巧)
+### [Jupyter技巧](https://www.zybuluo.com/hanxiaoyang/note/534296)
 
 ### Problem & Solution
 
