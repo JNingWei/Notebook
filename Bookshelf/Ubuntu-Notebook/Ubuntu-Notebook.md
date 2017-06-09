@@ -2385,6 +2385,17 @@ Markdown
 
 	<table><tr><td bgcolor=#7FFFD4>这里的背景色是：Aquamarine，  十六进制颜色值：#7FFFD4， rgb(127, 255, 212)</td></tr></table>
 
+#### 图片
+
+	<img src="图片地址" width="图片显示宽度" height="显示高度" alt="图片名称"/>
+示例：
+
+	<div align=center>
+	<img src="http://ww2.sinaimg.cn/bmiddle/88070423gw1ep30aw8an7g204d04gkgd.gif" width="400" height="400" alt="亦菲表演机器猫"/>
+	</div>
+
+其中，用<font color=green>　<div align=center></div>　</font>命令进行包裹，以达到居中效果。
+
 ### 编辑器
 
 我以前常用的轻量级的Markdown编辑器：[StackEdit](https://stackedit.io/editor)
