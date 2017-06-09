@@ -1,4 +1,4 @@
-**索引**
+<div align=center>**索引**</div>
 ---
 
 
