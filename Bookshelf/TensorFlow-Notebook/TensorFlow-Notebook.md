@@ -201,7 +201,7 @@ W x H 大小的张量 | 矩阵 | （W, H）
 Tensor 种类　| Annotation
 --- | ---
 常值张量(constant)　| 是不需要初始化的。
-变量(Variable)　| 是维护图执行过程中的状态信息的. 需要它来保持和更新参数值，是需要动态调整的。必须先通过**tf.global_variables_initializer()**初始化，然后才有值。
+变量(Variable)　| 是维护图执行过程中的状态信息的. 需要它来保持和更新参数值，是需要动态调整的。必须先通过 **tf.global_variables_initializer()** 初始化，然后才有值。
 
 ---
 
@@ -230,7 +230,7 @@ Variable
     sess.run(init)
 
 
-**tf.global_variables_initializer()** == **tf.global_variables_initializer()**
+**tf.global_variables_initializer()** == **tf.initialize_all_variables()**
 
 但是在 2017年3月2号以后, tf.initialize_all_variables() 该函数将不再使用。取而代之的是　tf.global_variables_initializer() 
 
