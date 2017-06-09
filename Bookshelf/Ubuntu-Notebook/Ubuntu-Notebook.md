@@ -2381,19 +2381,19 @@ Markdown
 方法2：
 
 使用html语言换行标签：
-> <br>
+
+	<br>
 
 #### 缩进
 
 每个表示一个空格，连续使用两个即可表示首行缩进两个字符
 
-> &ensp; 半角的空格
-> &emsp; 全角的空格
+	&ensp; 半角的空格
+	&emsp; 全角的空格
 
 #### 彩色字体
 
-[字体、字号与颜色
-](http://mbzx.github.io/2015/09/21/md-light/)
+[字体、字号与颜色](http://mbzx.github.io/2015/09/21/md-light/)
 
 	<font color=red>内容</font>
 	
