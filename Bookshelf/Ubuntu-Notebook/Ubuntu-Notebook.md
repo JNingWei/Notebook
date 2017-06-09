@@ -1592,6 +1592,7 @@ git
 ### git辅助工具
 
 #### 练习工具
+
 [git分支管理练习](http://learngitbranching.js.org/?NODEMO)
 
 #### GUI
@@ -1606,7 +1607,15 @@ git
 
 [利用Github免费搭建个人主页(个人博客)](http://blog.csdn.net/hitwhylz/article/details/42646197)
 
-### (Git常用指令备忘)[https://gist.github.com/pk13610/7983917]
+### [Git常用指令备忘](https://gist.github.com/pk13610/7983917)
+
+生成公钥：
+
+	ssh-keygen
+
+复制以下SSH公钥到对应地方：
+
+	cat ~/.ssh/id_rsa.pub
 
 配置：
 
