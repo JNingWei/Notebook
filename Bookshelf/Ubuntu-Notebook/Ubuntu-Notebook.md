@@ -2375,6 +2375,8 @@ Markdown
 [字体、字号与颜色
 ](http://mbzx.github.io/2015/09/21/md-light/)
 
+	<font color=red>内容</font>
+	
 	<font color=#0099ff size=7 face="黑体">color=#0099ff size=72 face="黑体"</font>
 
 #### 背景色
