@@ -24,6 +24,29 @@ Python开发者手册
 
 ---
 
+PyUnit
+---
+
+听同事在讨论会上介绍到的，就上网查了一下。只知道是Python的单元测试框架，暂时没空去深入学习和使用。。。
+
+### 背景
+
+Python单元测试框架（The Python unit testing framework），简称为PyUnit， 是Kent Beck和Erich Gamma所设计的 JUnit 的Python版本。 而JUnit又是Kent设计的Smalltalk测试框架的Java版本。它们都是各自语言的标准测试框架。
+
+### 官网
+
+[PyUnit](http://pyunit.sourceforge.net/)
+
+[PyUnit中文版](http://pyunit.sourceforge.net/pyunit_cn.html)
+
+### 教程
+
+[Python自动单元测试框架PyUnit](http://www.cnblogs.com/liyuanhong/articles/5331907.html)
+
+---
+
+---
+
 Fundamental element
 ---
 
