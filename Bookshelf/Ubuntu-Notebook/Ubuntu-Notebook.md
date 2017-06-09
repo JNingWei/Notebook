@@ -1617,6 +1617,10 @@ git
 
 	cat ~/.ssh/id_rsa.pub
 
+测试连接是否成功：
+
+	ssh -T git@github.com
+
 配置：
 
 	git config --global user.name "robbin"  
