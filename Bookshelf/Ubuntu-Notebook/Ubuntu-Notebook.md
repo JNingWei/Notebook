@@ -2357,9 +2357,36 @@ Markdown
 
 [Markdown 语法说明 (简体中文版)](http://wowubuntu.com/markdown/index.html#list)
 
+
+#### 换行
+
+方法1: 连续两个以上空格+回车
+方法2：使用html语言换行标签：<br>
+
+#### 缩进
+
+每个表示一个空格，连续使用两个即可表示首行缩进两个字符
+
+&ensp; 半角的空格
+&emsp; 全角的空格
+
+#### 彩色字体
+
+[字体、字号与颜色
+](http://mbzx.github.io/2015/09/21/md-light/)
+
+	<font color=#0099ff size=7 face="黑体">color=#0099ff size=72 face="黑体"</font>
+
+#### 背景色
+
+[背景色](http://www.voidcn.com/blog/testcs_dn/article/p-151884.html)
+
+	<table><tr><td bgcolor=#7FFFD4>这里的背景色是：Aquamarine，  十六进制颜色值：#7FFFD4， rgb(127, 255, 212)</td></tr></table>
+
 ### 编辑器
 
 我以前常用的轻量级的Markdown编辑器：[StackEdit](https://stackedit.io/editor)
+
 
 ----
 
