@@ -372,7 +372,7 @@ Args|Annotation
  第二个参数filter | 相当于CNN中的卷积核，它要求是一个Tensor，具有[filter_height, filter_width, in_channels, out_channels]这样的shape，具体含义是[卷积核的高度，卷积核的宽度，图像通道数，卷积核个数]，要求类型与参数input相同，有一个地方需要注意，第三维in_channels，就是参数input的第四维
 第三个参数strides | 卷积时在图像每一维的步长，这是一个一维的向量，长度4
 第四个参数padding | string类型的量，只能是"SAME","VALID"其中之一，这个值决定了不同的卷积方式
-第五个参数 | use_cudnn_on_gpu:bool类型，是否使用cudnn加速，默认为true
+第五个参数 | use_cudnn_on_gpu:bool类型，是否使用cudnn加速，默认为true        
 
 **结果返回：** 一个Tensor，这个输出，就是我们常说的feature map
 
@@ -573,7 +573,7 @@ HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等�
 
 ---
 
----
+---        
 
 tf.assign
 ---
@@ -680,7 +680,6 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 - ### Running Graphs:  [Details](https://www.tensorflow.org/api_guides/python/client)
 	+ #### Session management:  会话管理
 	    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
-		
 			Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
 	    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
 		
@@ -780,7 +779,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	建立Tensorflow图的类和函数
 
     + #### Core graph data structures
-		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		Defined in [tensorflow/python/framework/ops.py]        (https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 		- tf.Graph
 		- tf.Operation
 		- tf.Tensor
