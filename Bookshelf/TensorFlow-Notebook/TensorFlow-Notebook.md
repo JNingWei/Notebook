@@ -796,7 +796,8 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	
    + #### Defining new operations
 		- class tf.TensorShape
-		    Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
+		    	
+			Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 	      
     + #### For libraries building on TensorFlow
     
