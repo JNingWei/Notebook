@@ -645,4 +645,24 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 
 ---
 
-	
+[Python API Guides](https://www.tensorflow.org/api_docs/python/)
+---
+
+## [Tensor Transformations](https://www.tensorflow.org/api_guides/python/array_ops)
+
+Tensor Transformations | Annotation | API
+--- | --- | ---
+Casting | 在图形中放置tensor数据类型 | 
+- tf.string_to_number
+- tf.to_double
+- tf.to_float
+- tf.to_bfloat16
+- tf.to_int32
+- tf.to_int64
+- tf.cast
+- tf.bitcast
+- tf.saturate_cast
+
+### Shapes and Shaping
+
+确定tensor的形状并更改张量的形状。
