@@ -665,6 +665,17 @@ Casting | 在图形中放置tensor数据类型 |
 - tf.saturate_cast
 </table>
 
+<table border="1" width="400">
+  <tr>
+    <th>Month</th>
+    <th>Savings</th>
+  </tr>
+  <tr>
+    <td>January</td>
+    <td>$100</td>
+  </tr>
+</table>
+
 ### Shapes and Shaping
 
 确定tensor的形状并更改张量的形状。
