@@ -777,26 +777,26 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 
     + #### Core graph data structures
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-	- tf.Graph
-	- tf.Operation
-	- tf.Tensor
+		- tf.Graph
+		- tf.Operation
+		- tf.Tensor
 		
    + #### Tensor types
 		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
-	- tf.DType
-	- tf.as_dtype
+		- tf.DType
+		- tf.as_dtype
 	
    + #### Utility functions
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-	- tf.device
-	- tf.container
-	- tf.name_scope
-	- tf.get_default_graph
-	- tf.reset_default_graph
+		- tf.device
+		- tf.container
+		- tf.name_scope
+		- tf.get_default_graph
+		- tf.reset_default_graph
 	
    + #### Defining new operations
-	- class tf.TensorShape
-	    Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
+		- class tf.TensorShape
+		    Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 	      
     + #### For libraries building on TensorFlow
     
