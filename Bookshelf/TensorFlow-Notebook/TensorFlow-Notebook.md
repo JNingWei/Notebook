@@ -626,3 +626,23 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 
 ---
 
+会话管理
+---
+
+### [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session)
+
+Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+	
+### [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
+
+Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+
+### [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
+
+Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+
+---
+
+---
+
+	
