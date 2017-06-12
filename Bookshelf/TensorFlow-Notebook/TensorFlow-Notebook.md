@@ -771,8 +771,10 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	+ #### Debugging Operations:
 		- tf.is_finite
 		Defined in [tensorflow/python/ops/gen_math_ops.py]()
+		
 		- tf.Assert
 		Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
+		
 		- tf.Print
 		Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
