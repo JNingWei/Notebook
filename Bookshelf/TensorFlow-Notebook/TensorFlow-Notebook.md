@@ -7,6 +7,9 @@
 
 ---
 
+
+
+
 基本使用
 ---
 
@@ -89,9 +92,17 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 [tensorflow源码](https://github.com/tensorflow/tensorflow)
 
+[TensorFlow Model Zoo](https://github.com/tensorflow/models)：
+该存储库包含在TensorFlow中实现的机器学习模型。
+
+因为这些型号仅仅与TensorFlow 1.0或更高版本兼容。 如果TensorFlow 是0.x版本，需要upgdade tensorflow version才能使用这些model
+
 [tensorflow官网](https://www.tensorflow.org/)
 
-[tensorflow中文社区](http://www.tensorfly.cn)：内容老旧，里面列举的不少api后来都改名了，直接copy下的代码有时候跑起来会报错。
+[tensorflow中文社区](http://www.tensorfly.cn)：
+内容老旧，里面的TensorFlow 是0.x版本。
+
+列举的不少api后来都改名了，直接copy下的代码有时候跑起来会报错。初学的时候看看还是可以的。
 
 [python-api](https://www.tensorflow.org/api_docs/python/)
 
@@ -678,11 +689,37 @@ Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/te
   + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
 
 - [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
-
   + Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-####
 
-### 
+#### Error classes and convenience functions: 错误类和方便功能
+- tf.OpError
+  + Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
+
+### Constants, Sequences, and Random Values: [Details](https://www.tensorflow.org/api_guides/python/constant_op)
+
+#### Constant Value Tensors: 生成常量的操作
+- tf.zeros
+- tf.zeros_like
+- tf.ones
+- tf.ones_like
+- tf.fill
+- tf.constant
+
+#### Sequences: 序列操作
+- tf.linspace
+- tf.range
+
+
+#### Random Tensors: 创建随机张量
+Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
+- tf.random_normal
+- tf.truncated_normal
+- tf.random_uniform
+- tf.random_shuffle
+
+#### 
+
+
 
 
 
