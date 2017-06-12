@@ -776,18 +776,18 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	建立Tensorflow图的类和函数
 
     + #### Core graph data structures
-	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 	- tf.Graph
 	- tf.Operation
 	- tf.Tensor
 		
    + #### Tensor types
-	Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
+		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
 	- tf.DType
 	- tf.as_dtype
 	
    + #### Utility functions
-	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 	- tf.device
 	- tf.container
 	- tf.name_scope
