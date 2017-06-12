@@ -441,7 +441,7 @@ Args|Annotation
 ---
 
 ### 不能直接用print的原因：
-print只能打印输出shape的信息，而要打印输出tensor的值，需要借助class tf.Session, class tf.InteractiveSession。
+print只能打印输出shape的信息，而要打印输出tensor的值，需要借助class     tf.Session, class tf.InteractiveSession。
 
 因为我们在建立graph的时候，只建立tensor的结构形状信息，并没有执行数据的操作。
 
@@ -618,7 +618,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
  | --- | --- | --- | 
  | tf.add | (x, y, name=None) | 求和 | 
  | tf.subtract | (x, y, name=None) | 减法 | 
- | tf.multiply | (x, y, name=None) | 乘法 | 
+ | tf.multiply | (x, y, name=None) | 乘法 |     
  | tf.div | (x, y, name=None) | 除法 | 
  | tf.mod | (x, y, name=None) | 取模 | 
  | tf.abs | (x, name=None) | 求绝对值 | 
@@ -772,7 +772,6 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 		- tf.is_finite
 		
 			Defined in [tensorflow/python/ops/gen_math_ops.py]()
-		
 		- tf.Assert
 		
 			Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
@@ -784,20 +783,20 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	建立Tensorflow图的类和函数
 
 	+ #### Core graph data structures
-		Defined in [tensorflow/python/framework/ops.py]        (https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py)
 		- tf.Graph
 		- tf.Operation
 		- tf.Tensor
 		
 	+ #### Tensor types
-		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
+		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py)
 		- tf.DType
 		- tf.as_dtype
 	
 	+ #### Utility functions
-		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py)
 		- tf.device
-		- tf.container
+		- tf.container    
 		- tf.name_scope
 		- tf.get_default_graph
 		- tf.reset_default_graph
