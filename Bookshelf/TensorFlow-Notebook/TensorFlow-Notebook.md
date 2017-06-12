@@ -650,12 +650,12 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 
 ## [Tensor Transformations](https://www.tensorflow.org/api_guides/python/array_ops)
 
-Tensor Transformations | Annotation | API
---- | --- | ---
-Casting | 在图形中放置tensor数据类型 | <ol>
+| Tensor Transformations | Annotation | API |
+| --- | --- | --- |
+| Casting | 在图形中放置tensor数据类型 | <ol>
 <li>Coffee</li>
 <li>Milk</li>
-</ol>
+</ol> |
 
 
 <th>
