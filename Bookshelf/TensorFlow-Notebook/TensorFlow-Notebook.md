@@ -671,20 +671,20 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
   + #### Fake quantization:  用于帮助训练更好的量化精度的操作
 
 - ### Asserts and boolean checks:   [Details](https://www.tensorflow.org/api_guides/python/check_ops)
-Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
+	Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
 
 - ### Running Graphs:  [Details](https://www.tensorflow.org/api_guides/python/client)
 	+ #### Session management:  会话管理
 	    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
-Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
+		Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
 	    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
-	Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+		Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
 	    - [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
-	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 
-  + #### Error classes and convenience functions:  错误类和方便功能
-	    - tf.OpError
-Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
+  	+ #### Error classes and convenience functions:  错误类和方便功能
+    	    - tf.OpError
+		Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
 - ### Constants, Sequences, and Random Values:  [Details](https://www.tensorflow.org/api_guides/python/constant_op)
 
@@ -728,19 +728,19 @@ Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tenso
 	- tf.contrib.layers.unit_norm
 
   + #### Regularizers: 正则化可以帮助防止过度配合。
-Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
+	Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
 	- tf.contrib.layers.l1_regularizer
 	- tf.contrib.layers.l2_regularizer
 
   + #### Initializers: 初始化具有明确值的变量，给出其大小，数据类型和目的
-Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
+	Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
 
   + #### Optimization: 优化损失的权重
+  	Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
 	- [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
-Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
 
   + #### Summaries:  协助总结具体变量或操作
-Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
+	Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
 	- tf.contrib.layers.summarize_activation
 	- tf.contrib.layers.summarize_tensor
 	- tf.contrib.layers.summarize_tensors
@@ -748,7 +748,7 @@ Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github
 	- tf.contrib.layers.summarize_activations
 
 + #### Feature columns:  将数据映射到模型的机制
-Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
+	Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
 
 - ### RNN and Cells (contrib)：　[Details](https://www.tensorflow.org/api_guides/python/contrib.rnn)
 
@@ -770,28 +770,29 @@ Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/
 
 - ### Building Graphs:  [Details](https://www.tensorflow.org/api_guides/python/framework)
 　　　建立Tensorflow图的类和函数
-	+ #### Core graph data structures
-Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-		- tf.Graph
-		- tf.Operation
-		- tf.Tensor
+
+    + #### Core graph data structures
+	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+	- tf.Graph
+	- tf.Operation
+	- tf.Tensor
 		
    + #### Tensor types
-Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
-		- tf.DType
-		- tf.as_dtype
+	Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
+	- tf.DType
+	- tf.as_dtype
 	
    + #### Utility functions
-Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-		- tf.device
-		- tf.container
-		- tf.name_scope
-		- tf.get_default_graph
-		- tf.reset_default_graph
+	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+	- tf.device
+	- tf.container
+	- tf.name_scope
+	- tf.get_default_graph
+	- tf.reset_default_graph
 	
    + #### Defining new operations
-		- class tf.TensorShape
-	            Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
+	- class tf.TensorShape
+	    Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 	      
     + #### For libraries building on TensorFlow
     
