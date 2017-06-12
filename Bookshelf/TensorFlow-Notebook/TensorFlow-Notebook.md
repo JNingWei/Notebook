@@ -548,7 +548,9 @@ Module | Annotation
  :---- | ----
 SCALARS | 记录单一变量的，使用 tf.summary.scalar() 收集构建。
 IMAGES | 收集的图片数据，当我们使用的数据为图片时（选用）。
-AUDIO | 收集的音频数据，当我们使用数据为音频时（选用）。
+AUDIO | 收集的音频数据，当我们使用数据为音频时（选用）。                - class tf.TensorShape
+799
+                    Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 GRAPHS | 构件图，效果图类似流程图一样，我们可以看到数据的流向，使用tf.name_scope()收集构建。
 DISTRIBUTIONS | 用于查看变量的分布值，比如 W（Weights）变化的过程中，主要是在 0.5 附近徘徊。
 HISTOGRAMS | 用于记录变量的历史值（比如 weights 值，平均值等），并使用折线图的方式展现，使用tf.summary.histogram()进行收集构建。
@@ -769,8 +771,10 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	+ #### Debugging Operations:
 		- tf.is_finite
 			Defined in [tensorflow/python/ops/gen_math_ops.py]()
+			
 		- tf.Assert
 			Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
+			
 		- tf.Print
 			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
