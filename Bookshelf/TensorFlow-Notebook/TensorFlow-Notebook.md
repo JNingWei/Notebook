@@ -638,10 +638,10 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 
 ---
 
-[Python API Guides](https://www.tensorflow.org/api_docs/python/)
+[Python API Guides](https://www.tensorflow.org/api_docs/python/)(仅记录日常用到的api)
 ---
 
-- ### Tensor Transformations: [Details](https://www.tensorflow.org/api_guides/python/array_ops)
+- ### Tensor Transformations:  [Details](https://www.tensorflow.org/api_guides/python/array_ops)
 
   + #### Casting: 在图形中放置tensor数据类型
     - tf.string_to_number
@@ -671,11 +671,11 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 
   + #### Fake quantization: 用于帮助训练更好的量化精度的操作
 
-- ### Asserts and boolean checks: [Details](https://www.tensorflow.org/api_guides/python/check_ops)
+- ### Asserts and boolean checks:   [Details](https://www.tensorflow.org/api_guides/python/check_ops)
 
   + Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
 
-- ### Running Graphs: [Details](https://www.tensorflow.org/api_guides/python/client)
+- ### Running Graphs:  [Details](https://www.tensorflow.org/api_guides/python/client)
 
   + #### Session management: 会话管理
     - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
@@ -691,7 +691,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
     - tf.OpError
       + Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
-- ### Constants, Sequences, and Random Values: [Details](https://www.tensorflow.org/api_guides/python/constant_op)
+- ### Constants, Sequences, and Random Values:  [Details](https://www.tensorflow.org/api_guides/python/constant_op)
 
   + #### Constant Value Tensors: 生成常量的操作
 	- tf.zeros
@@ -713,7 +713,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	- tf.random_uniform
 	- tf.random_shuffle
 
-- ### Layers (contrib): [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
+- ### Layers (contrib):  [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
    用于　构建神经网络层，regularizers, summaries　等的操作
   + #### Higher level ops for building neural network layers: 创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
     - tf.contrib.layers.avg_pool2d
@@ -770,6 +770,10 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 			+ Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
 		- tf.Print
 			+ Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
+
+- ### Building Graphs: [Details](https://www.tensorflow.org/api_guides/python/framework)
+		Tensorflow
+
 
 
 
