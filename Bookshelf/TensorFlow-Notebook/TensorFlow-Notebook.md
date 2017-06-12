@@ -676,6 +676,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 - ### Running Graphs:  [Details](https://www.tensorflow.org/api_guides/python/client)
 	+ #### Session management:  会话管理
 	    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
+		
 		Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
 	    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
 		Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
@@ -747,7 +748,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	- tf.contrib.layers.summarize_collection
 	- tf.contrib.layers.summarize_activations
 
-+ #### Feature columns:  将数据映射到模型的机制
+  + #### Feature columns:  将数据映射到模型的机制
 	Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
 
 - ### RNN and Cells (contrib)：　[Details](https://www.tensorflow.org/api_guides/python/contrib.rnn)
