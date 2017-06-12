@@ -677,15 +677,18 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	+ #### Session management:  会话管理
 	    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
 		
-		Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
+			Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
 	    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
-		Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+		
+			Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
 	    - [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
-		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		
+			Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 
   	+ #### Error classes and convenience functions:  错误类和方便功能
-    	    - tf.OpError
-		Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
+		- tf.OpError
+		
+			Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
 - ### Constants, Sequences, and Random Values:  [Details](https://www.tensorflow.org/api_guides/python/constant_op)
 
