@@ -773,7 +773,7 @@ Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensor
 Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
 - ### Building Graphs:  [Details](https://www.tensorflow.org/api_guides/python/framework)
-　　　建立Tensorflow图的类和函数
+	建立Tensorflow图的类和函数
 
     + #### Core graph data structures
 	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
