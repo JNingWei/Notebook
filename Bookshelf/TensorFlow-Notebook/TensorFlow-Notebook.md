@@ -90,21 +90,18 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 基本网站
 ---
 
-[tensorflow源码](https://github.com/tensorflow/tensorflow)
+[TensorFlow组织](https://github.com/tensorflow)
+- [tensorflow源码](https://github.com/tensorflow/tensorflow)
+  + 源码永远是学习的重中之重。
+- [TensorFlow Model Zoo](https://github.com/tensorflow/models)
+  + 该存储库包含在TensorFlow中实现的机器学习模型。因为这些型号仅仅与TensorFlow 1.0或更高版本兼容
+  + 如果TensorFlow 是0.x版本，需要upgdade tensorflow version才能使用这些model
 
-[TensorFlow Model Zoo](https://github.com/tensorflow/models)：
-该存储库包含在TensorFlow中实现的机器学习模型。
-
-因为这些型号仅仅与TensorFlow 1.0或更高版本兼容。 如果TensorFlow 是0.x版本，需要upgdade tensorflow version才能使用这些model
-
-[tensorflow官网](https://www.tensorflow.org/)
-
-[tensorflow中文社区](http://www.tensorfly.cn)：
-内容老旧，里面的TensorFlow 是0.x版本。
-
-列举的不少api后来都改名了，直接copy下的代码有时候跑起来会报错。初学的时候看看还是可以的。
-
-[python-api](https://www.tensorflow.org/api_docs/python/)
+[TensorFlow官网](https://www.tensorflow.org/)
+- [python-api](https://www.tensorflow.org/api_docs/python/)
+- [TensorFlow中文社区](http://www.tensorfly.cn)
+  + 内容老旧，里面的TensorFlow 是0.x版本。
+  + 列举的不少api后来都改名了，直接copy下的代码有时候跑起来会报错。初学的时候看看还是可以的。
 
 ---
 
