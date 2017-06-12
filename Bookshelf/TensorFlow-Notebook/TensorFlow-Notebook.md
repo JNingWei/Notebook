@@ -653,7 +653,7 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 Tensor Transformations | Annotation | API
 --- | --- | ---
 Casting | 在图形中放置tensor数据类型 | 
-- tf.string_to_number
+- tf.string_to_number 
 - tf.to_double
 - tf.to_float
 - tf.to_bfloat16
@@ -661,7 +661,7 @@ Casting | 在图形中放置tensor数据类型 |
 - tf.to_int64
 - tf.cast
 - tf.bitcast
-- tf.saturate_cast
+- tf.saturate_cast" 
 
 ### Shapes and Shaping
 
