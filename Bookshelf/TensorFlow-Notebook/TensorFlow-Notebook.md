@@ -641,78 +641,77 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 [Python API Guides](https://www.tensorflow.org/api_docs/python/)
 ---
 
-### Tensor Transformations: [Details](https://www.tensorflow.org/api_guides/python/array_ops)
+- ### Tensor Transformations: [Details](https://www.tensorflow.org/api_guides/python/array_ops)
 
-#### Casting: 在图形中放置tensor数据类型
+  + #### Casting: 在图形中放置tensor数据类型
+    - tf.string_to_number
+    - tf.to_double
+    - tf.to_float
+    - tf.to_bfloat16
+    - tf.to_int32
+    - tf.to_int64
+    - tf.cast
 
-- tf.string_to_number
-- tf.to_double
-- tf.to_float
-- tf.to_bfloat16
-- tf.to_int32
-- tf.to_int64
-- tf.cast
+  + #### Shapes and Shaping: 确定tensor的形状并更改张量的形状
 
-#### Shapes and Shaping: 确定tensor的形状并更改张量的形状
+    - tf.shape
+    - tf.size
+    - tf.rank
+    - tf.reshape
+    - tf.squeeze
+    - tf.expand_dims
 
-- tf.shape
-- tf.size
-- tf.rank
-- tf.reshape
-- tf.squeeze
-- tf.expand_dims
+  + #### Slicing and Joining: 切片和加入
 
-#### Slicing and Joining: 切片和加入
+    - tf.slice
+    - tf.split
+    - tf.pad
+    - tf.concat
+    - tf.transpose
 
-- tf.slice
-- tf.split
-- tf.pad
-- tf.concat
-- tf.transpose
+  + #### Fake quantization: 用于帮助训练更好的量化精度的操作
 
-#### Fake quantization: 用于帮助训练更好的量化精度的操作
+- ### Asserts and boolean checks: [Details](https://www.tensorflow.org/api_guides/python/check_ops)
 
-### Asserts and boolean checks: [Details](https://www.tensorflow.org/api_guides/python/check_ops)
+  + Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
 
-Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
+- ### Running Graphs: [Details](https://www.tensorflow.org/api_guides/python/client)
 
-### Running Graphs: [Details](https://www.tensorflow.org/api_guides/python/client)
-
-#### Session management: 会话管理
-- [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
-  + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+  + #### Session management: 会话管理
+    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
+      + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
 	
-- [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
-  + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
+      + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
 
-- [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
-  + Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+    - [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
+      + Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 
-#### Error classes and convenience functions: 错误类和方便功能
-- tf.OpError
-  + Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
+  + #### Error classes and convenience functions: 错误类和方便功能
+    - tf.OpError
+      + Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
-### Constants, Sequences, and Random Values: [Details](https://www.tensorflow.org/api_guides/python/constant_op)
+- ### Constants, Sequences, and Random Values: [Details](https://www.tensorflow.org/api_guides/python/constant_op)
 
-#### Constant Value Tensors: 生成常量的操作
-- tf.zeros
-- tf.zeros_like
-- tf.ones
-- tf.ones_like
-- tf.fill
-- tf.constant
+  + #### Constant Value Tensors: 生成常量的操作
+	- tf.zeros
+	- tf.zeros_like
+	- tf.ones
+	- tf.ones_like
+	- tf.fill
+	- tf.constant
 
-#### Sequences: 序列操作
-- tf.linspace
-- tf.range
+  + #### Sequences: 序列操作
+	- tf.linspace
+	- tf.range
 
 
-#### Random Tensors: 创建随机张量
-Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
-- tf.random_normal
-- tf.truncated_normal
-- tf.random_uniform
-- tf.random_shuffle
+  + #### Random Tensors: 创建随机张量
+	 Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
+	- tf.random_normal
+	- tf.truncated_normal
+	- tf.random_uniform
+	- tf.random_shuffle
 
 #### 
 
