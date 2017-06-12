@@ -653,9 +653,8 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 
 ## [Tensor Transformations](https://www.tensorflow.org/api_guides/python/array_ops)
 
-| Tensor Transformations | Annotation | API |
-| --- | --- | --- |
-|  | 在图形中放置tensor数据类型 | 
+#### Casting: 在图形中放置tensor数据类型
+
 - tf.string_to_number
 - tf.to_double
 - tf.to_float
@@ -666,6 +665,6 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 - tf.bitcast
 - tf.saturate_cast
 
-### Shapes and Shaping
 
-确定tensor的形状并更改张量的形状。
+
+#### Shapes and Shaping: 确定tensor的形状并更改张量的形状。
