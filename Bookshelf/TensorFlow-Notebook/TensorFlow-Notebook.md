@@ -638,169 +638,163 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 
 ---
 
-[Python API Guides](https://www.tensorflow.org/api_docs/python/)(仅记录日常用到的api)
+
+[Python API Guides](https://www.tensorflow.org/api_docs/python/)  (仅记录日常用到的api)
 ---
 
 - ### Tensor Transformations:  [Details](https://www.tensorflow.org/api_guides/python/array_ops)
 
-  + #### Casting: 在图形中放置tensor数据类型
-    - tf.string_to_number
-    - tf.to_double
-    - tf.to_float
-    - tf.to_bfloat16
-    - tf.to_int32
-    - tf.to_int64
-    - tf.cast
+  + #### Casting:  在图形中放置tensor数据类型
+	    - tf.string_to_number
+	    - tf.to_double
+	    - tf.to_float
+	    - tf.to_bfloat16
+	    - tf.to_int32
+	    - tf.to_int64
+	    - tf.cast
 
-  + #### Shapes and Shaping: 确定tensor的形状并更改张量的形状
+  + #### Shapes and Shaping:  确定tensor的形状并更改张量的形状
+	    - tf.shape
+	    - tf.size
+	    - tf.rank
+	    - tf.reshape
+	    - tf.squeeze
+	    - tf.expand_dims
 
-    - tf.shape
-    - tf.size
-    - tf.rank
-    - tf.reshape
-    - tf.squeeze
-    - tf.expand_dims
+  + #### Slicing and Joining:  切片和加入
+	    - tf.slice
+	    - tf.split
+	    - tf.pad
+	    - tf.concat
+	    - tf.transpose
 
-  + #### Slicing and Joining: 切片和加入
-
-    - tf.slice
-    - tf.split
-    - tf.pad
-    - tf.concat
-    - tf.transpose
-
-  + #### Fake quantization: 用于帮助训练更好的量化精度的操作
+  + #### Fake quantization:  用于帮助训练更好的量化精度的操作
 
 - ### Asserts and boolean checks:   [Details](https://www.tensorflow.org/api_guides/python/check_ops)
-
-  + Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
+Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
 
 - ### Running Graphs:  [Details](https://www.tensorflow.org/api_guides/python/client)
+	+ #### Session management:  会话管理
+	    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
+Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
+	    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
+	Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+	    - [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
+	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 
-  + #### Session management: 会话管理
-    - [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
-      + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
-	
-    - [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
-      + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
-
-    - [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
-      + Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-
-  + #### Error classes and convenience functions: 错误类和方便功能
-    - tf.OpError
-      + Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
+  + #### Error classes and convenience functions:  错误类和方便功能
+	    - tf.OpError
+Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
 - ### Constants, Sequences, and Random Values:  [Details](https://www.tensorflow.org/api_guides/python/constant_op)
 
-  + #### Constant Value Tensors: 生成常量的操作
-	- tf.zeros
-	- tf.zeros_like
-	- tf.ones
-	- tf.ones_like
-	- tf.fill
-	- tf.constant
+	  + #### Constant Value Tensors: 生成常量的操作
+		- tf.zeros
+		- tf.zeros_like
+		- tf.ones
+		- tf.ones_like
+		- tf.fill
+		- tf.constant
+						
+	  + #### Sequences: 序列操作
+		- tf.linspace
+		- tf.range
 
-  + #### Sequences: 序列操作
-	- tf.linspace
-	- tf.range
+	  + #### Random Tensors: 创建随机张量
+Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
+		- tf.random_normal
+		- tf.truncated_normal
+		- tf.random_uniform
+		- tf.random_shuffle
 
+- ### Layers (contrib):   [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
+用于　构建神经网络层，regularizers ， summaries　等的操作
 
-  + #### Random Tensors: 创建随机张量
-	 Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
-	- tf.random_normal
-	- tf.truncated_normal
-	- tf.random_uniform
-	- tf.random_shuffle
+	+ #### Higher level ops for building neural network layers:  创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
+	
+		- tf.contrib.layers.avg_pool2d
+		- tf.contrib.layers.batch_norm
+		- tf.contrib.layers.convolution2d
+		- tf.nn.conv2d_transpose
+		- tf.contrib.layers.convolution2d_transpose
+		- tf.nn.dropout
+		- tf.contrib.layers.fully_connected
+		- tf.contrib.layers.max_pool2d
+		- tf.nn.relu
+		- tf.nn.relu6
+		- tf.nn.softmax
+		- tf.stack
+		- tf.contrib.layers.unit_norm
 
-- ### Layers (contrib):  [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
-   用于　构建神经网络层，regularizers, summaries　等的操作
-  + #### Higher level ops for building neural network layers: 创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
-    - tf.contrib.layers.avg_pool2d
-    - tf.contrib.layers.batch_norm
-    - tf.contrib.layers.convolution2d
-    - tf.nn.conv2d_transpose
-    - tf.contrib.layers.convolution2d_transpose
-    - tf.nn.dropout
-    - tf.contrib.layers.fully_connected
-    - tf.contrib.layers.max_pool2d
-    - tf.nn.relu
-    - tf.nn.relu6
-    - tf.nn.softmax
-    - tf.stack
-    - tf.contrib.layers.unit_norm
+	+ #### Regularizers: 正则化可以帮助防止过度配合。
+Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
+		- tf.contrib.layers.l1_regularizer
+		- tf.contrib.layers.l2_regularizer
+		
+	+ #### Initializers: 初始化具有明确值的变量，给出其大小，数据类型和目的
+Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
+		  
+	+ #### Optimization: 优化损失的权重
+		- [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
+Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
+		      
+	+ #### Summaries:  协助总结具体变量或操作
+Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
 
-    设置默认激活功能的fully_connected的别名可用：relu，relu6和linear。
-    
-    堆栈操作也可用。 它通过重复应用层来构建一叠层。
-
-  + #### Regularizers: 正则化可以帮助防止过度配合。 这些具有签名fn（权重）。 损失通常添加到tf.GraphKeys.REGULARIZATION_LOSSES中
-	Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
-    - tf.contrib.layers.l1_regularizer
-    - tf.contrib.layers.l2_regularizer
-
-  + #### Initializers: 初始化具有明确值的变量，给出其大小，数据类型和目的
-  	Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
-  
-  + #### Optimization: 优化损失的权重
-    - [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
-	Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
-      
-  + #### Summaries: 协助总结具体变量或操作
- 	Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py).
-	- tf.contrib.layers.summarize_activation
-	- tf.contrib.layers.summarize_tensor
-	- tf.contrib.layers.summarize_tensors
-	- tf.contrib.layers.summarize_collection
-	- tf.contrib.layers.summarize_activations
-
-  + #### Feature columns: 将数据映射到模型的机制
-  	Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
+		- tf.contrib.layers.summarize_activation
+		- tf.contrib.layers.summarize_tensor
+		- tf.contrib.layers.summarize_tensors
+		- tf.contrib.layers.summarize_collection
+		- tf.contrib.layers.summarize_activations
+		
+	+ #### Feature columns:  将数据映射到模型的机制
+Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
 
 - ### RNN and Cells (contrib)：　[Details](https://www.tensorflow.org/api_guides/python/contrib.rnn)
 
 - ### Control Flow：　[Dteails](https://www.tensorflow.org/api_guides/python/control_flow_ops)
+
 	+ #### Control Flow Operations:
+
 	+ #### Logical Operators:
+
 	+ #### Comparison Operators:
+
 	+ #### Debugging Operations:
 		- tf.is_finite
-			Defined in [tensorflow/python/ops/gen_math_ops.py]()
+Defined in [tensorflow/python/ops/gen_math_ops.py]()
 		- tf.Assert
-			Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
+Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
 		- tf.Print
-			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
+Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
-- ### Building Graphs: [Details](https://www.tensorflow.org/api_guides/python/framework)
+- ### Building Graphs:  [Details](https://www.tensorflow.org/api_guides/python/framework)
 　　　建立Tensorflow图的类和函数
-   
-   + #### Core graph data structures
-	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-	- tf.Graph
-	- tf.Operation
-	- tf.Tensor
-	
-   + #### Tensor types
-	Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
-	- tf.DType
-	- tf.as_dtype
+	+ #### Core graph data structures
+Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		- tf.Graph
+		- tf.Operation
+		- tf.Tensor
+		
+   + #### Tensor types
+Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
+		- tf.DType
+		- tf.as_dtype
 	
    + #### Utility functions
-	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
-	- tf.device
-	- tf.container
-	- tf.name_scope
-	- tf.get_default_graph
-	- tf.reset_default_graph
+Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+		- tf.device
+		- tf.container
+		- tf.name_scope
+		- tf.get_default_graph
+		- tf.reset_default_graph
 	
    + #### Defining new operations
-	- class tf.TensorShape
-            Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
+		- class tf.TensorShape
+	            Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 	      
     + #### For libraries building on TensorFlow
-   
-   
-
+    
 
 
 
