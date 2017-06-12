@@ -655,7 +655,7 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 
 | Tensor Transformations | Annotation | API |
 | --- | --- | --- |
-| Casting | 在图形中放置tensor数据类型 | 
+|  | 在图形中放置tensor数据类型 | 
 <ol>
 <li>Coffee</li>
 <li>Milk</li>
@@ -663,17 +663,7 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 |
 
 
-<th>
-- tf.string_to_number 
-- tf.to_double
-- tf.to_float
-- tf.to_bfloat16
-- tf.to_int32
-- tf.to_int64
-- tf.cast
-- tf.bitcast
-- tf.saturate_cast
-</th>
+
 
 <table border="1" width="400">
   <tr>
@@ -685,6 +675,41 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
     <td>$100</td>
   </tr>
 </table>
+
+<table>
+<thead>
+<tr>
+  <th>Tensor Transformations</th>
+  <th>Annotation</th>
+  <th>API</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+  <td>Casting</td>
+  <td>在图形中放置tensor数据类型</td>
+  <td>
+    <th>
+    	<ol>
+		<li>Coffee</li>
+		<li>Milk</li>
+	</ol> 
+
+    </th>
+  </td>
+</tr>
+</tbody>
+</table>
+
+  tf.string_to_number 
+- tf.to_double
+- tf.to_float
+- tf.to_bfloat16
+- tf.to_int32
+- tf.to_int64
+- tf.cast
+- tf.bitcast
+- tf.saturate_cast
 
 ### Shapes and Shaping
 
