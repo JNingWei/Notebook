@@ -735,7 +735,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
     堆栈操作也可用。 它通过重复应用层来构建一叠层。
 
   + #### Regularizers: 正则化可以帮助防止过度配合。 这些具有签名fn（权重）。 损失通常添加到tf.GraphKeys.REGULARIZATION_LOSSES中
-  	Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
+	Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
     - tf.contrib.layers.l1_regularizer
     - tf.contrib.layers.l2_regularizer
 
@@ -744,9 +744,9 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
   
   + #### Optimization: 优化损失的权重
     - [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
-      + Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
+	Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
       
-  + #### Summaries: 协助总结具体变量或操作
+  + #### Summaries: 协助总结具体变量或操作
  	Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py).
 	- tf.contrib.layers.summarize_activation
 	- tf.contrib.layers.summarize_tensor
@@ -765,35 +765,39 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	+ #### Comparison Operators:
 	+ #### Debugging Operations:
 		- tf.is_finite
-			+ Defined in [tensorflow/python/ops/gen_math_ops.py]()
+			Defined in [tensorflow/python/ops/gen_math_ops.py]()
 		- tf.Assert
-			+ Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
+			Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
 		- tf.Print
-			+ Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
+			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
 - ### Building Graphs: [Details](https://www.tensorflow.org/api_guides/python/framework)
 　　　建立Tensorflow图的类和函数
-   + Core graph data structures
-	   Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+   
+   + #### Core graph data structures
+	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 	- tf.Graph
 	- tf.Operation
 	- tf.Tensor
-   + Tensor types
-         Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
+	
+   + #### Tensor types
+	Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
 	- tf.DType
 	- tf.as_dtype
-   + Utility functions
-   + Graph collections
-   		      Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+	
+   + #### Utility functions
+	Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 	- tf.device
 	- tf.container
 	- tf.name_scope
 	- tf.get_default_graph
 	- tf.reset_default_graph
-   + Defining new operations
+	
+   + #### Defining new operations
 	- class tf.TensorShape
-              Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
-  ＋ For libraries building on TensorFlow
+            Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
+	      
+    + #### For libraries building on TensorFlow
    
    
 
