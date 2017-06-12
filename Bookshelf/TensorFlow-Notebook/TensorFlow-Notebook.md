@@ -713,7 +713,28 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	- tf.random_uniform
 	- tf.random_shuffle
 
-#### 
+- ### Layers (contrib): [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
+   用于　构建神经网络层，regularizers, summaries　等的操作
+  + #### Higher level ops for building neural network layers: 创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
+    - tf.contrib.layers.avg_pool2d
+    - tf.contrib.layers.batch_norm
+    - tf.contrib.layers.convolution2d
+    - tf.nn.conv2d_transpose
+    - tf.contrib.layers.convolution2d_transpose
+    - tf.nn.dropout
+    - tf.contrib.layers.fully_connected
+    - tf.contrib.layers.max_pool2d
+    - tf.nn.relu
+    - tf.nn.relu6
+    - tf.nn.softmax
+    - tf.stack
+    - tf.contrib.layers.unit_norm
+
+    设置默认激活功能的fully_connected的别名可用：relu，relu6和linear。
+    
+    堆栈操作也可用。 它通过重复应用层来构建一叠层。
+
+  + #### 
 
 
 
