@@ -771,30 +771,30 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	+ #### Debugging Operations:
 		- tf.is_finite
 		
-		Defined in [tensorflow/python/ops/gen_math_ops.py]()
+			Defined in [tensorflow/python/ops/gen_math_ops.py]()
 		
 		- tf.Assert
 		
-		Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
+			Defined in [tensorflow/python/ops/control_flow_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/control_flow_ops.py).
 		- tf.Print
 		
-		Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
+			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
 - ### Building Graphs:  [Details](https://www.tensorflow.org/api_guides/python/framework)
 	建立Tensorflow图的类和函数
 
-    + #### Core graph data structures
+	+ #### Core graph data structures
 		Defined in [tensorflow/python/framework/ops.py]        (https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 		- tf.Graph
 		- tf.Operation
 		- tf.Tensor
 		
-   + #### Tensor types
+	+ #### Tensor types
 		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py).
 		- tf.DType
 		- tf.as_dtype
 	
-   + #### Utility functions
+	+ #### Utility functions
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 		- tf.device
 		- tf.container
@@ -802,12 +802,12 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 		- tf.get_default_graph
 		- tf.reset_default_graph
 	
-   + #### Defining new operations
+	+ #### Defining new operations
 		- class tf.TensorShape
 		    	
 			Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 	      
-    + #### For libraries building on TensorFlow
+	+ #### For libraries building on TensorFlow
     
 
 
