@@ -652,7 +652,12 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 
 Tensor Transformations | Annotation | API
 --- | --- | ---
-Casting | 在图形中放置tensor数据类型 | 
+Casting | 在图形中放置tensor数据类型 | <ol>
+<li>Coffee</li>
+<li>Milk</li>
+</ol>
+
+
 <th>
 - tf.string_to_number 
 - tf.to_double
