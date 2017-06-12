@@ -625,24 +625,6 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
  | tf.sin | (x, name=None) | 三角函数sin | 
  | tf.tan | (x, name=None) | 三角函数tan |  
 
----
-
----
-
-会话管理
----
-
-### [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session)
-
-Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
-	
-### [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
-
-Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
-
-### [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
-
-Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 
 ---
 
@@ -651,7 +633,7 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 [Python API Guides](https://www.tensorflow.org/api_docs/python/)
 ---
 
-## [Tensor Transformations](https://www.tensorflow.org/api_guides/python/array_ops)
+### Tensor Transformations: [Details](https://www.tensorflow.org/api_guides/python/array_ops)
 
 #### Casting: 在图形中放置tensor数据类型
 
@@ -662,9 +644,46 @@ Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/te
 - tf.to_int32
 - tf.to_int64
 - tf.cast
-- tf.bitcast
-- tf.saturate_cast
+
+#### Shapes and Shaping: 确定tensor的形状并更改张量的形状
+
+- tf.shape
+- tf.size
+- tf.rank
+- tf.reshape
+- tf.squeeze
+- tf.expand_dims
+
+#### Slicing and Joining: 切片和加入
+
+- tf.slice
+- tf.split
+- tf.pad
+- tf.concat
+- tf.transpose
+
+#### Fake quantization: 用于帮助训练更好的量化精度的操作
+
+### Asserts and boolean checks: [Details](https://www.tensorflow.org/api_guides/python/check_ops)
+
+Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
+
+### Running Graphs: [Details](https://www.tensorflow.org/api_guides/python/client)
+
+#### Session management: 会话管理
+- [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session)
+ + Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+	
+- [tf.InteractiveSession](https://www.tensorflow.org/api_docs/python/tf/InteractiveSession)
+
+Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py).
+
+- [tf.get_default_session](https://www.tensorflow.org/api_docs/python/tf/get_default_session)
+
+Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
+####
+
+### 
 
 
 
-#### Shapes and Shaping: 确定tensor的形状并更改张量的形状。
