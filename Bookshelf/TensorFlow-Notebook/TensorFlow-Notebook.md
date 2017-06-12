@@ -13,23 +13,75 @@ Tensorflow代码目录结构
 ## tensorflow/
 - ### tensorflow/
 	+ contrib/ 
+	
 		该目录下存放有其他项目贡献者添加的相关贡献代码
 	+ core/ 
+	
 		该目录为tensorflow的C++源码的核心
+		- common_runtime/ 
+		
+			包含了tensorflow中session执行的通用逻辑流程。
+		- distributed_runtime/ 
+		
+			tensorflow 与分布式相关的执行逻辑。
+		- framework/ 
+			
+			对tensorflow进行计算过程中的通用组件进行了定义和实现。
+		- graph/
+		
+			tensorflow图相关操作的逻辑。由于tensorflow中的数据计算本质上是一个图状结构的计算流程，该过程中存在将图进行切分并且并行化执行的可能性。该目录下的代码逻辑即为对图数据进行结构化定义并进行拆分的相关内容。
+		- kernels/
+		
+			对tensorflow中各个单步操作的具体实现。录下包含了大量的tensorflow中单步操作的实现方式。(如Variable（）)
+		
+		- lib/ 
+		
+			一些公用的调用方法。
+		- ops/
+		
+			对kernel/ 下的op进行注册和对外声明。
+		- protobuf/
+		
+			tensorflow下各个模块间进行数据传输的数据结构定义，通过proto进行配置实现。
+		- public/
+		
+			删除、更新一些接口的声明
+		- user_ops/ 
+		
+			用户可进行编写自己的op并添加到该目录
+		- util/ 
+		
+			一些公用的调用方法。
+
+		
 	+ g3doc/
+	
 		是针对c++、python的版本的代码文档
+		
 	+ examples/
+	
 		下有andord系统的一个示例
+		
 	+ python/ 
+	
 		该目录下存放了tensorflow使用python编写的相关代码，是和”core“目录对应的python实现目录
+		
 	+ stream_executor/
+	
 		流处理，看里面还有dnn之类，具体详细待定
+		
 	+ tensorboard/ 
-		是tensorflow中非常有特色的一个模块，该模块可以用于生成模型训练中实时生成图表，用于监控模型的训练程度。
+	
+		是tensorflow中非常有特色的一个模块，该模块可以用于生成模型训练中实时生成图表，用于监控模型的训练程度
+		
 	+ tools/ 
-		一些工具杂项，pip。
+	
+		一些工具杂项，pip
+		
 	+ user_ops/
-		用户可进行编写自己的op并添加到该目录。
+	
+		用户可进行编写自己的op并添加到该目录
+		
 - ### third_party/
 - ### tools/
 - ### util/
