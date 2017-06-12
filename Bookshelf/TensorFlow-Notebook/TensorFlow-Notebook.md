@@ -769,6 +769,7 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	+ #### Comparison Operators:
 
 	+ #### Debugging Operations:
+	
 		- tf.is_finite
 		Defined in [tensorflow/python/ops/gen_math_ops.py]()
 		
