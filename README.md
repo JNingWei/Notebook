@@ -1,5 +1,5 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
-<font color=##40E0D0 size=10 face="楷书">目 &emsp; 录</font>
+<font color=##40E0D0 size=10 face="楷书">书 &emsp; 单</font>
 ---
 
 [<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/Ubuntu_Logo/Ubuntu_1.png" width="100" height="80" alt="Ubuntu"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Ubuntu-Notebook/Ubuntu-Notebook.md) 
@@ -22,5 +22,8 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 [<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/Scipy_pic/Scipy_1.jpg" width="100" height="80" alt="Scipy"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Scipy-Notebook/Scipy-Notebook.md)
 
+---
 
-查看方式： ###### 点击图标，跳转到相应的笔记本。
+---
+
+###### 查看方式： 点击图标，跳转到相应的笔记本。
