@@ -87,6 +87,9 @@ Tensorflow代码目录结构
 - ### util/
 - ### 其他小文档
 
+##### Reference:
+##### [Tensorflow快速入门3–代码结构及模型例子](http://www.infocool.net/kb/OtherCloud/201701/278480.html)、[TensorFlow0.8源码阅读 -- 代码目录结构讲解](http://blog.csdn.net/s_sunnyy/article/details/62417390)、[TensorFlow项目文件结构说明](http://www.jianshu.com/p/cccf9bfc8e01)、[ubuntu下 tensorflow 初探](http://www.bagualu.net/wordpress/archives/4951)
+
 ---
 
 ---
