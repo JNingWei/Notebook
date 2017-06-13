@@ -2694,12 +2694,13 @@ ProcessOn
 
 ---
 
-文件系统层次结构标准
+文件层次结构
 ---
 
 [文件系统层次结构标准](https://zh.wikipedia.org/wiki/%E6%96%87%E4%BB%B6%E7%B3%BB%E7%BB%9F%E5%B1%82%E6%AC%A1%E7%BB%93%E6%9E%84%E6%A0%87%E5%87%86)（英语：Filesystem Hierarchy Standard，FHS）定义了Linux操作系统中的主要目录及目录内容。在大多数情况下，它是一个传统BSD文件系统层次结构的形式化与扩充。
 
 ## /
+
 ###### 第一层次结构 的根、 整个文件系统层次结构的根目录。
 - ### /bin/
 
