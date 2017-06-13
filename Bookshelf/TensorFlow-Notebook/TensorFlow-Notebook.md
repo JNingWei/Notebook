@@ -21,7 +21,6 @@ Tensorflow源码目录结构
 	
 		###### 后台C++实现部分。包含了主要的C++代码和runtimes。该目录为tensorflow的C++源码的核心。
 		- ##### common_runtime / 
-		
 			###### 包含了tensorflow中session执行的通用逻辑流程。
 		- distributed_runtime / 
 		
