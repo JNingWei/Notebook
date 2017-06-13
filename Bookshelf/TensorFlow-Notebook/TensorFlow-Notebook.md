@@ -721,7 +721,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
 ## Python API Guides
 
-- ### Tensor Transformations:  [Details](https://www.tensorflow.org/api_guides/python/array_ops)
+- ### Tensor Transformations:  [Ref](https://www.tensorflow.org/api_guides/python/array_ops)
 
   + #### Casting:  在图形中放置tensor数据类型
     - tf.string_to_number
@@ -749,10 +749,10 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
   + #### Fake quantization:  用于帮助训练更好的量化精度的操作
 
-- ### Asserts and boolean checks:   [Details](https://www.tensorflow.org/api_guides/python/check_ops)
+- ### Asserts and boolean checks:   [Ref](https://www.tensorflow.org/api_guides/python/check_ops)
 	Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
 
-- ### Running Graphs:  [Details](https://www.tensorflow.org/api_guides/python/client)
+- ### Running Graphs:  [Ref](https://www.tensorflow.org/api_guides/python/client)
 	+ #### Session management:  会话管理
 		- [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
 	    
@@ -769,7 +769,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		
 			Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
-- ### Constants, Sequences, and Random Values:  [Details](https://www.tensorflow.org/api_guides/python/constant_op)
+- ### Constants, Sequences, and Random Values:  [Ref](https://www.tensorflow.org/api_guides/python/constant_op)
 
 	+ #### Constant Value Tensors: 生成常量的操作
 		- tf.zeros
@@ -791,7 +791,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.random_uniform
 		- tf.random_shuffle
 
-- ### Layers (contrib):   [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
+- ### Layers (contrib):   [Ref](https://www.tensorflow.org/api_guides/python/contrib.layers)
 	
 	用于　构建神经网络层，regularizers ， summaries　等的操作
  	+ #### Higher level ops for building neural network layers:  创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
@@ -838,9 +838,9 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 	
 		Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
 
-- ### RNN and Cells (contrib)：　[Details](https://www.tensorflow.org/api_guides/python/contrib.rnn)
+- ### RNN and Cells (contrib)：　[Ref](https://www.tensorflow.org/api_guides/python/contrib.rnn)
 
-- ### Control Flow：　[Dteails](https://www.tensorflow.org/api_guides/python/control_flow_ops)
+- ### Control Flow：　[Ref](https://www.tensorflow.org/api_guides/python/control_flow_ops)
 
 	+ #### Control Flow Operations:
 
@@ -859,7 +859,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		
 			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
-- ### Building Graphs:  [Details](https://www.tensorflow.org/api_guides/python/framework)
+- ### Building Graphs:  [Ref](https://www.tensorflow.org/api_guides/python/framework)
 	建立Tensorflow图的类和函数
 
 	+ #### Core graph data structures
@@ -888,7 +888,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 	      
 	+ #### For libraries building on TensorFlow
 	
-- ### Images:  [Details](https://www.tensorflow.org/api_guides/python/image)
+- ### Images:  [Ref](https://www.tensorflow.org/api_guides/python/image)
 
 	+ #### Encoding and Decoding  
 	
@@ -940,9 +940,252 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.train.maybe_batch_join
 		- tf.train.shuffle_batch
 
-- ### Math:   [[Details]()]
+- ### Math:   [{Detail}](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/TensorFlow-Notebook/TensorFlow-Box/Source_Code/tensorflow/python/ops/math_ops.md)
 
 	Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/math_ops.py)
+	+ #### Arithmetic Operators
+
+		TensorFlow provides several operations that you can use to add basic arithmetic operators to your graph.
+		- tf.add
+		- tf.subtract
+		- tf.multiply
+		- tf.scalar_mul
+		- tf.div
+		- tf.divide
+		- tf.truediv
+		- tf.floordiv
+		- tf.realdiv
+		- tf.truncatediv
+		- tf.floor_div
+		- tf.truncatemod
+		- tf.floormod
+		- tf.mod
+		- tf.cross
+
+	+ #### Basic Math Functions
+
+		TensorFlow provides several operations that you can use to add basic mathematical functions to your graph.
+		- tf.add_n
+		- tf.abs
+		- tf.negative
+		- tf.sign
+		- tf.square
+		- tf.round
+		- tf.sqrt
+		- tf.exp
+		- tf.expm1
+		- tf.log
+		- tf.log1p
+		- tf.ceil
+		- tf.floor
+		- tf.maximum
+		- tf.minimum
+		- tf.cos
+		- tf.sin
+		- tf.tan
+		- tf.acos
+		- tf.asin
+		- tf.atan
+
+	+ #### Matrix Math Functions
+
+		TensorFlow provides several operations that you can use to add linear algebra functions on matrices to your graph.
+
+		- tf.diag
+		- tf.trace
+		- tf.transpose
+		- tf.eye
+		- tf.matrix_diag
+		- tf.matrix_transpose
+		- tf.matmul
+		- tf.norm
+		- tf.cholesky
+
+	+ #### Complex Number Functions
+
+		TensorFlow provides several operations that you can use to add complex number functions to your graph.
+
+		- tf.complex
+		- tf.conj
+		- tf.imag
+		- tf.real
+
+	+ #### Reduction
+
+		TensorFlow provides several operations that you can use to perform common math computations that reduce various dimensions of a tensor.
+
+		- tf.reduce_sum
+		- tf.reduce_prod
+		- tf.reduce_min
+		- tf.reduce_max
+		- tf.reduce_mean
+		- tf.reduce_all
+		- tf.reduce_any
+
+	+ #### Segmentation
+
+		TensorFlow provides several operations that you can use to perform common math computations on tensor segments. 
+		- tf.segment_sum
+		- tf.segment_prod
+		- tf.segment_min
+		- tf.segment_max
+		- tf.segment_mean
+		- tf.sparse_segment_sum
+		- tf.sparse_segment_mean
+		
+	+ #### Sequence Comparison and Indexing
+
+		TensorFlow provides several operations that you can use to add sequence comparison and index extraction to your graph. You can use these operations to determine sequence differences and determine the indexes of specific values in a tensor.
+
+		- tf.argmin
+		- tf.argmax
+		- tf.where
+		- tf.unique
+		
+- ### Neural Network
+
+	+ #### Activation FunctionsActivation Functions
+
+		The activation ops provide different types of nonlinearities for use in neural networks. These include smooth nonlinearities (sigmoid, tanh, elu, softplus, and softsign), continuous but not everywhere differentiable functions (relu, relu6, crelu and relu_x), and random regularization (dropout).
+
+		All activation ops apply componentwise, and produce a tensor of the same shape as the input tensor.
+
+		- tf.nn.relu
+		- tf.nn.relu6
+		- tf.nn.crelu
+		- tf.nn.elu
+		- tf.nn.softplus
+		- tf.nn.softsign
+		- tf.nn.dropout
+		- tf.nn.bias_add
+		- tf.sigmoid
+		- tf.tanh
+
+	+ #### Convolution
+
+		The convolution ops sweep a 2-D filter over a batch of images, applying the filter to each window of each image of the appropriate size. The different ops trade off between generic vs. specific filters:
+
+		- tf.nn.convolution
+		- tf.nn.conv2d
+		- tf.nn.depthwise_conv2d
+		- tf.nn.depthwise_conv2d_native
+		- tf.nn.separable_conv2d
+		- tf.nn.atrous_conv2d
+		- tf.nn.atrous_conv2d_transpose
+		- tf.nn.conv2d_transpose
+		- tf.nn.conv1d
+		- tf.nn.conv3d
+		- tf.nn.conv3d_transpose
+		- tf.nn.conv2d_backprop_filter
+		- tf.nn.conv2d_backprop_input
+		- tf.nn.conv3d_backprop_filter_v2
+		- tf.nn.depthwise_conv2d_native_backprop_filter
+		- tf.nn.depthwise_conv2d_native_backprop_input
+
+	+ #### Pooling
+
+		The pooling ops sweep a rectangular window over the input tensor, computing a reduction operation for each window (average, max, or max with argmax). Each pooling op uses rectangular windows of size ksize separated by offset strides. For example, if strides is all ones every window is used, if strides is all twos every other window is used in each dimension, etc.
+
+		- tf.nn.avg_pool
+		- tf.nn.max_pool
+		- tf.nn.max_pool_with_argmax
+		- tf.nn.avg_pool3d
+		- tf.nn.max_pool3d
+		- tf.nn.fractional_avg_pool
+		- tf.nn.fractional_max_pool
+		- tf.nn.pool
+
+	+ #### Morphological filtering
+
+		Morphological operators are non-linear filters used in image processing.
+
+		- tf.nn.dilation2d
+		- tf.nn.erosion2d
+		- tf.nn.with_space_to_batch
+
+
+	+ #### Normalization
+
+		Normalization is useful to prevent neurons from saturating when inputs may have varying scale, and to aid generalization.
+
+		- tf.nn.l2_normalize
+		- tf.nn.local_response_normalization
+		- tf.nn.sufficient_statistics
+		- tf.nn.normalize_moments
+		- tf.nn.moments
+		- tf.nn.weighted_moments
+		- tf.nn.fused_batch_norm
+		- tf.nn.batch_normalization
+		- tf.nn.batch_norm_with_global_normalization
+
+	+ #### Losses
+
+		The loss ops measure error between two tensors, or between a tensor and zero. These can be used for measuring accuracy of a network in a regression task or for regularization purposes (weight decay).
+
+		- tf.nn.l2_loss
+		- tf.nn.log_poisson_loss
+		
+	+ #### Classification
+
+		TensorFlow provides several operations that help you perform classification.
+
+		- tf.nn.sigmoid_cross_entropy_with_logits
+		- tf.nn.softmax
+		- tf.nn.log_softmax
+		- tf.nn.softmax_cross_entropy_with_logits
+		- tf.nn.sparse_softmax_cross_entropy_with_logits
+		- tf.nn.weighted_cross_entropy_with_logits
+
+	+ #### Embeddings
+
+		TensorFlow provides library support for looking up values in embedding tensors.
+
+		- tf.nn.embedding_lookup
+		- tf.nn.embedding_lookup_sparse
+
+
+	+ #### Recurrent Neural Networks
+
+		TensorFlow provides a number of methods for constructing Recurrent Neural Networks. Most accept an RNNCell-subclassed object (see the documentation for tf.contrib.rnn).
+
+		- tf.nn.dynamic_rnn
+		- tf.nn.bidirectional_dynamic_rnn
+		- tf.nn.raw_rnn
+
+	+ #### Connectionist Temporal Classification (CTC)
+
+		- tf.nn.ctc_loss
+		- tf.nn.ctc_greedy_decoder
+		- tf.nn.ctc_beam_search_decoder
+
+	+ #### Evaluation
+
+		The evaluation ops are useful for measuring the performance of a network. They are typically used at evaluation time.
+
+		- tf.nn.top_k
+		- tf.nn.in_top_k
+
+	+ #### Candidate Sampling
+
+		train a multiclass or multilabel model with thousands or millions of output classes (for example, a language model with a large vocabulary.
+
+		- tf.nn.nce_loss
+		- tf.nn.sampled_softmax_loss
+
+		- tf.nn.uniform_candidate_sampler
+		- tf.nn.log_uniform_candidate_sampler
+		- tf.nn.learned_unigram_candidate_sampler
+		- tf.nn.fixed_unigram_candidate_sampler
+
+		- tf.nn.compute_accidental_hits
+
+		- tf.nn.quantized_conv2d
+		- tf.nn.quantized_relu_x
+		- tf.nn.quantized_max_pool
+		- tf.nn.quantized_avg_pool
+
+
+	
 
 
 
