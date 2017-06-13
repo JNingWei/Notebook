@@ -19,22 +19,22 @@ Tensorflow源码目录结构
 		###### 该目录下存放有其他项目贡献者添加的相关贡献代码。由于tensorflow受关注程度较高，目前该目录正急剧膨胀。
 	+ #### core/ 
 	
-		###### 后台C++实现部分。包含了主要的C++代码和runtimes。该目录为tensorflow的C++源码的核心。
+		###### 后台C++实现部分。包含了主要的　C++代码　和　runtimes　。该目录为tensorflow的C++源码的核心。
 		- ##### common_runtime/ 
 			
-			###### 包含了tensorflow中session执行的通用逻辑流程。
+			###### tensorflow 普通的 执行逻辑。
 		- ##### distributed_runtime/ 
 		
-			###### tensorflow 与分布式相关的执行逻辑。
+			###### tensorflow 与分布式相关的 执行逻辑。
 		- ##### framework/ 
 			
 			###### 包含主要的抽象图计算和其他有用的library。对tensorflow进行计算过程中的通用组件进行了定义和实现。
 		- ##### graph/
 		
-			###### tensorflow图相关操作的逻辑。由于tensorflow中的数据计算本质上是一个图状结构的计算流程，该过程中存在将图进行切分并且并行化执行的可能性。该目录下的代码逻辑即为对图数据进行结构化定义并进行拆分的相关内容。
+			###### tensorflow图相关操作的逻辑。 由于tensorflow中的数据计算本质上是一个图状结构的计算流程，该过程中存在将图进行切分并且并行化执行的可能性。该目录下的代码逻辑即为对图数据进行结构化定义并进行拆分的相关内容。
 		- ##### kernels/
 		
-			###### 对tensorflow中各个单步op的具体实现(包括CPU和CUDA的kernel)。该目录中共有约470个文件，其中414个文件和op相关，该目录下包含了大量的tensorflow中单步操作的实现方式。(如Variable（）)
+			###### 对tensorflow中各个单步op的具体实现。
 		- ##### lib/ 
 		
 			###### 一些公用的调用方法。同 util /
@@ -67,13 +67,13 @@ Tensorflow源码目录结构
 		###### 是针对c++、python的版本的代码文档	
 	+ #### python/ 
 	
-		###### 前台Python接口。 该目录下存放了tensorflow使用python编写的相关代码，是和 **core/** 对应的python实现目录。使用python封装了　** 对　core/ 中实现的相关的机器学习算法　的调用** 。 同时利用了python方便的编程特性和C++高效的执行效率。
+		###### 前台Python接口。 该目录下存放了tensorflow使用python编写的相关代码，是和 **core/** 对应的python实现目录。使用python封装了　** 对　core/ 中实现的相关的机器学习算法　的调用　** 。 同时利用了　python方便的编程特性　和　C++高效的执行效率　。
 		- ##### framework/
 		
-			###### 包含　图的python抽象　等，其中很多被序列化为　proto　或被传递到　swigged session　调用
+			###### 包含　图的python抽象　等，(还没深入验证过的：　“　其中很多被序列化为　proto　或被传递到　swigged session　调用　”　)
 		- ##### kernel_tests/
 		
-			###### 单元测试代码和示例代码
+			###### 单元测试代码　和　示例代码
 		- ##### ops/
 		
 			###### 核心python接口
