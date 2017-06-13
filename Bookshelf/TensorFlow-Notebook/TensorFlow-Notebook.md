@@ -716,40 +716,6 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
 ---
 
-Math
----
-
-Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/math_ops.py)
-
- | op　| Args |　Annotation | 
- | --- | --- | --- | 
- | tf.add | (x, y, name=None) | 求和 | 
- | tf.subtract | (x, y, name=None) | 减法 | 
- | tf.multiply | (x, y, name=None) | 乘法 |     
- | tf.div | (x, y, name=None) | 除法 | 
- | tf.mod | (x, y, name=None) | 取模 | 
- | tf.abs | (x, name=None) | 求绝对值 | 
- | tf.negative | (x, name=None) | 取负 (y = -x). | 
- | tf.sign | (x, name=None) | 返回符号 y = sign(x) = -1 if x < 0; 0 if x == 0; 1 if x > 0. | 
- | tf.square | (x, name=None) | 计算平方 (y = x * x = x^2). | 
- | tf.round | (x, name=None) | 舍入最接近的整数  # ‘a’ is [0.9, 2.5, 2.3, -4.4] tf.round(a) ==> [ 1.0, 3.0, 2.0, -4.0 ] | 
- | tf.sqrt | (x, name=None) | 开根号 (y = \sqrt{x} = x^{1/2}). | 
- | tf.pow | (x, y, name=None) | 幂次方 # tensor ‘x’ is [[2, 2], [3, 3]] # tensor ‘y’ is [[8, 16], [2, 3]] tf.pow(x, y) ==> [[256, 65536], [9, 27]] | 
- | tf.exp | (x, name=None) | 计算e的次方 | 
- | tf.log | (x, name=None) | 计算log，一个输入计算e的ln，两输入以第二输入为底 | 
-  | tf.log1p | (x, name=None) | 计算e为底的log(1+x) | 
- | tf.maximum | (x, y, name=None) | 返回最大值 (x > y ? x : y) | 
- | tf.minimum | (x, y, name=None) | 返回最小值 (x < y ? x : y) | 
- | tf.cos | (x, name=None) | 三角函数cos | 
- | tf.sin | (x, name=None) | 三角函数sin | 
- | tf.tan | (x, name=None) | 三角函数tan |  
-
-
----
-
----
-
-
 [Python API Guides](https://www.tensorflow.org/api_docs/python/)  (仅记录日常用到的api)
 ---
 
@@ -805,67 +771,72 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 
 - ### Constants, Sequences, and Random Values:  [Details](https://www.tensorflow.org/api_guides/python/constant_op)
 
-  + #### Constant Value Tensors: 生成常量的操作
-	- tf.zeros
-	- tf.zeros_like
-	- tf.ones
-	- tf.ones_like
-	- tf.fill
-	- tf.constant
+	+ #### Constant Value Tensors: 生成常量的操作
+		- tf.zeros
+		- tf.zeros_like
+		- tf.ones
+		- tf.ones_like
+		- tf.fill
+		- tf.constant
 
-  + #### Sequences: 序列操作
-	- tf.linspace
-	- tf.range
+ 	+ #### Sequences: 序列操作
+		- tf.linspace
+		- tf.range
 
-  + #### Random Tensors: 创建随机张量
-	Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
-
-	- tf.random_normal
-	- tf.truncated_normal
-	- tf.random_uniform
-	- tf.random_shuffle
+	+ #### Random Tensors: 创建随机张量
+	
+		Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
+		- tf.random_normal
+		- tf.truncated_normal
+		- tf.random_uniform
+		- tf.random_shuffle
 
 - ### Layers (contrib):   [Details](https://www.tensorflow.org/api_guides/python/contrib.layers)
+	
 	用于　构建神经网络层，regularizers ， summaries　等的操作
+ 	+ #### Higher level ops for building neural network layers:  创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
 
-  + #### Higher level ops for building neural network layers:  创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
+		- tf.contrib.layers.avg_pool2d
+		- tf.contrib.layers.batch_norm
+		- tf.contrib.layers.convolution2d
+		- tf.nn.conv2d_transpose
+		- tf.contrib.layers.convolution2d_transpose
+		- tf.nn.dropout
+		- tf.contrib.layers.fully_connected
+		- tf.contrib.layers.max_pool2d
+		- tf.nn.relu
+		- tf.nn.relu6
+		- tf.nn.softmax
+		- tf.stack
+		- tf.contrib.layers.unit_norm
 
-	- tf.contrib.layers.avg_pool2d
-	- tf.contrib.layers.batch_norm
-	- tf.contrib.layers.convolution2d
-	- tf.nn.conv2d_transpose
-	- tf.contrib.layers.convolution2d_transpose
-	- tf.nn.dropout
-	- tf.contrib.layers.fully_connected
-	- tf.contrib.layers.max_pool2d
-	- tf.nn.relu
-	- tf.nn.relu6
-	- tf.nn.softmax
-	- tf.stack
-	- tf.contrib.layers.unit_norm
+	+ #### Regularizers: 正则化可以帮助防止过度配合。
+	
+		Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
+		- tf.contrib.layers.l1_regularizer
+		- tf.contrib.layers.l2_regularizer
 
-  + #### Regularizers: 正则化可以帮助防止过度配合。
-	Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
-	- tf.contrib.layers.l1_regularizer
-	- tf.contrib.layers.l2_regularizer
+ 	+ #### Initializers: 初始化具有明确值的变量，给出其大小，数据类型和目的
+	
+		Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
 
-  + #### Initializers: 初始化具有明确值的变量，给出其大小，数据类型和目的
-	Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
+	+ #### Optimization: 优化损失的权重
+  	
+		Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
+		- [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
 
-  + #### Optimization: 优化损失的权重
-  	Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
-	- [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
+ 	+ #### Summaries:  协助总结具体变量或操作
+	
+		Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
+		- tf.contrib.layers.summarize_activation
+		- tf.contrib.layers.summarize_tensor
+		- tf.contrib.layers.summarize_tensors
+		- tf.contrib.layers.summarize_collection
+		- tf.contrib.layers.summarize_activations
 
-  + #### Summaries:  协助总结具体变量或操作
-	Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
-	- tf.contrib.layers.summarize_activation
-	- tf.contrib.layers.summarize_tensor
-	- tf.contrib.layers.summarize_tensors
-	- tf.contrib.layers.summarize_collection
-	- tf.contrib.layers.summarize_activations
-
-  + #### Feature columns:  将数据映射到模型的机制
-	Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
+	+ #### Feature columns:  将数据映射到模型的机制
+	
+		Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
 
 - ### RNN and Cells (contrib)：　[Details](https://www.tensorflow.org/api_guides/python/contrib.rnn)
 
@@ -923,6 +894,80 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 	
 	+ #### Resizing
 		- tf.image.resize_images
+
+- ### Inputs and Readers
+
+	+ #### Placeholders
+	
+		###### TensorFlow提供一个占位符操作，必须在执行时提供数据。 
+		- tf.placeholder
+		- tf.placeholder_with_default
+	+ #### Readers
+	
+		###### TensorFlow提供了一组用于读取数据格式的Reader类。
+		- tf.ReaderBase
+		- tf.IdentityReader
+		- tf.TFRecordReader
+
+	+ #### Converting
+	
+		###### TensorFlow提供了一组op用于将不同的数据格式转换成tensor
+		- tf.decode_csv　
+		- tf.decode_raw
+		
+	+ #### Example protocol buffer
+	
+	+ #### Queues
+	
+		###### TensorFlow提供了几个“队列”的实现，它们是TensorFlow计算图中的结构，用于将张量的管道放在一起
+		- tf.QueueBase
+		- tf.FIFOQueue
+
+	+ #### Conditional Accumulators
+	
+	+ #### Dealing with the filesystem
+	
+		- tf.matching_files
+		- tf.read_file
+		- tf.write_file
+	
+	+ #### Input pipeline###
+	
+		###### TensorFlow功能用于设置输入预取流水线
+		- tf.train.batch
+		- tf.train.maybe_batch
+		- tf.train.batch_join
+		- tf.train.maybe_batch_join
+		- tf.train.shuffle_batch
+
+- ### Math
+	
+	Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/math_ops.py)
+
+	 | op　| Args |　Annotation | 
+	 | --- | --- | --- | 
+	 | tf.add | (x, y, name=None) | 求和 | 
+	 | tf.subtract | (x, y, name=None) | 减法 | 
+	 | tf.multiply | (x, y, name=None) | 乘法 |     
+	 | tf.div | (x, y, name=None) | 除法 | 
+	 | tf.mod | (x, y, name=None) | 取模 | 
+	 | tf.abs | (x, name=None) | 求绝对值 | 
+	 | tf.negative | (x, name=None) | 取负 (y = -x). | 
+	 | tf.sign | (x, name=None) | 返回符号 y = sign(x) = -1 if x < 0; 0 if x == 0; 1 if x > 0. | 
+	 | tf.square | (x, name=None) | 计算平方 (y = x * x = x^2). | 
+	 | tf.round | (x, name=None) | 舍入最接近的整数  # ‘a’ is [0.9, 2.5, 2.3, -4.4] tf.round(a) ==> [ 1.0, 3.0, 2.0, -4.0 ] | 
+	 | tf.sqrt | (x, name=None) | 开根号 (y = \sqrt{x} = x^{1/2}). | 
+	 | tf.pow | (x, y, name=None) | 幂次方 # tensor ‘x’ is [[2, 2], [3, 3]] # tensor ‘y’ is [[8, 16], [2, 3]] tf.pow(x, y) ==> [[256, 65536], [9, 27]] | 
+	 | tf.exp | (x, name=None) | 计算e的次方 | 
+	 | tf.log | (x, name=None) | 计算log，一个输入计算e的ln，两输入以第二输入为底 | 
+	  | tf.log1p | (x, name=None) | 计算e为底的log(1+x) | 
+	 | tf.maximum | (x, y, name=None) | 返回最大值 (x > y ? x : y) | 
+	 | tf.minimum | (x, y, name=None) | 返回最小值 (x < y ? x : y) | 
+	 | tf.cos | (x, name=None) | 三角函数cos | 
+	 | tf.sin | (x, name=None) | 三角函数sin | 
+	 | tf.tan | (x, name=None) | 三角函数tan |  
+
+
 
 　　　
 
