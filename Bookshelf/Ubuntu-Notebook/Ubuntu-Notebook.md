@@ -2445,7 +2445,7 @@ GitHub 使用的是 “ GitHub Flavored Markdown ” ，简称GFM，有site-in i
 
 Github上的一篇高star语法讲解：[README文件语法解读，即Github Flavored Markdown语法介绍](https://github.com/guodongxiaren/README)。但都是讲一些很基础的。像实际问题中遇到的四重列表嵌套外带多层中插入注释，这里面并没有讲到。
 
- | # | Problem | Solution |
+ |   | Problem | Solution |
  | --- | --- | --- |
  | 0 | 我把大段文段复制到　MarkdownEditor.io　上进行重新编辑，再贴回　github修改框　后，发现格式依然是乱的，只不过由一种乱法变成了另一种乱法。 | 上网去查，发现GFM是一种独立于Markdown的语法。在一些语法的书写上，比如列表多重嵌套，并在其中多层插入注释字段时，语法与普通的　Markdown　语法还是有很大的差别的。之前学习Markdown的时候，虽然知道Markdown有很多变种语法，但是写的都只是一些简单的嵌套，并没有涉及三四重以上的嵌套，也没有在嵌套中插入注释，所以一直没觉得GFM和Mrakdown有什么区别。直到碰上了具体情况需要这种的复杂书写时，才暴露出了这个问题。　
  | 1 | 用GFM书写简单语法时，用两个空格键就能代替Tab。空格键和Tab键常常可以多打也没关系。于是我在多重嵌套的时候依然这么干。。然后就悲剧了。。T T | 在书写GFM时想要不犯错，缩进必须要严格采用Tab键（Tab键会等于超级多个空格，远不止四个）。Tab键既不可以多打也不可以少打。 | 
@@ -2829,7 +2829,7 @@ ProcessOn
 | C++源文件　| .cc | .cpp　| 
 | 头文件　| .h | .h　| 
 
-(P == 'PLUS' == '+'，cpp == c++)
+###### P == 'PLUS' == '+'， cpp == c++
 
 ---
 
