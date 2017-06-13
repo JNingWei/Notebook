@@ -10,92 +10,92 @@
 Tensorflow源码目录结构
 ---
 
-## tensorflow /
-- ### tensorflow /
+## tensorflow/
+- ### tensorflow/
 
 	##### 该目录下存放着tensorflow的核心代码
-	+ #### contrib / 
+	+ #### contrib/ 
 	
 		###### 该目录下存放有其他项目贡献者添加的相关贡献代码。由于tensorflow受关注程度较高，目前该目录正急剧膨胀。
-	+ #### core / 
+	+ #### core/ 
 	
 		###### 后台C++实现部分。包含了主要的C++代码和runtimes。该目录为tensorflow的C++源码的核心。
-		- ##### common_runtime / 
+		- ##### common_runtime/ 
 			
 			###### 包含了tensorflow中session执行的通用逻辑流程。
-		- ##### distributed_runtime / 
+		- ##### distributed_runtime/ 
 		
 			###### tensorflow 与分布式相关的执行逻辑。
-		- ##### framework / 
+		- ##### framework/ 
 			
 			###### 包含主要的抽象图计算和其他有用的library。对tensorflow进行计算过程中的通用组件进行了定义和实现。
-		- ##### graph /
+		- ##### graph/
 		
 			###### tensorflow图相关操作的逻辑。由于tensorflow中的数据计算本质上是一个图状结构的计算流程，该过程中存在将图进行切分并且并行化执行的可能性。该目录下的代码逻辑即为对图数据进行结构化定义并进行拆分的相关内容。
-		- ##### kernels /
+		- ##### kernels/
 		
 			###### 对tensorflow中各个单步op的具体实现(包括CPU和CUDA的kernel)。该目录中共有约470个文件，其中414个文件和op相关，该目录下包含了大量的tensorflow中单步操作的实现方式。(如Variable（）)
-		- ##### lib / 
+		- ##### lib/ 
 		
 			###### 一些公用的调用方法。同 util /
-		- ##### ops /
+		- ##### ops/
 		
 			###### 对kernel/ 下的op进行注册和对外声明。
-		- ##### platform /
+		- ##### platform/
 		
 			###### 包含抽象出平台和其他导入库（protobuf等）的代码
-		- ##### protobuf /
+		- ##### protobuf/
 		
 			###### tensorflow下各个模块间进行数据传输的数据结构定义，通过proto进行配置实现。
-		- ##### public /
+		- ##### public/
 		
 			###### 删除、更新一些接口的声明。tensorflow对外api的定义和实现。
-		- ##### user_ops / 
+		- ##### user_ops/ 
 		
 			###### 用户可进行编写自己的op并添加到该目录。
-		- ##### util / 
+		- ##### util/ 
 		
-			###### 一些公用的调用方法。同　lib /
-		- 其他　文件夹 /
+			###### 一些公用的调用方法。同　lib/
+		- 其他　文件夹/
 		- 其他　文档
 
-	+ #### examples /
+	+ #### examples/
 	
 		###### 下有andord系统的一个示例
-	+ #### g3doc /
+	+ #### g3doc/
 	
 		###### 是针对c++、python的版本的代码文档	
-	+ #### python / 
+	+ #### python/ 
 	
 		###### 前台Python接口部分。该目录下存放了tensorflow使用python编写的相关代码，是和”core“目录对应的python实现目录。该部分代码主要是使用python封装了相关的机器学习算法，但最终的计算操作是通过调用目录core 中的C++逻辑实现的。这样做的好处是利用了python较方便的编程特性和C++较高效的执行效率。
-		- ##### framework /
+		- ##### framework/
 		
 			###### 包含图的python抽象等，其中很多被序列化为proto或被传递到　swigged session　调用
-		- ##### kernel_tests /
+		- ##### kernel_tests/
 		
 			###### 单元测试代码和示例代码
-		- ##### ops /
+		- ##### ops/
 		
 			###### 核心python接口
-		- ##### platform /
+		- ##### platform/
 	
 			###### 和上面C++部分的platform（core/platform/）差不多, 对python I/O、单元测试等做了轻量级的包装。
-	+ #### stream_executor /
+	+ #### stream_executor/
 	
 		###### 流处理，看里面还有dnn之类，具体详细待定	
-	+ #### tensorboard / 
+	+ #### tensorboard/ 
 	
 		###### 是tensorflow中非常有特色的一个模块，该模块可以用于生成模型训练中实时生成图表，用于监控模型的训练程度	
-	+ #### tools / 
+	+ #### tools/ 
 	
 		###### 一些工具杂项，pip	
-	+ #### user_ops /
+	+ #### user_ops/
 	
 		###### 用户可进行编写自己的op并添加到该目录
 		
-- ### third_party /
-- ### tools /
-- ### util /
+- ### third_party/
+- ### tools/
+- ### util/
 - ### configure文档
 
 	###### 该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作。（注 需要先安装bazel）
@@ -106,7 +106,7 @@ Tensorflow源码目录结构
 <br>
 
 #### Supplement:
-很多博客中提到的 **models /**（位于根目录下，该目录下存放这多个使用python实现的模型实例），我并没有看到。估计是最新版的Tensorflow源码取消了这个文件夹。
+很多博客中提到的 **models/**（位于根目录下，该目录下存放这多个使用python实现的模型实例），我并没有看到。估计是最新版的Tensorflow源码取消了这个文件夹。
 
 #### Reference:
 [google讨论小组](https://groups.google.com/a/tensorflow.org/forum/#!topic/discuss/39guS9VV0Yg)、[Tensorflow快速入门3–代码结构及模型例子](http://www.infocool.net/kb/OtherCloud/201701/278480.html)
