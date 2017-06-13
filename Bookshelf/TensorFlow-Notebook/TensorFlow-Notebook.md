@@ -105,11 +105,11 @@ Tensorflow源码目录结构
 <br>
 <br>
 
-### Supplement:
+#### Supplement:
 很多博客中提到的 **models /**（位于根目录下，该目录下存放这多个使用python实现的模型实例），我并没有看到。估计是最新版的Tensorflow源码取消了这个文件夹。
 
 #### Reference:
-[groups.google.com](https://groups.google.com/a/tensorflow.org/forum/#!topic/discuss/39guS9VV0Yg)、[Tensorflow快速入门3–代码结构及模型例子](http://www.infocool.net/kb/OtherCloud/201701/278480.html)、[ubuntu下 tensorflow 初探](http://www.bagualu.net/wordpress/archives/4951)
+[google讨论小组](https://groups.google.com/a/tensorflow.org/forum/#!topic/discuss/39guS9VV0Yg)、[Tensorflow快速入门3–代码结构及模型例子](http://www.infocool.net/kb/OtherCloud/201701/278480.html)
 
 ---
 
