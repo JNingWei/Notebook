@@ -960,7 +960,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 	 | tf.pow | (x, y, name=None) | 幂次方 # tensor ‘x’ is [[2, 2], [3, 3]] # tensor ‘y’ is [[8, 16], [2, 3]] tf.pow(x, y) ==> [[256, 65536], [9, 27]] | 
 	 | tf.exp | (x, name=None) | 计算e的次方 | 
 	 | tf.log | (x, name=None) | 计算log，一个输入计算e的ln，两输入以第二输入为底 | 
-	  | tf.log1p | (x, name=None) | 计算e为底的log(1+x) | 
+	 | tf.log1p | (x, name=None) | 计算e为底的log(1+x) | 
 	 | tf.maximum | (x, y, name=None) | 返回最大值 (x > y ? x : y) | 
 	 | tf.minimum | (x, y, name=None) | 返回最小值 (x < y ? x : y) | 
 	 | tf.cos | (x, name=None) | 三角函数cos | 
