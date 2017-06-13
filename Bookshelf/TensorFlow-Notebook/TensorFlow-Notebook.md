@@ -753,6 +753,8 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 [Python API Guides](https://www.tensorflow.org/api_docs/python/)  (仅记录日常用到的api)
 ---
 
+## Python API Guides
+
 - ### Tensor Transformations:  [Details](https://www.tensorflow.org/api_guides/python/array_ops)
 
   + #### Casting:  在图形中放置tensor数据类型
@@ -914,7 +916,15 @@ Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/t
 			Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 	      
 	+ #### For libraries building on TensorFlow
-    
+	
+- ### Images:  [Details](https://www.tensorflow.org/api_guides/python/image)
+
+	+ #### Encoding and Decoding  
+	
+	+ #### Resizing
+		- tf.image.resize_images
+
+　　　
 
 
 
