@@ -57,7 +57,7 @@ Tensorflow代码目录结构
 		
 			###### 一些公用的调用方法。同　lib /
 		- 其他　文件夹 /
-		- 其他　文件
+		- 其他　文档
 
 	+ #### g3doc /
 	
@@ -86,10 +86,10 @@ Tensorflow代码目录结构
 - ### third_party /
 - ### tools /
 - ### util /
-- ### 文件configure
+- ### configure文档
 
-	该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作。（注 需要先安装bazel）
-- ### 其他小文档
+	##### 该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作。（注 需要先安装bazel）
+- ### 其他文档
 
 <br>
 <br>
