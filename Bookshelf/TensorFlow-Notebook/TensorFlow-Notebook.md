@@ -7,7 +7,7 @@
 
 ---
 
-Tensorflow代码目录结构
+Tensorflow源码目录结构
 ---
 
 ## tensorflow /
@@ -19,7 +19,7 @@ Tensorflow代码目录结构
 		###### 该目录下存放有其他项目贡献者添加的相关贡献代码。由于tensorflow受关注程度较高，目前该目录正急剧膨胀。
 	+ #### core / 
 	
-		###### 包含了主要的C++代码和runtimes。该目录为tensorflow的C++源码的核心。
+		###### 后台C++实现部分。包含了主要的C++代码和runtimes。该目录为tensorflow的C++源码的核心。
 		- common_runtime / 
 		
 			###### 包含了tensorflow中session执行的通用逻辑流程。
@@ -59,17 +59,27 @@ Tensorflow代码目录结构
 		- 其他　文件夹 /
 		- 其他　文档
 
-	+ #### g3doc /
-	
-		###### 是针对c++、python的版本的代码文档
 	+ #### examples /
 	
-		###### 下有andord系统的一个示例	
+		###### 下有andord系统的一个示例
+	+ #### g3doc /
+	
+		###### 是针对c++、python的版本的代码文档	
 	+ #### python / 
 	
-		###### 该目录下存放了tensorflow使用python编写的相关代码，是和”core“目录对应的python实现目录。该部分代码主要是使用python封装了相关的机器学习算法，但最终的计算操作是通过调用目录core 中的C++逻辑实现的。这样做的好处是利用了python较方便的编程特性和C++较高效的执行效率。
+		###### 前台Python接口部分。该目录下存放了tensorflow使用python编写的相关代码，是和”core“目录对应的python实现目录。该部分代码主要是使用python封装了相关的机器学习算法，但最终的计算操作是通过调用目录core 中的C++逻辑实现的。这样做的好处是利用了python较方便的编程特性和C++较高效的执行效率。
 		- ops /
+		
+			###### 核心python接口
+		- kernel_tests /
+		
+			###### 单元测试代码和示例代码
+		- framework /
+		
+			###### 包含图的python抽象等，其中很多被序列化为proto或被传递到　swigged session　调用
+		- platform /
 	
+			###### 和上面C++部分的platform（core/platform/）差不多, 对python I/O、单元测试等做了轻量级的包装。
 	+ #### stream_executor /
 	
 		###### 流处理，看里面还有dnn之类，具体详细待定	
