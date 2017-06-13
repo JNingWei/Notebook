@@ -88,7 +88,8 @@ Tensorflow代码目录结构
 - ### util /
 - ### configure文档
 
-	##### 该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作。（注 需要先安装bazel）
+	###### 该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作。（注 需要先安装bazel）
+	
 - ### 其他文档
 
 <br>
