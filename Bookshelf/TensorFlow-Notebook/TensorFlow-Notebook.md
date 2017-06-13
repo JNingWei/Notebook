@@ -1184,7 +1184,14 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.quantized_max_pool
 		- tf.nn.quantized_avg_pool
 
+- ### Data IO (Python functions)
 
+	A TFRecords file represents a sequence of (binary) strings. The format is not random access, so it is suitable for streaming large amounts of data but not suitable if fast sharding or other non-sequential access is desired.
+	+ 
+		- tf.python_io.TFRecordWriter
+		- tf.python_io.tf_record_iterator
+		- tf.python_io.TFRecordCompressionType
+tf.python_io.TFRecordOptions
 	
 
 
