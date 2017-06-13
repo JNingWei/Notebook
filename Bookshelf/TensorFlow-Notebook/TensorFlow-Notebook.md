@@ -49,28 +49,28 @@ Tensorflow源码目录结构
 			###### tensorflow下各个模块间进行数据传输的数据结构定义，通过proto进行配置实现。
 		- ##### public/
 		
-			###### 删除、更新一些接口的声明。tensorflow对外api的定义和实现。
+			###### 定义　Session
 		- ##### user_ops/ 
 		
-			###### 用户可进行编写自己的op并添加到该目录。
+			###### 存放自己编写的 op
 		- ##### util/ 
 		
 			###### 一些公用的调用方法。同　lib/
-		- 其他　文件夹/
-		- 其他　文档
+		- 其他 文件夹/
+		- 其他 文档
 
 	+ #### examples/
 	
-		###### 下有andord系统的一个示例
+		###### 一些示例（如ios、android系统的示例）
 	+ #### g3doc/
 	
 		###### 是针对c++、python的版本的代码文档	
 	+ #### python/ 
 	
-		###### 前台Python接口部分。该目录下存放了tensorflow使用python编写的相关代码，是和”core“目录对应的python实现目录。该部分代码主要是使用python封装了相关的机器学习算法，但最终的计算操作是通过调用目录core 中的C++逻辑实现的。这样做的好处是利用了python较方便的编程特性和C++较高效的执行效率。
+		###### 前台Python接口。 该目录下存放了tensorflow使用python编写的相关代码，是和 **core/** 对应的python实现目录。使用python封装了　** 对　core/ 中实现的相关的机器学习算法　的调用** 。 同时利用了python方便的编程特性和C++高效的执行效率。
 		- ##### framework/
 		
-			###### 包含图的python抽象等，其中很多被序列化为proto或被传递到　swigged session　调用
+			###### 包含　图的python抽象　等，其中很多被序列化为　proto　或被传递到　swigged session　调用
 		- ##### kernel_tests/
 		
 			###### 单元测试代码和示例代码
@@ -82,23 +82,23 @@ Tensorflow源码目录结构
 			###### 和上面C++部分的platform（core/platform/）差不多, 对python I/O、单元测试等做了轻量级的包装。
 	+ #### stream_executor/
 	
-		###### 流处理，看里面还有dnn之类，具体详细待定	
+		###### 流处理	
 	+ #### tensorboard/ 
 	
-		###### 是tensorflow中非常有特色的一个模块，该模块可以用于生成模型训练中实时生成图表，用于监控模型的训练程度	
+		###### tensorflow独家模块。用于模型训练中实时生成图表，以监控模型的训练程度	
 	+ #### tools/ 
 	
-		###### 一些工具杂项，pip	
+		###### 一些工具杂项（如pip、git）
 	+ #### user_ops/
 	
-		###### 用户可进行编写自己的op并添加到该目录
+		###### 存放自己编写的 op
 		
 - ### third_party/
 - ### tools/
 - ### util/
 - ### configure文档
 
-	###### 该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作。（注 需要先安装bazel）
+	###### 该文件用于配置tensorflow的安装环境，运行该文件并完成tensorflow的安装环境配置后，输入相应bazel指令即可完成代码的编译工作（需要先安装bazel）
 	
 - ### 其他文档
 
@@ -106,7 +106,7 @@ Tensorflow源码目录结构
 <br>
 
 #### Supplement:
-很多博客中提到的 **models/**（位于根目录下，该目录下存放这多个使用python实现的模型实例），我并没有看到。估计是最新版的Tensorflow源码取消了这个文件夹。
+很多博客中提到的 *models/*（位于根目录下，该目录下存放这多个使用python实现的模型实例），我并没有看到。估计是最新版的Tensorflow源码取消了这个文件夹。
 
 #### Reference:
 [google讨论小组](https://groups.google.com/a/tensorflow.org/forum/#!topic/discuss/39guS9VV0Yg)、[Tensorflow快速入门3–代码结构及模型例子](http://www.infocool.net/kb/OtherCloud/201701/278480.html)
@@ -141,6 +141,8 @@ TensorFlow 用图来表示计算任务，图中的节点被称之为operation，
 
 个人理解
 ---
+
+TensorFlow是一个库，用于计算数据流图。
 
 Session 与硬件设备相关联，而 Graph　只是画了一张虚拟的操作图。所以 Graph 只有放在　Session 中才能实际跑起来。Op　是代表　操作　的　节点　，一堆　Op 和它们之间的　关联　构成　Graph ， tensor 们在这张 Graph 上的那些孔（Op）里穿来穿去。
 
