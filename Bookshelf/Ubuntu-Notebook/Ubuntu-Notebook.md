@@ -2407,3 +2407,34 @@ Segmentation fault (core dumped)
 
 ---
 
+Ubuntu下C++程序编辑、编译、运行
+---
+
+- 编辑
+	
+		gedit my_first.cpp
+		
+	my_first.cpp:
+	
+		#include<iostream>
+		using namespace std;
+		int main()
+		{
+		   cout<<"hello, Ubuntu !"<<endl;
+		   cout<<"hello, World！"<<endl;
+		   return 0;
+		}
+		
+- 编译
+
+		g++ my_first.cpp -o file_name
+
+ 
+- 运行
+
+     		./file_name
+
+---
+
+---
+
