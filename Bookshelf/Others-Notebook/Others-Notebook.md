@@ -420,11 +420,13 @@ Github上的一篇高star语法讲解：[README文件语法解读，即Github Fl
 	+ #### 类比	
 		- ##### VGA
 		
-			###### VGA端子（Video Graphics Array (VGA) connector）。　旧电脑自带的接显示器的端口就是VGA。　其他的名称包括RGB端子，D-sub 15，或mini D15，是一种3排共15针的DE-15。VGA端子通常在电脑的显示卡、显示器及其他设备。是用作发送模拟信号。
+			###### VGA端子（Video Graphics Array (VGA) connector）。　旧电脑自带的接显示器的端口就是VGA。　
+			其他的名称包括RGB端子，D-sub 15，或mini D15，是一种3排共15针的DE-15。VGA端子通常在电脑的显示卡、显示器及其他设备。是用作发送模拟信号。
 	+ #### 数字	
 		- ##### DVI
 		
-			###### DVI端子（Digital Visual Interface），中文称为“数字视频接口”。　装上GPU后，要连接上DVI线，才能从显卡中读取显示。 是一种视频接口标准，设计的目的是用来传输未经压缩的数字化视频。目前广泛应用于LCD、数字投影机等显示设备上。DVI接口可以发送未压缩的数字视频数据到显示设备。
+			###### DVI端子（Digital Visual Interface），中文称为“数字视频接口”。　装上GPU后，要连接上DVI线，才能从显卡中读取显示。　我实验室显示器接的就是　（DVI-D　single link） 。　
+			DVI是一种视频接口标准，设计的目的是用来传输未经压缩的数字化视频。目前广泛应用于LCD、数字投影机等显示设备上。DVI接口可以发送未压缩的数字视频数据到显示设备。
 
 - ### 影音端子	
 	+ #### 类比	
