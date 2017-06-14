@@ -2414,7 +2414,7 @@ Ubuntu下C++程序编辑、编译、运行
 	
 		gedit my_first.cpp
 		
-	my_first.cpp:
+	##### 写入　my_first.cpp:
 	
 		#include<iostream>
 		using namespace std;
@@ -2432,7 +2432,7 @@ Ubuntu下C++程序编辑、编译、运行
  
 - 运行
 
-     		./file_name
+		./file_name
 
 ---
 
