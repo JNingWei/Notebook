@@ -2391,16 +2391,17 @@ Segmentation fault (core dumped)
 可以查看core file大小的配置情况，如果为0，则表示系统关闭了dump core。
 
 解决方法:
-	- 对当前进程有效：
 
-			ulimit -c unlimited
-	- 永久有效：
-	
-			sudo gedit ~/.bashrc　
+- 对当前进程有效：
 			
-		添上 **ulimit -c unlimited **
+		ulimit -c unlimited
+- 永久有效：
+	
+		sudo gedit ~/.bashrc　
+			
+	添上 **ulimit -c unlimited **
 
-			source ~/.bashrc　
+		source ~/.bashrc　
 
 ---
 
