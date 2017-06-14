@@ -10,17 +10,6 @@
 
 ---
 
-Pycharm使用
----
-
-[pycharm快捷键、常用设置、配置管理](http://blog.csdn.net/pipisorry/article/details/39909057)
-
-ctrl + Click：自动跳转
-
----
-
----
-
 表情符号
 ---
 
@@ -46,7 +35,6 @@ ctrl + Click：自动跳转
 
 ---
 
-
 ProcessOn
 ---
 
@@ -57,7 +45,6 @@ ProcessOn
 ---
 
 ---
-
 
 Google Search Tip
 ---
@@ -75,22 +62,6 @@ Google Search Tip
 限定新闻来源	source      
 限定新闻来源国	location    
 限定图片尺寸	imagesize   
-
-----------
-
-----------
-
-中文编码
-----
-
-首行添加
-
-	# -*- coding: utf-8 -*-
-
-or
-
-	#!/usr/bin/env python
-	# -*- coding: utf-8 -*-
 
 ---
 
@@ -432,7 +403,6 @@ Github上的一篇高star语法讲解：[README文件语法解读，即Github Fl
 3. 下载要添加到浏览器中的[SwitchyOmega](https://github.com/FelisCatus/SwitchyOmega/releases)插件。
 4. 在浏览器中，根据[具体步骤](https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList)来安装SwitchyOmega插件。
 5. 完成
-
 
 ---
 
