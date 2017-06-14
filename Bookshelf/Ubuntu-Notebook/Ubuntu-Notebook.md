@@ -1,9 +1,7 @@
 前言
 ---
 
-以下是我个人在Ubuntu下日常学习和开发的经验总结。内容不一定都是和Linux操作有关。后面再整理时我会把无关的部分再剥离出来。
-
-在熟悉　Ubuntu 后会考虑换成其他Linux系统，以从多角度理解Linux。
+在熟悉　Ubuntu 后，我会考虑换成其他Linux系统，以从多角度理解Linux。
 
 ---
 
@@ -2375,3 +2373,6 @@ When attempt to download **.ipynb** file as **.python** file:
 ---
 
 ---
+
+
+
