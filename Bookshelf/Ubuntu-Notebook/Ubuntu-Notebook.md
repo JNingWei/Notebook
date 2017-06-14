@@ -2374,5 +2374,37 @@ When attempt to download **.ipynb** file as **.python** file:
 
 ---
 
+Segmentation fault (core dumped)
+---
+
+配置操作系统使其产生core文件
+
+若发生了段错误，但没有core dump，是由于系统禁止core文件的生成。
+
+首先通过 ulimit命令 查看一下系统是否配置支持了 dump core 的功能。通过
+
+	ulimit -c
+或
+
+	ulimit -a
+
+可以查看core file大小的配置情况，如果为0，则表示系统关闭了dump core。
+
+解决方法:
+	- 对当前进程有效：
+
+			ulimit -c unlimited
+	- 永久有效：
+	
+			sudo gedit ~/.bashrc　
+			
+		添上 **ulimit -c unlimited **
+
+			source ~/.bashrc　
+
+---
+
+---
+
 
 
