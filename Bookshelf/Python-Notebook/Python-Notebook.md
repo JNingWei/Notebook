@@ -24,6 +24,33 @@ Python开发者手册
 
 ---
 
+Pycharm
+---
+
+[pycharm快捷键、常用设置、配置管理](http://blog.csdn.net/pipisorry/article/details/39909057)
+
+ctrl + Click：自动跳转
+
+---
+
+---
+
+中文编码
+---
+
+首行添加
+
+	# -*- coding: utf-8 -*-
+
+or
+
+	#!/usr/bin/env python
+	# -*- coding: utf-8 -*-
+
+---
+
+---
+
 PyUnit
 ---
 
