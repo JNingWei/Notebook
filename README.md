@@ -1,4 +1,4 @@
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
 <font color=##40E0D0 size=10 face="楷书">书 &emsp; 架</font>
 ---
 
@@ -6,9 +6,9 @@
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp; 
 [<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/Python_pic/Python_0.jpg" width="100" height="80" alt="Python"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Python-Notebook/Python-Notebook.md)
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
-[<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/Other_pic/Other_3.png" width="100" height="80" alt="Other"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Notebook.md)
-&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
 [<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/ComputerVision_pic/ComputerVision_1.jpg" width="100" height="80" alt="ComputerVision"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/ComputerVision-Notebook/ComputerVision-Notebook.md)
+&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;
+[<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/Other_pic/Other_3.png" width="100" height="80" alt="Other"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Notebook.md)
 <br>
 <br>
 [<img src="https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Others-Notebook/Others-Box/Pic/Logo_pic/Caffe_pic/Caffe_3.png" width="100" height="80" alt="Caffe"/>](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/Caffe-Notebook/Caffe-Notebook.md) 
