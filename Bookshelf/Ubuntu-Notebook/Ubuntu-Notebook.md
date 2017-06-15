@@ -2407,34 +2407,44 @@ Segmentation fault (core dumped)
 
 ---
 
-Ubuntu下C++程序编辑、编译、运行
+C++编译
 ---
 
-- 编辑
-	
-		gedit my_first.cpp
+
 		
-	##### 写入　my_first.cpp:
-	
-		#include<iostream>
-		using namespace std;
-		int main()
-		{
-		   cout<<"hello, Ubuntu !"<<endl;
-		   cout<<"hello, World！"<<endl;
-		   return 0;
-		}
 		
-- 编译
-
-		g++ my_first.cpp -o file_name
-
- 
-- 运行
-
-		./file_name
+###### Reference: [Compiling Cpp](http://wiki.ubuntu.org.cn/Compiling_Cpp#.E5.88.9B.E5.BB.BA.E9.9D.99.E6.80.81.E5.BA.93)
 
 ---
 
 ---
+
+
+C编译
+---
+
+
+		
+		
+###### Reference: [Compiling C](http://wiki.ubuntu.org.cn/Compiling_C)
+
+---
+
+---
+
+
+Makefile
+---
+
+
+		
+		
+###### Reference: [跟我一起写Makefile
+](http://wiki.ubuntu.org.cn/%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99Makefile)
+
+---
+
+---
+
+
 
