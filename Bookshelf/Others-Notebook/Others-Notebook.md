@@ -469,6 +469,44 @@ Github上的一篇高star语法讲解：[README文件语法解读，即Github Fl
 
 ---
 
+C++编译
+---
+
+
+		
+		
+###### Reference: [Compiling Cpp](http://wiki.ubuntu.org.cn/Compiling_Cpp#.E5.88.9B.E5.BB.BA.E9.9D.99.E6.80.81.E5.BA.93)、[gcc和g++到底啥关系？](https://www.zhihu.com/question/20940822)
+
+---
+
+---
+
+
+C编译
+---
+
+
+		
+		
+###### Reference: [Compiling C](http://wiki.ubuntu.org.cn/Compiling_C)
+
+---
+
+---
+
+
+Makefile
+---
+
+
+		
+		
+###### Reference: [跟我一起写Makefile](http://wiki.ubuntu.org.cn/%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99Makefile)
+
+---
+
+---
+
 
 
 
