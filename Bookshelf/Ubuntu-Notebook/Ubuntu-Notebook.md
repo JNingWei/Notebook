@@ -2407,44 +2407,5 @@ Segmentation fault (core dumped)
 
 ---
 
-C++编译
----
-
-
-		
-		
-###### Reference: [Compiling Cpp](http://wiki.ubuntu.org.cn/Compiling_Cpp#.E5.88.9B.E5.BB.BA.E9.9D.99.E6.80.81.E5.BA.93)
-
----
-
----
-
-
-C编译
----
-
-
-		
-		
-###### Reference: [Compiling C](http://wiki.ubuntu.org.cn/Compiling_C)
-
----
-
----
-
-
-Makefile
----
-
-
-		
-		
-###### Reference: [跟我一起写Makefile
-](http://wiki.ubuntu.org.cn/%E8%B7%9F%E6%88%91%E4%B8%80%E8%B5%B7%E5%86%99Makefile)
-
----
-
----
-
 
 
