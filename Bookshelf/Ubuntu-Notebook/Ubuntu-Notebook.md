@@ -137,24 +137,6 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 
 ---
 
-gcc降级
----
-
-	sudo apt-get install -y gcc-4.7
-	sudo apt-get install -y g++-4.7
-	cd /usr/bin
-	sudo rm gcc
-	sudo ln -s gcc-4.7 gcc
-	sudo rm g++
-	sudo ln -s g++-4.7 g++
-	ls –al gcc g++
-	gcc --version
-	g++ --version
-
----
-
----
-
 安装ATLAS
 ---
 
