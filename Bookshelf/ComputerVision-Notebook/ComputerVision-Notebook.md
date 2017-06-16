@@ -95,7 +95,7 @@
 
 [相机标定(Camera calibration)](http://blog.csdn.net/honyniu/article/details/51004397)
 
-[]()
+[双眼可以测距和建立立体环境，双摄像头可以吗？](https://www.zhihu.com/question/23418797)
 
 ---
 
