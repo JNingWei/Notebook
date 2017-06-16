@@ -95,8 +95,6 @@
 
 [相机标定(Camera calibration)](http://blog.csdn.net/honyniu/article/details/51004397)
 
-[内参、外参、畸变参数三种参数与相机的标定方法与相机坐标系的理解](http://blog.csdn.net/yangdashi888/article/details/51356385)
-
 []()
 
 ---
