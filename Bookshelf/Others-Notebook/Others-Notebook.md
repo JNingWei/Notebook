@@ -49,19 +49,21 @@ ProcessOn
 Google Search Tip
 ---
 
-限定搜索	+           
-限定过滤	-           
-同义词	~           
-通配符	*           
-精确搜索	""          
-或	|           
-数字范围	..          
-官方定义	define      
-限定文件类型	filetype    
-限定网站	site        
-限定新闻来源	source      
-限定新闻来源国	location    
-限定图片尺寸	imagesize   
+ | 附加条件 | 符号 |
+ | :---: | :---: | 
+ | 限定搜索 | + |          
+ | 限定过滤 | -  |   
+ | 同义词	| ~ |       
+ | 通配符 | * |          
+ | 精确搜索	 | "" |         
+ | 或 | |  |        
+ | 数字范围 | ..  |       
+ | 官方定义	| define |      
+ | 限定文件类型 | filetype |   
+ | 限定网站 | site |    
+ | 限定新闻来源 | source |     
+ | 限定新闻来源国 | location |  
+ | 限定图片尺寸 | imagesize |  
 
 ---
 
