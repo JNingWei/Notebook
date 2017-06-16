@@ -264,7 +264,7 @@ Ctrl键组合
 ---
 
 
- | Ctrl + | Annotation |  | Ctrl + | Annotation |  | Ctrl + | Annotation |  | Ctrl + | Annotation |
+ | Ctrl + | Annotation |  | Ctrl + | Annotation |  | Ctrl + | Annotation |
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
  | A | 全选 | | B | 粗体 | | C | 复制 |
  | D | 添加到收藏夹 | | F | 查找 | | H | 历史记录 | | J | 下载管理 | 
