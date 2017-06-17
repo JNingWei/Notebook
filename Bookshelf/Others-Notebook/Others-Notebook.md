@@ -573,16 +573,16 @@ Makefile
 
 ---
 
-Intel架构
+架构
 ---
 
-- CPU
+- Intel: CPU
 	+ 64位
 		- x64
 		- x86_64
 	+ 32位
 		- x86
-- AMD
+- AMD: AMD
 	+ 64位
 	+ 32位
 	
