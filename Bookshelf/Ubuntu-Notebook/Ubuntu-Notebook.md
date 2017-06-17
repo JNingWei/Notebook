@@ -895,17 +895,28 @@ find
 截屏
 --
 
-scrot
+- scrot
+	#### 感觉挺简陋的 
+	+ #### 安装：
+	
+		sudo apt-get install scrot
+		
+	+ #### 抓屏：	
+	
+		scrot -s a.png
 
-	sudo apt-get install scrot
-	scrot -s rectangle.png
-    
-或者是：
+- shutter
 
-shutter
+	#### 无比强大的 shutter (￣︶￣)> ，感觉啥都能干
+	+ #### 安装：
 
-	sudo add-apt-repository ppa:shutter/ppa
-	sudo apt-get update && sudo apt-get install shutter
+		sudo add-apt-repository ppa:shutter/ppa
+		
+		sudo apt-get update && sudo apt-get install shutter
+		
+	+ #### 抓屏：		
+	
+		##### 打开工具就能选择自己要用的截屏方式了
 
 ---
 
