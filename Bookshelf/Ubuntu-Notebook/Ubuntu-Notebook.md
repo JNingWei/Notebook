@@ -892,11 +892,20 @@ find
 
 ----------
 
-抓屏
+截屏
 --
 
-    sudo apt-get install scrot
-    scrot -s rectangle.png
+scrot
+
+	sudo apt-get install scrot
+	scrot -s rectangle.png
+    
+或者是：
+
+shutter
+
+	sudo add-apt-repository ppa:shutter/ppa
+	sudo apt-get update && sudo apt-get install shutter
 
 ---
 
