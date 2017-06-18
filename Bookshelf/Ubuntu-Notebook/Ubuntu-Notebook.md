@@ -19,9 +19,18 @@
 更改源
 ---
 
-> Software&Updates
+### 修改官方软件源：
 
- 里把 源 改了，把 Other Software 改了，
+System Settings --> Software & Updates --> Ubuntu Software --> Download from --> Other.. --> China --> Select Best Sever
+
+系统会帮你选择最佳的源。
+
+### 修改第三方软件源：
+
+System Settings --> Software & Updates --> Other Software
+
+把所有以ppa打头的源地址去掉。
+
 随后
 
     sudo apt-get update
