@@ -16,17 +16,6 @@
 
 ---
 
-GPU下,刷正版Ubuntu系统
----
-
-**BIOS Surface** --> **XXXX** --> **Security Boot menu** --> **Other OS**
-
-to prevent the Security Problem about Third-party Software in Installing CUDA.
-
----
-
----
-
 更改源
 ---
 
@@ -107,6 +96,12 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 	cd /usr/local/cuda/samples/bin/x86_64/linux/release
 	./deviceQuery
 
+若是主机安装了英伟达的GPU，则在刷正版Ubuntu系统的过程中，记得修改配置：
+
+**BIOS Surface** --> **XXXX** --> **Security Boot menu** --> **Other OS**
+
+防止在装 CUDA时出现 “因第三方插件而引起的安全问题”。
+
 ---
 
 ---
@@ -156,9 +151,9 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 在桌面左上角的 dash 直接打开
 
 
-----------
+---
 
-----------
+---
 
 
 输入密码后又返回登录界面
