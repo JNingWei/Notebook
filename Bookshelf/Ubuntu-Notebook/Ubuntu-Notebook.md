@@ -111,6 +111,11 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 
 防止在装 CUDA时出现 “因第三方插件而引起的安全问题”。
 
+ | Problem | Solution
+ --- | --- | ---
+ 0 | 装完 Cuda 重启时，输入密码后又返回登录界面 | 装 Cuda 时，如果遇到 shell 执行过程中跳出一个 **粉红色的选择框**（关于Security的选择）
+这时候要选择 **No**。因为，**nvidia显卡的驱动** 对于 **Ubuntu** 来说就是 **第三方软件**， **Security** 会导致第三方软件不能正常安装。
+
 ---
 
 ---
@@ -159,14 +164,12 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 
 在桌面左上角的 dash 直接打开
 
-
 ---
 
 ---
-
 
 输入密码后又返回登录界面
-------------
+---
 
 ### [方法一](http://ubuntukylin.com/ukylin/forum.php?mod=viewthread&tid=23362)：
 
@@ -229,28 +232,9 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 
     sudo reboot
 
-
-----------
-
-----------
-
-
-装完 Cuda 重启时，输入密码后又返回登录界面
 ---
 
-装 Cuda 时，如果遇到 shell 执行过程中跳出一个 **粉红色的选择框**（关于Security的选择）
-这时候要选择 
-
-> No
-
- 因为 **Security** 会导致第三方软件不能正常安装
- **nvidia显卡的驱动** 对于 **Ubuntu** 来说就是 **第三方软件**
-
-
-----------
-
-
-----------
+---
 
 关机重启
 ----
@@ -263,12 +247,9 @@ ubuntu下某些程序需要自己定义LD_LIBRARY_PATH，修改下面文件的�
 
     sudo shutdown -r now
 
+---
 
-----------
-
-
-----------
-
+---
 
 安装teamviewer 远程桌面
 ---
@@ -333,13 +314,14 @@ try installing  **.deb** file with:
 
     sudo dpkg -i teamviewer_linux_x64.deb
 
+
 If nothing works, and only if nothing works, you can force installation, but you will most probably BREAK APT:
 
     sudo dpkg --force-depends -i teamviewer_linux_x64.deb
 
-----------
+---
 
-----------
+---
 
 因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系
 ---
@@ -355,12 +337,9 @@ If nothing works, and only if nothing works, you can force installation, but you
 
     sudo aptitude install  ...
 
+---
 
-----------
-
-
-----------
-
+---
 
 sudo apt-get update 如果出现问题
 ---
@@ -405,12 +384,9 @@ sudo apt-get update 如果出现问题
 
     sudo sed -i -e 's/deb http/deb [arch=amd64] http/' "/opt/google/chrome/cron/google-chrome"
 
+---
 
-----------
-
-
-----------
-
+---
 
 apt-get 安装 出现依赖问题
 ----
@@ -444,55 +420,15 @@ apt-get 安装 出现依赖问题
 
 更换源
 
-> Power
->  --> System Settings 
->  --> Software&Updates 
->  --> Other Software 
->  --> add :
-
-添加内容：
-
--
-
->    Binary
->    file:///var/cuda-repo-8-0-local
->    /
->    放空
->    放空
-
-    
--
-
->    Binary
->    http://archive.ubuntukylin.com:10006/ubuntukylin
->    trusty
->    main
->    放空
-
--
-
->    Binary
->    http://dl.google.com/linux/chrome/deb/
->    stable
->    main
->    放空
-
--
-
     sudo apt-get update
 
 删除 */var/lib/apt/lists* 下的所有文件
 
 如果还是解决不了问题，[另寻办法](http://blog.csdn.net/supercooly/article/details/50976358)
 
+---
 
-----------
-
-
-----------
-
-
-
+---
 
 安装Gnome桌面
 ----
@@ -504,9 +440,7 @@ apt-get 安装 出现依赖问题
 
 ---
 
-
 ---
-
 
 虚拟机安装改动
 ---
@@ -582,9 +516,9 @@ sudo mount -t smbfs -o username=The_username,password=The_password  Shared_direc
 
 查资料后，说先去掉　password　项，后面会重新让你输入的。然后就有权限挂载该共享目录了。
 
------
+---
 
------
+---
 
 虚拟机操作
 ---
@@ -607,11 +541,9 @@ Super+F
 
 > manage=True
 
+---
 
-----
-
-
-----
+---
 
 网卡设置
 ---
@@ -661,11 +593,9 @@ ubuntu 网卡设置,ip,mask,gateway,dns
 
     sudo /etc/init.d/network-manager restart
 
-
 ---
 
 ---
-
 
 修改开机启动脚本
 ---
@@ -685,20 +615,22 @@ ubuntu 网卡设置,ip,mask,gateway,dns
 
 ---
 
-必备软件
+Ubuntu必备软件
 ---
 
     sudo apt-get install unrar
+    
     sudo apt-get install pure-ftpd
 
     sudo nautilus
+    
     sudo apt-get install nautilus-open-terminal
 
     sudo service network-manager start
 
     sudo apt-get install mysql-server mysql-client libmysqlclient-dev
 
-	sudo apt-get install openssh-server
+    sudo apt-get install openssh-server
 
 ---
 
@@ -776,26 +708,32 @@ or
     pip install --upgrade distribute
 
 ##### Problem_2
-pip can't work normally
+
+pip不能正常工作
+
 ##### Solution_2
 
     sudo apt-get install python python-dev libatlas-base-dev gcc gfortran g++
-or
-use **chown** & **chmod** to change the **authority** of python2.7
+
+或者
+
+使用 **chown** & **chmod** 来修改Python的 **authority** 
 
 ##### Problem_3
-when
+
+如果
 
 > sudo apt-get python-pip
 
-can't work
+不能正常工作
+
 ##### Solution_3
-try
+
+试一下：
 
     sudo aptitude install python-pip
 
-choices met when install **python-pip** through **aptitude**
-follow below when meet choices
+遇到选项时按以下顺序选择：
 
 > n --> y --> y
 
