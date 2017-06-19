@@ -44,7 +44,12 @@
 
 | | | | | | | | |
 | :--- | :--- | :--- | :--- | :--- | :--- | :--- | :--- |
-| [更改源](http://www.jianshu.com/users/e762b52741c7/timeline) | []() | []() | []() | []() | []() | []() | []() |
+| [更改源](http://www.jianshu.com/p/34af9781574a) | [右键添加"Open in Terminal"选项](http://www.jianshu.com/p/b8c458649d55) | [cuda安装与可能遇到的问题](http://www.jianshu.com/p/f71bbf2ecde3) | [Cudnn安装与可能遇到的问题
+](http://www.jianshu.com/p/aa10f356a3af) | [安装 Y PPA Manager
+](http://www.jianshu.com/p/b930746b6080) | [Ubuntu输入密码后重返登录界面
+](http://www.jianshu.com/p/1bfbec5aea12) | [安装teamviewer 远程桌面
+](http://www.jianshu.com/p/63d0d01747f6) | [sudo apt-get update 可能遇到的问题
+](http://www.jianshu.com/p/a5228238a4b2) |
 | []() | []() | []() | []() | []() | []() | []() | []() |
 | []() | []() | []() | []() | []() | []() | []() | []() |
 | []() | []() | []() | []() | []() | []() | []() | []() |
