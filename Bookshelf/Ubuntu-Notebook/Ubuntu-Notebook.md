@@ -796,7 +796,7 @@ conda
 
 ---
 
-chomd
+chomd指令
 -----
 修改权限
 
@@ -807,7 +807,7 @@ chomd
 
 ---
 
-chown
+chown指令
 ---
 
 修改群组和用户
@@ -818,21 +818,18 @@ chown
 
     sudo chgrp group_name file
 
-----------
+---
 
+---
 
-----------
-
-find
+find指令
 ----
 
     find / -name "*" -print
 
+---
 
-----------
-
-
-----------
+---
 
 截屏
 --
@@ -892,7 +889,7 @@ PPA is for Ubuntu >= 14.04.
 
 ----
 
-compress & uncompress
+压缩与解压
 ----
 
 ### .sh
@@ -1044,24 +1041,21 @@ or
 
 > extract here
 
+---
 
-----------
-
-----------
-
+---
 
 查看IP
 ----
 
     ifconfig
 
+----
 
-----------
+----
 
-----------
-
-apt-get
--------
+apt-get指令
+---
 
 apt-cache search package    #搜索包（相当于yum list | grep pkg）
 apt-cache show package      #显示包的相关信息，如说明、大小、版本等
@@ -1087,14 +1081,12 @@ apt-file search filename  #查找filename属于哪个软件包
 apt-file list packagename #列出软件包的内容
 apt-file update           #更新apt-file的数据库
 
+---
 
-----------
+---
 
-
-----------
-
-aptitude
---------
+aptitude指令
+---
 
 aptitude update   #更新可用的包列表 
 aptitude upgrade  #升级可用的包 
@@ -1114,15 +1106,12 @@ apt-get的优势： source（aptitude无此功能）， build-dep（低版本的
 apt-get与aptitude一样的地方：update， upgrade (apt-get upgrade=aptitude safe-upgrade， apt-get dist-upgrade=aptitude full-upgrgade)
 此外，如果要搜索网络上的bzip2软件包，用apt-cache search bzip2，会搜索出很多杂乱的东西，而aptitude search bzip2结果则精确的多。因为apt-cache根据全文匹配（包含描述等），而aptitude是根据文件名来匹配。
 
+---
 
-----------
-
-
-----------
-
+---
 
 笔记本UBUNTU系统连不上WIFI
-----
+---
 
 [针对(Qualcomm Atheros Device)型号的无线网卡的解决方案](http://www.linuxdiyf.com/linux/26162.html)
 我的无线网卡型号：  Atheros Wirelss 0042
@@ -1173,13 +1162,11 @@ apt-get与aptitude一样的地方：update， upgrade (apt-get upgrade=aptitude 
     sudo cp -r ath10k-firmware/QCA9377 /lib/firmware/ath10k/  
     sudo cp /lib/firmware/ath10k/QCA9377/hw1.0/firmware-5.bin_WLAN.TF.1.0-00267-1 /lib/firmware/ath10k/QCA9377/hw1.0/firmware-5.bin  
 
-
 重启
 
-----------
+---
 
-----------
-
+---
 
 linux查看网卡型号、驱动版本、队列数
 ---
@@ -1222,23 +1209,20 @@ or
 
     ethtool -S eth0
 
+---
 
-----------
+---
 
-
-----------
-
-cat
+cat指令
 ---
 
 cat filename
 
-----------
+---
 
+---
 
-----------
-
-环境变量
+修改环境变量
 ----
 
 ### 暂时
@@ -1324,14 +1308,12 @@ source 该文件 :
 
 这样每次启动该用户，都会 **自动 source 一遍** /etc/profile
 
-----------
+---
 
-
-----------
-
+---
 
 Ubuntu 备份与恢复
-------------
+---
 
 [详细教程](https://gist.hub.com/bearpaw/c38ef18ec45ba6548ec0)
 
@@ -1380,24 +1362,20 @@ Ubuntu可以将系统备份为一个tar压缩文件，也能很方便地从该�
     sudo umount /mnt/dev
     sudo umount /mnt
 
+---
 
-----------
-
-
-----------
+---
 
 关闭进程
-----
+---
 
     ps
     to show them all. and type:
     kill -9 PID_of_process
 
+---
 
-----------
-
-
-----------
+---
 
 监视显存
 ----
@@ -1410,12 +1388,9 @@ Ubuntu可以将系统备份为一个tar压缩文件，也能很方便地从该�
 
     watch -n 10 nvidia-smi
 
+---
 
-----------
-
-
-----------
-
+---
 
 查看指令作用
 ------
@@ -1427,14 +1402,11 @@ for example
     $ whatis watch
     watch(1)        - execute a program periodically, showing output fullscreen
 
+---
 
-----------
+---
 
-
-----------
-
-
-唐诗宋词
+显示唐诗宋词
 ----
 
 唐诗宋词package
@@ -1451,7 +1423,7 @@ for example
 
 ---
 
-查看本机数据
+查看和修改本机数据
 ---
 
 ### 内核版本
@@ -1599,16 +1571,6 @@ synaptic 图形界面下载工具
 
 ---
 
-每次输入都会附带着删除后一格内容
----
-#### Problem
-键盘输入时，出现 “每次输入都会附带着删除后一格内容” 的问题
-#### Solution
-按键盘上 “Insert” 键
-
----
-
----
 
 protobuf
 ----
