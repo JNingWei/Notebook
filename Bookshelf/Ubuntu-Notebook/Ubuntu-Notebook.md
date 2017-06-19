@@ -796,8 +796,9 @@ conda
 
 ---
 
-chomd指令
------
+chmod指令
+---
+
 修改权限
 
     sudo chmod -R 777 ...
