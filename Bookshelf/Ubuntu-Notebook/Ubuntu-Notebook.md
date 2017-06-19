@@ -2111,7 +2111,7 @@ When attempt to download **.ipynb** file as **.python** file:
 
 ---
 
-搜狗拼音
+搜狗拼音设置
 ---
 
 ### 安装到最后发现装不上
@@ -2257,7 +2257,7 @@ When attempt to download **.ipynb** file as **.python** file:
 
 ---
 
-Segmentation fault (core dumped)
+分段错误
 ---
 
 配置操作系统使其产生core文件
