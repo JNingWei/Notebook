@@ -42,7 +42,7 @@
 
 #### Ubuntu:
 
-  | 
+ | | |
  :--- | :--- 
  [更改源](http://www.jianshu.com/p/34af9781574a) | [右键添加"Open in Terminal"选项](http://www.jianshu.com/p/b8c458649d55) 
  [cuda安装与可能遇到的问题](http://www.jianshu.com/p/f71bbf2ecde3) | [Cudnn安装与可能遇到的问题](http://www.jianshu.com/p/aa10f356a3af)
