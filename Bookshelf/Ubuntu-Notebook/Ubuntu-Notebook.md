@@ -1102,7 +1102,7 @@ apt-get与aptitude一样的地方：update， upgrade (apt-get upgrade=aptitude 
 
 ---
 
-笔记本UBUNTU系统连不上WIFI
+笔记本Ubuntu系统连不上wifi
 ---
 
 [针对(Qualcomm Atheros Device)型号的无线网卡的解决方案](http://www.linuxdiyf.com/linux/26162.html)
