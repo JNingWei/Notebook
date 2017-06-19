@@ -52,10 +52,10 @@
  [因为您要求某些软件包保持现状，就是它们破坏了软件包间的依赖关系](http://www.jianshu.com/p/180ab8c9f171) | | | [apt-get install 遇到依赖问题](http://www.jianshu.com/p/461c34506a4c) 
  [安装Gnome桌面](http://www.jianshu.com/p/9b01f1ae24b0) | | | [开机自动挂载磁盘](http://www.jianshu.com/p/3f5954d5388e) 
  [局域网上的共享目录](http://www.jianshu.com/p/8b1cade2b3c7) | | | [虚拟机操作](http://www.jianshu.com/p/ec5694048aa0) 
- []() | | | []() 
- []() | | | []() 
- []() | | | []() 
- []() | | | []() 
+ [Ubuntu下网卡设置](http://www.jianshu.com/p/1ece6ddcce38) | | | [修改开机启动脚本](http://www.jianshu.com/p/aa42279ac50f) 
+ [修改ip](http://www.jianshu.com/p/b2374ef5085d) | | | [Ubuntu必备软件](http://www.jianshu.com/p/2a843b6fc093) 
+ [Cannot remove entries from nonexistent file /usr/local/bin/anaconda2/lib/python2.7/site-packages/eas](http://www.jianshu.com/p/f89acba5cc6b) | | | [pip相关操作与可能遇到的问题](http://www.jianshu.com/p/fc0d1ca49eeb) 
+ [conda相关操作与可能遇到的问题](http://www.jianshu.com/p/1e321208db4a) | | | []() 
  []() | | | []() 
 
 ---
