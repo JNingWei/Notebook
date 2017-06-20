@@ -46,7 +46,7 @@ ProcessOn
 
 ---
 
-Google Search Tip
+Google检索技巧
 ---
 
  | 搜索指定 | 符号 |
@@ -69,7 +69,7 @@ Google Search Tip
 
 ---
 
-git
+git操作
 ---
 
 ### git规范
@@ -263,7 +263,6 @@ Git远程仓库管理：
 Ctrl键组合
 ---
 
-
  | Ctrl + | Annotation |  | Ctrl + | Annotation |  | Ctrl + | Annotation |
  | :---: | :---: | :---: | :---: | :---: | :---: | :---: | :---: | 
  | A | 全选 | | B | 粗体 | | C | 复制 |
@@ -278,7 +277,7 @@ Ctrl键组合
 
 ---
 
-Markdown
+Markdown操作
 ---
 
 最开始是因为看到网上的教程写得很简洁漂亮，所以学的Markdown。个人感觉Markdown是一种学会了就回不去的语法，特别方便简洁。
@@ -573,7 +572,7 @@ Makefile
 
 ---
 
-架构
+处理器架构
 ---
 
 - Intel: CPU
