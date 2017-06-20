@@ -71,7 +71,7 @@
  [Jupyter](http://www.jianshu.com/p/e862c9f19c1a) | | | [修改目录下所有图片的尺寸](http://www.jianshu.com/p/d0c43196b3bf) 
  [生成目录下所有图片的路径](http://www.jianshu.com/p/d11a9f1d4e43) | | | [搜狗拼音设置](http://www.jianshu.com/p/9aa4a10561a4) 
  [文件层次结构](http://www.jianshu.com/p/b4aada33b8fd) | | | [分段错误](http://www.jianshu.com/p/00e81baf0801) 
- []() | | | []() 
+ [查看网关及局域网中的所有设备IP地址](http://www.jianshu.com/p/519bdfd1c6dc) | | | []() 
  
 ---
 
@@ -90,12 +90,11 @@
 
 ---
 
-#### 硬件:
+#### Caffe:
 
  | | | | |
  :--- | --- | --- | :--- 
- [组装电脑（从零部件到整机）](http://www.jianshu.com/p/9873a589064a) | | | []() 
- []() | | | []() 
+ [Ubuntu 安装与测试 Caffe，及可能遇到的问题](http://www.jianshu.com/p/1de5f5809f2c) | | | []() 
  []() | | | []() 
  []() | | | []() 
  []() | | | []() 
@@ -105,6 +104,34 @@
 
 ---
 
+#### 硬件:
+
+ | | | | |
+ :--- | --- | --- | :--- 
+ [组装电脑（从零部件到整机）](http://www.jianshu.com/p/9873a589064a) | | | [主机降噪](http://www.jianshu.com/p/ee8831ea348f) 
+ [处理器架构](http://www.jianshu.com/p/2ad6130bc9f3) | | | []() 
+ []() | | | []() 
+ []() | | | []() 
+ []() | | | []() 
+ []() | | | []() 
+ []() | | | []() 
+ []() | | | []() 
+
+---
+
+#### Others:
+
+ | | | | |
+ :--- | --- | --- | :--- 
+ [文件后缀名](http://www.jianshu.com/p/6f71ab38b910) | | | [Google检索技巧](http://www.jianshu.com/p/1f3920ba86d2) 
+ [git操作](http://www.jianshu.com/p/d9c74eae2bab) | | | [Ctrl键组合](http://www.jianshu.com/p/84bc151b5362) 
+ [Markdown操作](http://www.jianshu.com/p/5ebaa0850e32) | | | [GFM操作](http://www.jianshu.com/p/76b52eff37f5) 
+ [查看Chrome浏览器保存的密码](http://www.jianshu.com/p/8a124eeeba26) | | | [搭建翻墙代理](http://www.jianshu.com/p/2571b321d439) 
+ [每次输入都会附带着删除后一格内容](http://www.jianshu.com/p/d208a53d1ca7) | | | [Adblock（过滤广告）沙盒](http://www.jianshu.com/p/595c232905a7) 
+ []() | | | []() 
+ []() | | | []() 
+
+---
 
 
 ---
