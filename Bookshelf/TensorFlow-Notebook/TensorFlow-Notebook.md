@@ -547,7 +547,8 @@ Args|Annotation
 ---
 
 ### 不能直接用print的原因：
-print只能打印输出shape的信息，而要打印输出tensor的值，需要借助class     tf.Session, class tf.InteractiveSession。
+
+print只能打印输出shape的信息，而要打印输出tensor的值，需要借助　class tf.Session, class tf.InteractiveSession。
 
 因为我们在建立graph的时候，只建立tensor的结构形状信息，并没有执行数据的操作。
 
@@ -731,7 +732,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
     - tf.to_int64
     - tf.cast
 
-  + #### tensor形状
+  + #### tensor形状op
     - tf.shape
     - tf.size
     - tf.rank
@@ -739,7 +740,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
     - tf.squeeze
     - tf.expand_dims
 　　　
-  + #### 切片和插入
+  + #### 切片和插入op
     - tf.slice
     - tf.split
     - tf.pad
@@ -776,7 +777,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.fill
 		- tf.constant
 
- 	+ #### 生成序列
+ 	+ #### 生成序列op
 		- tf.linspace
 		- tf.range
 
@@ -790,7 +791,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
 - ### 构建网络层:   [Ref](https://www.tensorflow.org/api_guides/python/contrib.layers)
 	
- 	+ #### 高级构建
+ 	+ #### 高级构建op
 
 		- tf.contrib.layers.avg_pool2d
 		- tf.contrib.layers.batch_norm
@@ -806,22 +807,22 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.stack
 		- tf.contrib.layers.unit_norm
 
-	+ #### 正则化
+	+ #### 正则化op
 	
 		Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
 		- tf.contrib.layers.l1_regularizer
 		- tf.contrib.layers.l2_regularizer
 
- 	+ #### 初始化
+ 	+ #### 初始化op
 	
 		Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
 
-	+ #### （权重）优化
+	+ #### （权重）优化op
   	
 		Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
 		- [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
 
- 	+ #### 总结
+ 	+ #### 总结op
 	
 		Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
 		- tf.contrib.layers.summarize_activation
@@ -835,12 +836,25 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 - ### 过程控制：　[Ref](https://www.tensorflow.org/api_guides/python/control_flow_ops)
 
 	+ #### 过程控制op:
-
+		- tf.identity
+		- tf.tuple
+		
 	+ #### 逻辑op:
+		- tf.logical_and
+		- tf.logical_not
+		- tf.logical_or
+		- tf.logical_xor
 
 	+ #### 对照op:
+		- tf.equal
+		- tf.not_equal
+		- tf.less
+		- tf.less_equal
+		- tf.greater
+		- tf.greater_equal
+		- tf.where
 
-	+ #### Debugging Operations:
+	+ #### 调试op:
 		- tf.is_finite
 		
 			Defined in [tensorflow/python/ops/gen_math_ops.py]()
@@ -852,20 +866,19 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
 - ### 构建graph：  [Ref](https://www.tensorflow.org/api_guides/python/framework)
-	建立Tensorflow图的类和函数
 
-	+ #### 核心graph数据结构
+	+ #### 核心graph数据结构op
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py)
 		- tf.Graph
 		- tf.Operation
 		- tf.Tensor
 		
-	+ #### tensor类型
+	+ #### tensor类型op
 		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py)
 		- tf.DType
 		- tf.as_dtype
 	
-	+ #### Utility函数
+	+ #### Utility函数op
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py)
 		- tf.device
 		- tf.container    
@@ -880,15 +893,15 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
 - ### 图像：  [Ref](https://www.tensorflow.org/api_guides/python/image)
 	
-	+ #### 图像调整
+	+ #### 图像调整op
 		- tf.image.resize_images
 
 - ### 输入和读取：
 
-	+ #### 占位符 
+	+ #### 占位符op
 		- tf.placeholder
 		- tf.placeholder_with_default
-	+ #### Readers
+	+ #### 读取op
 		- tf.ReaderBase
 		- tf.IdentityReader
 		- tf.TFRecordReader
@@ -897,16 +910,16 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.decode_csv　
 		- tf.decode_raw
 	
-	+ #### 队列
+	+ #### 队列op
 		- tf.QueueBase
 		- tf.FIFOQueue
 	
-	+ #### 文件处理
+	+ #### 文件处理op
 		- tf.matching_files
 		- tf.read_file
 		- tf.write_file
 	
-	+ #### 流水线输入
+	+ #### 流水线输入op
 		- tf.train.batch
 		- tf.train.maybe_batch
 		- tf.train.batch_join
@@ -1001,11 +1014,6 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 - ### 神经网络
 
 	+ #### 激活op
-
-		The activation ops provide different types of nonlinearities for use in neural networks. These include smooth nonlinearities (sigmoid, tanh, elu, softplus, and softsign), continuous but not everywhere differentiable functions (relu, relu6, crelu and relu_x), and random regularization (dropout).
-
-		All activation ops apply componentwise, and produce a tensor of the same shape as the input tensor.
-
 		- tf.nn.relu
 		- tf.nn.relu6
 		- tf.nn.crelu
@@ -1018,9 +1026,6 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.tanh
 
 	+ #### 卷积op
-
-		The convolution ops sweep a 2-D filter over a batch of images, applying the filter to each window of each image of the appropriate size. The different ops trade off between generic vs. specific filters:
-
 		- tf.nn.convolution
 		- tf.nn.conv2d
 		- tf.nn.depthwise_conv2d
@@ -1039,9 +1044,6 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.depthwise_conv2d_native_backprop_input
 
 	+ #### 池化op
-
-		The pooling ops sweep a rectangular window over the input tensor, computing a reduction operation for each window (average, max, or max with argmax). Each pooling op uses rectangular windows of size ksize separated by offset strides. For example, if strides is all ones every window is used, if strides is all twos every other window is used in each dimension, etc.
-
 		- tf.nn.avg_pool
 		- tf.nn.max_pool
 		- tf.nn.max_pool_with_argmax
@@ -1051,19 +1053,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.fractional_max_pool
 		- tf.nn.pool
 
-	+ #### Morphological filtering
-
-		Morphological operators are non-linear filters used in image processing.
-
-		- tf.nn.dilation2d
-		- tf.nn.erosion2d
-		- tf.nn.with_space_to_batch
-
-
-	+ #### 高斯op
-
-		Normalization is useful to prevent neurons from saturating when inputs may have varying scale, and to aid generalization.
-
+	+ #### 归一化op
 		- tf.nn.l2_normalize
 		- tf.nn.local_response_normalization
 		- tf.nn.sufficient_statistics
@@ -1074,17 +1064,11 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.batch_normalization
 		- tf.nn.batch_norm_with_global_normalization
 
-	+ #### 损失op
-
-		The loss ops measure error between two tensors, or between a tensor and zero. These can be used for measuring accuracy of a network in a regression task or for regularization purposes (weight decay).
-
+	+ #### 误差损失op
 		- tf.nn.l2_loss
 		- tf.nn.log_poisson_loss
 		
 	+ #### 分类op
-
-		TensorFlow provides several operations that help you perform classification.
-
 		- tf.nn.sigmoid_cross_entropy_with_logits
 		- tf.nn.softmax
 		- tf.nn.log_softmax
@@ -1092,64 +1076,20 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.sparse_softmax_cross_entropy_with_logits
 		- tf.nn.weighted_cross_entropy_with_logits
 
-	+ #### Embeddings
-
-		TensorFlow provides library support for looking up values in embedding tensors.
+	+ #### 查找嵌入tensor的value
 
 		- tf.nn.embedding_lookup
 		- tf.nn.embedding_lookup_sparse
 
-
-	+ #### 循环神经网络op
-
-		TensorFlow provides a number of methods for constructing Recurrent Neural Networks. Most accept an RNNCell-subclassed object (see the documentation for tf.contrib.rnn).
-
-		- tf.nn.dynamic_rnn
-		- tf.nn.bidirectional_dynamic_rnn
-		- tf.nn.raw_rnn
-
-	+ #### Connectionist Temporal Classification (CTC)
-
-		- tf.nn.ctc_loss
-		- tf.nn.ctc_greedy_decoder
-		- tf.nn.ctc_beam_search_decoder
-
-	+ #### Evaluation
-
-		The evaluation ops are useful for measuring the performance of a network. They are typically used at evaluation time.
-
-		- tf.nn.top_k
-		- tf.nn.in_top_k
-
-	+ #### Candidate Sampling
-
-		train a multiclass or multilabel model with thousands or millions of output classes (for example, a language model with a large vocabulary.
-
-		- tf.nn.nce_loss
+	+ #### 候选抽样op
 		- tf.nn.sampled_softmax_loss
 
-		- tf.nn.uniform_candidate_sampler
-		- tf.nn.log_uniform_candidate_sampler
-		- tf.nn.learned_unigram_candidate_sampler
-		- tf.nn.fixed_unigram_candidate_sampler
+- ### value
 
-		- tf.nn.compute_accidental_hits
-
-		- tf.nn.quantized_conv2d
-		- tf.nn.quantized_relu_x
-		- tf.nn.quantized_max_pool
-		- tf.nn.quantized_avg_pool
-
-- ### 变量
-
-	+ #### 变量
-	
+	+ #### value
 		- tf.Variable
 		
-	+ #### 变量协助函数
-	
-		TensorFlow提供了一组函数来帮助管理图中收集的变量集。
-
+	+ #### value管理op
 		- tf.global_variables
 		- tf.local_variables
 		- tf.model_variables
@@ -1165,25 +1105,19 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.assign_add
 		- tf.assign_sub
 		
-	+ #### 保存和恢复变量
-
+	+ #### value保存和恢复op
 		- tf.train.Saver
 		- tf.train.latest_checkpoint
 		- tf.train.get_checkpoint_state
 		- tf.train.update_checkpoint_state
 
-	+ #### 共享变量
-
-		TensorFlow提供了几种类和操作，您可以根据某些条件创建变量。
-
+	+ #### value共享op
 		- tf.get_variable
 		- tf.get_local_variable
 		- tf.VariableScope
 		- tf.variable_scope
 		- tf.variable_op_scope
 		- tf.get_variable_scope
-		- tf.make_template
-		- tf.no_regularizer
 		- tf.constant_initializer
 		- tf.random_normal_initializer
 		- tf.truncated_normal_initializer
@@ -1191,12 +1125,6 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.uniform_unit_scaling_initializer
 		- tf.zeros_initializer
 		- tf.ones_initializer
-		- tf.orthogonal_initializer
-
-
-
-
-　　　
 
 
 
