@@ -696,7 +696,7 @@ Defined in [tensorflow/python/ops/state_ops.py](https://github.com/tensorflow/te
 将　value 赋值给　ref，并输出 ref　
 
 这使得需要使用复位值的连续操作变简单
-                - class tf.TensorShape
+                - class tf.TensorShapeduilie
 799
                     Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
 **Args:**
@@ -834,11 +834,11 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
 - ### 过程控制：　[Ref](https://www.tensorflow.org/api_guides/python/control_flow_ops)
 
-	+ #### Control Flow Operations:
+	+ #### 过程控制op:
 
-	+ #### Logical Operators:
+	+ #### 逻辑op:
 
-	+ #### Comparison Operators:
+	+ #### 对照op:
 
 	+ #### Debugging Operations:
 		- tf.is_finite
@@ -851,21 +851,21 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		
 			Defined in [tensorflow/python/ops/logging_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/logging_ops.py).
 
-- ### Building Graphs:  [Ref](https://www.tensorflow.org/api_guides/python/framework)
+- ### 构建graph：  [Ref](https://www.tensorflow.org/api_guides/python/framework)
 	建立Tensorflow图的类和函数
 
-	+ #### Core graph data structures
+	+ #### 核心graph数据结构
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py)
 		- tf.Graph
 		- tf.Operation
 		- tf.Tensor
 		
-	+ #### Tensor types
+	+ #### tensor类型
 		Defined in [tensorflow/python/framework/dtypes.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/dtypes.py)
 		- tf.DType
 		- tf.as_dtype
 	
-	+ #### Utility functions
+	+ #### Utility函数
 		Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py)
 		- tf.device
 		- tf.container    
@@ -873,71 +873,51 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.get_default_graph
 		- tf.reset_default_graph
 	
-	+ #### Defining new operations
+	+ #### 自定义op
 		- class tf.TensorShape
 		    	
 			Defined in [tensorflow/python/framework/tensor_shape.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/tensor_shape.py).
-	      
-	+ #### For libraries building on TensorFlow
-	
-- ### Images:  [Ref](https://www.tensorflow.org/api_guides/python/image)
 
-	+ #### Encoding and Decoding  
+- ### 图像：  [Ref](https://www.tensorflow.org/api_guides/python/image)
 	
-	+ #### Resizing
+	+ #### 图像调整
 		- tf.image.resize_images
 
-- ### Inputs and Readers
+- ### 输入和读取：
 
-	+ #### Placeholders
-	
-		###### TensorFlow提供一个占位符操作，必须在执行时提供数据。 
+	+ #### 占位符 
 		- tf.placeholder
 		- tf.placeholder_with_default
 	+ #### Readers
-	
-		###### TensorFlow提供了一组用于读取数据格式的Reader类。
 		- tf.ReaderBase
 		- tf.IdentityReader
 		- tf.TFRecordReader
 
-	+ #### Converting
-	
-		###### TensorFlow提供了一组op用于将不同的数据格式转换成tensor
+	+ #### 转换成tensor
 		- tf.decode_csv　
 		- tf.decode_raw
-		
-	+ #### Example protocol buffer
 	
-	+ #### Queues
-	
-		###### TensorFlow提供了几个“队列”的实现，它们是TensorFlow计算图中的结构，用于将张量的管道放在一起
+	+ #### 队列
 		- tf.QueueBase
 		- tf.FIFOQueue
-
-	+ #### Conditional Accumulators
 	
-	+ #### Dealing with the filesystem
-	
+	+ #### 文件处理
 		- tf.matching_files
 		- tf.read_file
 		- tf.write_file
 	
-	+ #### Input pipeline###
-	
-		###### TensorFlow功能用于设置输入预取流水线
+	+ #### 流水线输入
 		- tf.train.batch
 		- tf.train.maybe_batch
 		- tf.train.batch_join
 		- tf.train.maybe_batch_join
 		- tf.train.shuffle_batch
 
-- ### Math:   [{Detail}](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/TensorFlow-Notebook/TensorFlow-Box/Source_Code/tensorflow/python/ops/math_ops.md)
+- ### 数学计算：　　[{Detail}](https://github.com/JNingWei/Notebook/blob/master/Bookshelf/TensorFlow-Notebook/TensorFlow-Box/Source_Code/tensorflow/python/ops/math_ops.md)
 
 	Defined in　[tensorflow/python/ops/math_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/math_ops.py)
-	+ #### Arithmetic Operators
 
-		TensorFlow provides several operations that you can use to add basic arithmetic operators to your graph.
+	+ #### 算数op
 		- tf.add
 		- tf.subtract
 		- tf.multiply
@@ -954,9 +934,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.mod
 		- tf.cross
 
-	+ #### Basic Math Functions
-
-		TensorFlow provides several operations that you can use to add basic mathematical functions to your graph.
+	+ #### 基本数学op
 		- tf.add_n
 		- tf.abs
 		- tf.negative
@@ -979,10 +957,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.asin
 		- tf.atan
 
-	+ #### Matrix Math Functions
-
-		TensorFlow provides several operations that you can use to add linear algebra functions on matrices to your graph.
-
+	+ #### 矩阵的线代op
 		- tf.diag
 		- tf.trace
 		- tf.transpose
@@ -993,19 +968,13 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.norm
 		- tf.cholesky
 
-	+ #### Complex Number Functions
-
-		TensorFlow provides several operations that you can use to add complex number functions to your graph.
-
+	+ #### 复数op
 		- tf.complex
 		- tf.conj
 		- tf.imag
 		- tf.real
 
-	+ #### Reduction
-
-		TensorFlow provides several operations that you can use to perform common math computations that reduce various dimensions of a tensor.
-
+	+ #### 降维op
 		- tf.reduce_sum
 		- tf.reduce_prod
 		- tf.reduce_min
@@ -1014,9 +983,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.reduce_all
 		- tf.reduce_any
 
-	+ #### Segmentation
-
-		TensorFlow provides several operations that you can use to perform common math computations on tensor segments. 
+	+ #### 切片op
 		- tf.segment_sum
 		- tf.segment_prod
 		- tf.segment_min
@@ -1025,18 +992,15 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.sparse_segment_sum
 		- tf.sparse_segment_mean
 		
-	+ #### Sequence Comparison and Indexing
-
-		TensorFlow provides several operations that you can use to add sequence comparison and index extraction to your graph. You can use these operations to determine sequence differences and determine the indexes of specific values in a tensor.
-
+	+ #### 序列比较和索引提取op
 		- tf.argmin
 		- tf.argmax
 		- tf.where
 		- tf.unique
 		
-- ### Neural Network
+- ### 神经网络
 
-	+ #### Activation FunctionsActivation Functions
+	+ #### 激活op
 
 		The activation ops provide different types of nonlinearities for use in neural networks. These include smooth nonlinearities (sigmoid, tanh, elu, softplus, and softsign), continuous but not everywhere differentiable functions (relu, relu6, crelu and relu_x), and random regularization (dropout).
 
@@ -1053,7 +1017,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.sigmoid
 		- tf.tanh
 
-	+ #### Convolution
+	+ #### 卷积op
 
 		The convolution ops sweep a 2-D filter over a batch of images, applying the filter to each window of each image of the appropriate size. The different ops trade off between generic vs. specific filters:
 
@@ -1074,7 +1038,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.depthwise_conv2d_native_backprop_filter
 		- tf.nn.depthwise_conv2d_native_backprop_input
 
-	+ #### Pooling
+	+ #### 池化op
 
 		The pooling ops sweep a rectangular window over the input tensor, computing a reduction operation for each window (average, max, or max with argmax). Each pooling op uses rectangular windows of size ksize separated by offset strides. For example, if strides is all ones every window is used, if strides is all twos every other window is used in each dimension, etc.
 
@@ -1096,7 +1060,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.with_space_to_batch
 
 
-	+ #### Normalization
+	+ #### 高斯op
 
 		Normalization is useful to prevent neurons from saturating when inputs may have varying scale, and to aid generalization.
 
@@ -1110,14 +1074,14 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.batch_normalization
 		- tf.nn.batch_norm_with_global_normalization
 
-	+ #### Losses
+	+ #### 损失op
 
 		The loss ops measure error between two tensors, or between a tensor and zero. These can be used for measuring accuracy of a network in a regression task or for regularization purposes (weight decay).
 
 		- tf.nn.l2_loss
 		- tf.nn.log_poisson_loss
 		
-	+ #### Classification
+	+ #### 分类op
 
 		TensorFlow provides several operations that help you perform classification.
 
@@ -1136,7 +1100,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.embedding_lookup_sparse
 
 
-	+ #### Recurrent Neural Networks
+	+ #### 循环神经网络op
 
 		TensorFlow provides a number of methods for constructing Recurrent Neural Networks. Most accept an RNNCell-subclassed object (see the documentation for tf.contrib.rnn).
 
