@@ -721,9 +721,9 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 
 ## Python API Guides
 
-- ### Tensor Transformations:  [Ref](https://www.tensorflow.org/api_guides/python/array_ops)
+- ### Tensor转换:  [Ref](https://www.tensorflow.org/api_guides/python/array_ops)
 
-  + #### Casting:  在图形中放置tensor数据类型
+  + #### 生成tensor
     - tf.string_to_number
     - tf.to_double
     - tf.to_float
@@ -732,28 +732,26 @@ Same as "ref". Returned as a convenience for operations that want to use the new
     - tf.to_int64
     - tf.cast
 
-  + #### Shapes and Shaping:  确定tensor的形状并更改张量的形状
-    - tf.shape
+  + #### tensor形状
+    - tf.shape
     - tf.size
     - tf.rank
     - tf.reshape
     - tf.squeeze
     - tf.expand_dims
 　　　
-  + #### Slicing and Joining:  切片和加入
-    - tf.slice
+  + #### 切片和插入
+    - tf.slice
     - tf.split
     - tf.pad
     - tf.concat
     - tf.transpose
 
-  + #### Fake quantization:  用于帮助训练更好的量化精度的操作
-
-- ### Asserts and boolean checks:   [Ref](https://www.tensorflow.org/api_guides/python/check_ops)
+- ### 断言和布尔检查:   [Ref](https://www.tensorflow.org/api_guides/python/check_ops)
 	Defined in [tensorflow/python/ops/check_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/ops/check_ops.py)
 
-- ### Running Graphs:  [Ref](https://www.tensorflow.org/api_guides/python/client)
-	+ #### Session management:  会话管理
+- ### Graphs运作:  [Ref](https://www.tensorflow.org/api_guides/python/client)
+	+ #### 会话管理
 		- [tf.Session](https://www.tensorflow.org/api_docs/python/tf/Session) 
 	    
 			Defined in [tensorflow/python/client/session.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/client/session.py)
@@ -764,14 +762,14 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		
 			Defined in [tensorflow/python/framework/ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/ops.py).
 
-  	+ #### Error classes and convenience functions:  错误类和方便功能
+  	+ #### 错误类和方便功能
 		- tf.OpError
 		
 			Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
 - ### Constants, Sequences, and Random Values:  [Ref](https://www.tensorflow.org/api_guides/python/constant_op)
 
-	+ #### Constant Value Tensors: 生成常量的操作
+	+ #### 生成常量tensor
 		- tf.zeros
 		- tf.zeros_like
 		- tf.ones
@@ -779,11 +777,11 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.fill
 		- tf.constant
 
- 	+ #### Sequences: 序列操作
+ 	+ #### 生成序列
 		- tf.linspace
 		- tf.range
 
-	+ #### Random Tensors: 创建随机张量
+	+ #### 生成随机tensor
 	
 		Under *Tensorflow/python/ops* dir or *Tnesorflow/python/framework* dir
 		- tf.random_normal
@@ -1184,23 +1182,15 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.nn.quantized_max_pool
 		- tf.nn.quantized_avg_pool
 
-- ### Data IO (Python functions)
+- ### 变量
 
-	A TFRecords file represents a sequence of (binary) strings. The format is not random access, so it is suitable for streaming large amounts of data but not suitable if fast sharding or other non-sequential access is desired.
-	+ 
-		- tf.python_io.TFRecordWriter
-		- tf.python_io.tf_record_iterator
-		- tf.python_io.TFRecordCompressionType
-
-- ### Variables
-
-	+ #### Variables
+	+ #### 变量
 	
 		- tf.Variable
 		
-	+ #### Variable helper functions
+	+ #### 变量协助函数
 	
-		TensorFlow provides a set of functions to help manage the set of variables collected in the graph.
+		TensorFlow提供了一组函数来帮助管理图中收集的变量集。
 
 		- tf.global_variables
 		- tf.local_variables
@@ -1217,16 +1207,16 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.assign_add
 		- tf.assign_sub
 		
-	+ #### Saving and Restoring Variables
+	+ #### 保存和恢复变量
 
 		- tf.train.Saver
 		- tf.train.latest_checkpoint
 		- tf.train.get_checkpoint_state
 		- tf.train.update_checkpoint_state
 
-	+ #### Sharing Variables
+	+ #### 共享变量
 
-		TensorFlow provides several classes and operations that you can use to create variables contingent on certain conditions.
+		TensorFlow提供了几种类和操作，您可以根据某些条件创建变量。
 
 		- tf.get_variable
 		- tf.get_local_variable
