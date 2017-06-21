@@ -193,8 +193,7 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 ---
 
-
-基本网站
+Tensorflow基本网站
 ---
 
 [TensorFlow组织](https://github.com/tensorflow)
@@ -214,7 +213,7 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 ---
 
-版本变动
+Tensorflow版本变动
 ---
 
 [TensorFlow 1.0 版本 API 变动汇总](http://www.jianshu.com/p/04850ffc1021)
@@ -227,7 +226,7 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 ---
 
-框架变动
+Tensorflow框架变动
 ---
 
 [Convert Caffe models to TensorFlow](https://github.com/ethereon/caffe-tensorflow)
@@ -238,7 +237,7 @@ TensorFlow 是一个编程系统, 使用图来表示计算任务.
 
 ---
 
-安装
+Tensorflow安装 & 遇到的问题及解决方案
 ---
 
 出处：[Ubuntu + py2.7 + gpu](https://www.tensorflow.org/install/install_linux#installing_with_native_pip)
@@ -767,7 +766,7 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		
 			Defined in [tensorflow/python/framework/errors_impl.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/python/framework/errors_impl.py).
 
-- ### Constants, Sequences, and Random Values:  [Ref](https://www.tensorflow.org/api_guides/python/constant_op)
+- ### 常量、序列和随机变量：　　[Ref](https://www.tensorflow.org/api_guides/python/constant_op)
 
 	+ #### 生成常量tensor
 		- tf.zeros
@@ -789,10 +788,9 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.random_uniform
 		- tf.random_shuffle
 
-- ### Layers (contrib):   [Ref](https://www.tensorflow.org/api_guides/python/contrib.layers)
+- ### 构建网络层:   [Ref](https://www.tensorflow.org/api_guides/python/contrib.layers)
 	
-	用于　构建神经网络层，regularizers ， summaries　等的操作
- 	+ #### Higher level ops for building neural network layers:  创建内部使用的变量，并为许多常见的机器学习算法提供构建块。
+ 	+ #### 高级构建
 
 		- tf.contrib.layers.avg_pool2d
 		- tf.contrib.layers.batch_norm
@@ -808,22 +806,22 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.stack
 		- tf.contrib.layers.unit_norm
 
-	+ #### Regularizers: 正则化可以帮助防止过度配合。
+	+ #### 正则化
 	
 		Defined in [tensorflow/contrib/layers/python/layers/regularizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/regularizers.py).
 		- tf.contrib.layers.l1_regularizer
 		- tf.contrib.layers.l2_regularizer
 
- 	+ #### Initializers: 初始化具有明确值的变量，给出其大小，数据类型和目的
+ 	+ #### 初始化
 	
 		Defined in [tensorflow/contrib/layers/python/layers/initializers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/initializers.py)
 
-	+ #### Optimization: 优化损失的权重
+	+ #### （权重）优化
   	
 		Defined in [tensorflow/contrib/layers/python/layers/optimizers.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/optimizers.py)
 		- [tf.contrib.layers.optimize_loss](https://www.tensorflow.org/api_docs/python/tf/contrib/layers/optimize_loss)
 
- 	+ #### Summaries:  协助总结具体变量或操作
+ 	+ #### 总结
 	
 		Defined in [tensorflow/contrib/layers/python/layers/summaries.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/summaries.py)
 		- tf.contrib.layers.summarize_activation
@@ -832,13 +830,9 @@ Same as "ref". Returned as a convenience for operations that want to use the new
 		- tf.contrib.layers.summarize_collection
 		- tf.contrib.layers.summarize_activations
 
-	+ #### Feature columns:  将数据映射到模型的机制
-	
-		Defined in [tensorflow/contrib/layers/python/layers/feature_column.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column.py) or [tensorflow/contrib/layers/python/layers/feature_column_ops.py](https://github.com/tensorflow/tensorflow/blob/r1.1/tensorflow/contrib/layers/python/layers/feature_column_ops.py)
+- ### RNN：　[Ref](https://www.tensorflow.org/api_guides/python/contrib.rnn)
 
-- ### RNN and Cells (contrib)：　[Ref](https://www.tensorflow.org/api_guides/python/contrib.rnn)
-
-- ### Control Flow：　[Ref](https://www.tensorflow.org/api_guides/python/control_flow_ops)
+- ### 过程控制：　[Ref](https://www.tensorflow.org/api_guides/python/control_flow_ops)
 
 	+ #### Control Flow Operations:
 
