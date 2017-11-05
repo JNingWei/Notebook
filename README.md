@@ -1,3 +1,5 @@
+![Travis](https://img.shields.io/travis/rust-lang/rust.svg) ![Language](https://img.shields.io/badge/language-Jupyter-orange.svg) [![License](https://img.shields.io/badge/license-MIT-blue.svg)](./LICENSE.md) [![SayThanks](https://img.shields.io/badge/say-thanks-ff69b4.svg)](https://saythanks.io/to/kamyu104)
+
 &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;
 <font color=##40E0D0 size=10 face="楷书">  书 &emsp;&ensp;   架</font>
 ---
