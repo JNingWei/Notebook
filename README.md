@@ -28,13 +28,16 @@
 
 ---
 
----
-
 ###### 查看方式： 点击图标，跳转到相应的笔记本。
 
+---
+
+**Update 13-05-2017: It's my online notebook.**
+
+Contributions welcome.
 
 ---
 
 ---
 
----
+
