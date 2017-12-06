@@ -34,7 +34,7 @@
 
 **Update 13-05-2017: It's my online notebook.**
 
-But it has now stopped maintaining. I have transferred my online notes to CDSN community.
+But it has now stopped maintaining. I have transferred my online notes to [CSDN community](http://blog.csdn.net/JNingWei?ref=toolbar).
 
 ---
 
